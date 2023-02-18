@@ -6,7 +6,7 @@ MAIN_DIR="${HOME}/my-stuff/"
 "${MAIN_DIR}copy-over.bash"
 
 # copy over emacs packages
-cp "${MAIN_DIR}.emacs.d/" "${HOME}/."
+cp -r "${MAIN_DIR}.emacs.d/" "${HOME}/."
 
 # modify dotfiles appropriately
 
