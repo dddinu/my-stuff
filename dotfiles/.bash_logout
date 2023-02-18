@@ -1,0 +1,1 @@
+/home/ddinu/.bash_logout
