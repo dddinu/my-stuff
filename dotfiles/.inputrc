@@ -1,1 +1,12 @@
-/home/ddinu/.inputrc
+# Pretty
+set colored-stats on
+set colored-completion-prefix on
+
+# completion settings
+set show-all-if-ambiguous on
+set completion-ignore-case on
+
+# command history search
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+

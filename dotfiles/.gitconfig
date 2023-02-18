@@ -1,1 +1,9 @@
-/home/ddinu/.gitconfig
+[user]
+	name = Daniel Dinu
+	email = ddd73@drexel.edu
+	editor = emacs
+[core]
+	editor = emacs
+
+[init]
+	defaultBranch = main
