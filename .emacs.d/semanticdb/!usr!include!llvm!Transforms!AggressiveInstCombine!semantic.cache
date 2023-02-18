@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file-155561f773b2
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155561f773b2"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155561f773f4"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_AGGRESSIVEINSTCOMBINE_AGGRESSIVEINSTCOMBINE_H" variable (:constant-flag t) nil [798 859])
+            ("llvm/IR/PassManager.h" include nil nil [861 893])
+            ("llvm/Pass.h" include nil nil [894 916])
+            ("llvm" type
+               (:members 
+                  ( ("AggressiveInstCombinePass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1025 1032])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1057 1069])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1070 1098]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1035 1099]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [936 1102])
+                    ("createAggressiveInstCombinerPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1338 1387]))                  
+                :type "namespace")
+                nil [918 1389]))          
+      :file "AggressiveInstCombine.h"
+      :pointmax 1398
+      :fsize 1397
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_AGGRESSIVEINSTCOMBINE_AGGRESSIVEINSTCOMBINE_H")
+          )
+))
+  :file "!usr!include!llvm!Transforms!AggressiveInstCombine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

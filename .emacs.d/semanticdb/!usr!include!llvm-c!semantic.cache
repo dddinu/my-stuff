@@ -1,0 +1,310 @@
+;; Object semanticdb-project-database-file-15556185ce44
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15556185ce44"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15556185ce6e"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_C_EXTERNC_H" variable (:constant-flag t) nil [1007 1023])
+            ("LLVM_C_STRICT_PROTOTYPES_BEGIN" variable (:constant-flag t) nil [1351 1381])
+            ("LLVM_C_STRICT_PROTOTYPES_END" variable (:constant-flag t) nil [1390 1418])
+            ("LLVM_C_EXTERN_C_BEGIN" variable (:constant-flag t) nil [1454 1475])
+            ("LLVM_C_EXTERN_C_END" variable (:constant-flag t) nil [1649 1668]))          
+      :file "ExternC.h"
+      :pointmax 1946
+      :fsize 1945
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_C_STRICT_PROTOTYPES_BEGIN")
+          ("LLVM_C_EXTERNC_H")
+          ("LLVM_C_EXTERN_C_END" . ((symbol "LLVM_C_STRICT_PROTOTYPES_END" 1724 . 1752) (close-paren "}" 1805 . 1806)))
+          ("LLVM_C_STRICT_PROTOTYPES_END")
+          ("LLVM_C_EXTERN_C_BEGIN" . 
+              ((EXTERN "extern" 1529 . 1535) (string "\"C\"" 1536 . 1539) (open-paren "{" 1540 . 1541) (symbol "LLVM_C_STRICT_PROTOTYPES_BEGIN" 1610 . 1640)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15556185cebe"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_C_TYPES_H" variable (:constant-flag t) nil [1005 1019])
+            ("llvm-c/DataTypes.h" include nil nil [1021 1050])
+            ("llvm-c/ExternC.h" include nil nil [1051 1078])
+            ("LLVMBool" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1175 1196])
+            ("LLVMMemoryBufferRef" type
+               (:typedef ("LLVMOpaqueMemoryBuffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1899 1958])
+            ("LLVMContextRef" type
+               (:typedef ("LLVMOpaqueContext" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2048 2097])
+            ("LLVMModuleRef" type
+               (:typedef ("LLVMOpaqueModule" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2222 2269])
+            ("LLVMTypeRef" type
+               (:typedef ("LLVMOpaqueType" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2358 2401])
+            ("LLVMValueRef" type
+               (:typedef ("LLVMOpaqueValue" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2488 2533])
+            ("LLVMBasicBlockRef" type
+               (:typedef ("LLVMOpaqueBasicBlock" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2635 2690])
+            ("LLVMMetadataRef" type
+               (:typedef ("LLVMOpaqueMetadata" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2766 2817])
+            ("LLVMNamedMDNodeRef" type
+               (:typedef ("LLVMOpaqueNamedMDNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [2907 2964])
+            ("LLVMValueMetadataEntry" type
+               (:typedef ("LLVMOpaqueValueMetadataEntry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3088 3155])
+            ("LLVMBuilderRef" type
+               (:typedef ("LLVMOpaqueBuilder" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3243 3292])
+            ("LLVMDIBuilderRef" type
+               (:typedef ("LLVMOpaqueDIBuilder" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3379 3432])
+            ("LLVMModuleProviderRef" type
+               (:typedef ("LLVMOpaqueModuleProvider" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3629 3692])
+            ("LLVMPassManagerRef" type
+               (:typedef ("LLVMOpaquePassManager" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3728 3785])
+            ("LLVMPassRegistryRef" type
+               (:typedef ("LLVMOpaquePassRegistry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3818 3877])
+            ("LLVMUseRef" type
+               (:typedef ("LLVMOpaqueUse" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3954 3995])
+            ("LLVMAttributeRef" type
+               (:typedef ("LLVMOpaqueAttributeRef" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [4068 4124])
+            ("LLVMDiagnosticInfoRef" type
+               (:typedef ("LLVMOpaqueDiagnosticInfo" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [4163 4226])
+            ("LLVMComdatRef" type
+               (:typedef ("LLVMComdat" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [4257 4298])
+            ("LLVMModuleFlagEntry" type
+               (:typedef ("LLVMOpaqueModuleFlagEntry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4346 4407])
+            ("LLVMJITEventListenerRef" type
+               (:typedef ("LLVMOpaqueJITEventListener" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [4448 4515])
+            ("LLVMBinaryRef" type
+               (:typedef ("LLVMOpaqueBinary" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [4554 4601]))          
+      :file "Types.h"
+      :pointmax 4646
+      :fsize 4645
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((symbol 4618 . 4637) (symbol 1080 . 1101))
+      :lexical-table 
+        '(("LLVM_C_TYPES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155560dcb584"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_C_DATATYPES_H" variable (:constant-flag t) nil [1701 1719])
+            ("inttypes.h" include (:system-flag t) nil [1721 1742])
+            ("stdint.h" include (:system-flag t) nil [1743 1762])
+            ("sys/types.h" include (:system-flag t) nil [2216 2238])
+            ("INT64_MAX" variable (:constant-flag t) nil [2744 2753])
+            ("INT64_MIN" variable (:constant-flag t) nil [2816 2825])
+            ("UINT64_MAX" variable (:constant-flag t) nil [2884 2894]))          
+      :file "DataTypes.h"
+      :pointmax 2957
+      :fsize 2956
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((string 2071 . 2132) (string 1992 . 2061) (symbol 1986 . 1991) (punctuation 1984 . 1985) (string 1894 . 1952) (string 1815 . 1884) (symbol 1809 . 1814) (punctuation 1807 . 1808))
+      :lexical-table 
+        '(("INT64_MAX" . ((symbol "9223372036854775807LL" 2754 . 2775)))
+          ("LLVM_C_DATATYPES_H")
+          ("INT64_MIN" . ((semantic-list "((-INT64_MAX)-1)" 2826 . 2842)))
+          ("UINT64_MAX" . ((symbol "0xffffffffffffffffULL" 2895 . 2916)))
+          )
+)
+    (semanticdb-table "semanticdb-table-155562645156"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_C_ERROR_H" variable (:constant-flag t) nil [1005 1019])
+            ("llvm-c/ExternC.h" include nil nil [1021 1048])
+            ("LLVMErrorSuccess" variable (:constant-flag t) nil [1156 1172])
+            ("LLVMErrorRef" type
+               (:typedef ("LLVMOpaqueError" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1262 1307])
+            ("LLVMErrorTypeId" type
+               (:typedef ("void")
+                :pointer 1
+                :type "typedef")
+                nil [1343 1379])
+            ("LLVMGetErrorTypeId" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Err" variable (:type ("LLVMErrorRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1527 1544]))                  
+                :type ("LLVMErrorTypeId" type (:type "class") nil nil))
+                nil [1492 1545])
+            ("LLVMConsumeError" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Err" variable (:type ("LLVMErrorRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1881 1898]))                  
+                :type "void")
+                nil [1859 1899])
+            ("LLVMGetErrorMessage" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("Err" variable (:type ("LLVMErrorRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2202]))                  
+                :type "char")
+                nil [2159 2203])
+            ("LLVMDisposeErrorMessage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ErrMsg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2281 2294]))                  
+                :type "void")
+                nil [2252 2295])
+            ("LLVMGetStringErrorTypeId" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2391 2396]))                  
+                :type ("LLVMErrorTypeId" type (:type "class") nil nil))
+                nil [2350 2397])
+            ("LLVMCreateStringError" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ErrMsg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2467 2486]))                  
+                :type ("LLVMErrorRef" type (:type "class") nil nil))
+                nil [2432 2487]))          
+      :file "Error.h"
+      :pointmax 2532
+      :fsize 2531
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((symbol 2504 . 2523) (symbol 1050 . 1071))
+      :lexical-table 
+        '(("LLVM_C_ERROR_H")
+          ("LLVMErrorSuccess" . ((number "0" 1173 . 1174)))
+          )
+))
+  :file "!usr!include!llvm-c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

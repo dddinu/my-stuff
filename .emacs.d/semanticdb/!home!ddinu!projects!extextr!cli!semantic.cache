@@ -1,0 +1,75 @@
+;; Object semanticdb-project-database-file-156b7c904e70
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-156b7c904e70"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-156b7c904eaa"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("filesystem" include (:system-flag t) nil [21 42])
+            ("string" include (:system-flag t) nil [43 60])
+            ("vector" include (:system-flag t) nil [61 78])
+            ("algorithm" include (:system-flag t) nil [79 99])
+            ("print_usage" function (:type "void") nil [102 189])
+            ("print_vector" function
+               (:arguments 
+                  ( ("v" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [209 237]))                  
+                :type "void")
+                nil [191 315])
+            ("remove_duplicates" function
+               (:arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [340 368]))                  
+                :type "void")
+                nil [317 481])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [493 502])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [503 516]))                  
+                :type "int")
+                nil [484 1256]))          
+      :file "main.cpp"
+      :pointmax 1257
+      :fsize 1256
+      :lastmodtime '(25582 64677 257237 366000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-156b7d1bcbaa"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [20 29])
+            ("RM" variable (:default-value ("rm" "-f")) nil [29 39])
+            ("CXXFLAGS" variable (:default-value ("-Wall")) nil [39 55])
+            ("SRCS" variable (:default-value ("main.cpp")) nil [70 85])
+            ("OBJS" variable (:default-value ("$(subst .cpp,.o,$(SRCS))")) nil [85 115])
+            ("TARGET" variable (:default-value ("extextr")) nil [130 146])
+            ("all" function (:arguments ("$(TARGET)")) nil [147 162])
+            ("$(TARGET)" function (:arguments ("$(OBJS)")) nil [163 223])
+            ("%.o" function (:arguments ("%.c")) nil [224 259])
+            ("clean" function nil nil [260 282])
+            ("cleantarg" function nil nil [283 311]))          
+      :file "Makefile"
+      :pointmax 311
+      :fsize 310
+      :lastmodtime '(25582 63376 805762 21000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!projects!extextr!cli!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

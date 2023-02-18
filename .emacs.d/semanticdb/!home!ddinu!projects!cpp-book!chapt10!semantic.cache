@@ -1,0 +1,137 @@
+;; Object semanticdb-project-database-file-15587eb3f552
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15587eb3f552"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15587eb3f512"
+      :major-mode c++-mode
+      :tags 
+        '( ("CATCH_CONFIG_MAIN" variable (:constant-flag t) nil [9 26])
+            ("catch2/catch.hpp" include (:system-flag t) nil [27 54])
+            ("hippomocks.h" include nil nil [55 78])
+            ("functional" include (:system-flag t) nil [79 100])
+            ("stdexcept" include (:system-flag t) nil [101 121])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [123 143])
+            ("SpeedUpdate" type
+               (:members 
+                  ( ("velocity_mps" variable (:type "double") (reparse-symbol classsubparts) [170 190]))                  
+                :type "struct")
+                nil [145 193])
+            ("CarDetected" type
+               (:members 
+                  ( ("distance_m" variable (:type "double") (reparse-symbol classsubparts) [220 238])
+                    ("velocity_mps" variable (:type "double") (reparse-symbol classsubparts) [243 263]))                  
+                :type "struct")
+                nil [195 266])
+            ("BreakCommand" type
+               (:members 
+                  ( ("time_to_collision_s" variable (:type "double") (reparse-symbol classsubparts) [294 321]))                  
+                :type "struct")
+                nil [268 324])
+            ("SpeedLimitDetected" type
+               (:members 
+                  ( ("speed_mps" variable (:type "unsigned short") (reparse-symbol classsubparts) [358 383]))                  
+                :type "struct")
+                nil [326 386])
+            ("SpeedUpdateCallback" variable (:type "int") nil [431 451])
+            ("CarDetectedCallback" variable (:type "int") nil [495 515])
+            ("SpeedLimitCallback" variable (:type "int") nil [566 585])
+            ("IServiceBus" type
+               (:members 
+                  ( ("publish" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BreakCommand" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [671 691]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [650 696])
+                    ("subscribe_to_speed" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("SpeedUpdateCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [733 753]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [701 758])
+                    ("subscribe_to_car_detected" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("CarDetectedCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [802 822]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [763 827])
+                    ("subscribe_to_speed_limit" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type ("SpeedLimitCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [870 889]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [832 894]))                  
+                :type "struct")
+                nil [587 897])
+            ("AutoBrake" type
+               (:members 
+                  ( ("AutoBrake" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("bus" variable
+                               (:reference 1
+                                :type ("IServiceBus" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [933 950]))                          
+                        :type ("AutoBrake" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [923 1703])
+                    ("set_collision_threshold_s" function
+                       (:arguments 
+                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [1739 1748]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1708 1849])
+                    ("get_collision_threshold_s" function
+                       (:methodconst-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1854 1933])
+                    ("get_speed_mps" function
+                       (:methodconst-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1938 1993])
+                    ("get_last_known_speed_limit_mps" function
+                       (:methodconst-flag t
+                        :type "unsigned short")
+                        (reparse-symbol classsubparts) [1998 2094])
+                    ("private" label nil (reparse-symbol classsubparts) [2096 2104])
+                    ("collision_threshold_s" variable (:type "double") (reparse-symbol classsubparts) [2109 2138])
+                    ("speed_mps" variable (:type "double") (reparse-symbol classsubparts) [2143 2160])
+                    ("last_know_speed_limit_mps" variable (:type "unsigned short") (reparse-symbol classsubparts) [2165 2206]))                  
+                :type "struct")
+                nil [900 2209])
+            ("TEST_CASE" function (:type "int") nil [2211 5350]))          
+      :file "main.cpp"
+      :pointmax 5351
+      :fsize 5350
+      :lastmodtime '(25546 802 439231 783000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CATCH_CONFIG_MAIN")
+          )
+)
+    (semanticdb-table "semanticdb-table-15587eb3f532"
+      :major-mode c-mode
+      :tags nil
+      :file "hippomocks.h"
+      :pointmax 1
+      :fsize 387690
+      :lastmodtime '(25540 34952 308594 47000)
+      :unmatched-syntax nil)
+)
+  :file "!home!ddinu!projects!cpp-book!chapt10!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

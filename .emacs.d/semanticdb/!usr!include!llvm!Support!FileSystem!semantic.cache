@@ -1,0 +1,131 @@
+;; Object semanticdb-project-database-file-1555620d70c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1555620d70c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15556248d10a"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_SUPPORT_FILESYSTEM_UNIQUEID_H" variable (:constant-flag t) nil [627 661])
+            ("llvm/ADT/DenseMapInfo.h" include nil nil [663 697])
+            ("llvm/ADT/Hashing.h" include nil nil [698 727])
+            ("cstdint" include (:system-flag t) nil [728 746])
+            ("utility" include (:system-flag t) nil [747 765])
+            ("llvm" type
+               (:members 
+                  ( ("sys" type
+                       (:members 
+                          ( ("fs" type
+                               (:members 
+                                  ( ("UniqueID" type
+                                       (:members 
+                                          ( ("Device" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [835 851])
+                                            ("File" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [854 868])
+                                            ("public" label nil (reparse-symbol classsubparts) [870 877])
+                                            ("UniqueID" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Device" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [913 929])
+                                                    ("File" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [930 944]))                                                  
+                                                :type ("UniqueID" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [904 976])
+                                            ("==" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("Other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UniqueID" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [996 1018]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [980 1087])
+                                            ("!=" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("Other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UniqueID" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1106 1128]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1090 1164])
+                                            ("<" function
+                                               (:methodconst-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("Other" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("UniqueID" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1182 1204]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1167 1423])
+                                            ("getDevice" function
+                                               (:methodconst-flag t
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1427 1472])
+                                            ("getFile" function
+                                               (:methodconst-flag t
+                                                :type ("uint64_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1475 1516]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [816 1519]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [800 1522]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [784 1544])
+                    ("DenseMapInfo" type
+                       (:type "struct"
+                        :members 
+                          ( ("getEmptyKey" function
+                               (:typemodifiers ("static" "inline")
+                                :type ("llvm::sys::fs::UniqueID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1667 1850])
+                            ("getTombstoneKey" function
+                               (:typemodifiers ("static" "inline")
+                                :type ("llvm::sys::fs::UniqueID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1854 2065])
+                            ("getHashValue" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("Tag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::sys::fs::UniqueID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2099 2134]))                                  
+                                :type ("hash_code" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2069 2211])
+                            ("isEqual" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("LHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::sys::fs::UniqueID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2235 2270])
+                                    ("RHS" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("llvm::sys::fs::UniqueID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2293 2328]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2215 2357]))                          
+                        :template-specifier 
+                          ( ("llvm::sys::fs::UniqueID" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1606 2360]))                  
+                :type "namespace")
+                nil [767 2363]))          
+      :file "UniqueID.h"
+      :pointmax 2432
+      :fsize 2431
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 900 . 901) (DEFAULT 893 . 900) (punctuation 891 . 892) (semantic-list 888 . 890) (symbol 880 . 888))
+      :lexical-table 
+        '(("LLVM_SUPPORT_FILESYSTEM_UNIQUEID_H")
+          )
+))
+  :file "!usr!include!llvm!Support!FileSystem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

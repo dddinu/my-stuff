@@ -1,0 +1,103 @@
+;; Object semanticdb-project-database-file-15798e4c808a
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15798e4c808a"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15798eb078c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("cerrno" include (:system-flag t) nil [19 36])
+            ("memory" include (:system-flag t) nil [37 54])
+            ("Hal.hpp" include nil nil [55 73])
+            ("std::shared_ptr" variable (:type "int") nil [93 115])
+            ("say_hello" function
+               (:arguments 
+                  ( ("file" variable (:type ("FileGuard" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133 148]))                  
+                :type "void")
+                nil [118 190])
+            ("main" function (:type "int") nil [193 496]))          
+      :file "main.cpp"
+      :pointmax 498
+      :fsize 497
+      :lastmodtime '(25550 3311 159609 251000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15798f64770a"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [15 32])
+            ("memory" include (:system-flag t) nil [33 50])
+            ("Hal" type
+               (:members 
+                  ( ("Hal" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("file" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("FILE" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [86 113]))                          
+                        :type ("Hal" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [82 130])
+                    ("Hal" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [147 154])
+                    ("write_status" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [168 188])
+                    ("private" label nil (reparse-symbol classsubparts) [189 197])
+                    ("file" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("FILE" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [199 226]))                  
+                :type "struct")
+                nil [52 229]))          
+      :file "Hal.hpp"
+      :pointmax 230
+      :fsize 229
+      :lastmodtime '(25549 44521 486922 508000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15798e9f3384"
+      :major-mode c++-mode
+      :tags 
+        '( ("Hal.hpp" include nil nil [1 19])
+            ("Hal" function
+               (:destructor-flag t
+                :parent "Hal"
+                :type "void")
+                nil [21 80])
+            ("write_status" function
+               (:parent "Hal"
+                :type "void")
+                nil [82 170]))          
+      :file "Hal.cpp"
+      :pointmax 171
+      :fsize 170
+      :lastmodtime '(25549 44734 404821 540000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15798ed1a072"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [20 29])
+            ("RM" variable (:default-value ("rm" "-f")) nil [29 39])
+            ("CXXFLAGS" variable (:default-value ("-Wall")) nil [39 55])
+            ("SRCS" variable (:default-value ("main.cpp" "Hal.cpp")) nil [70 93])
+            ("OBJS" variable (:default-value ("$(subst .cpp,.o,$(SRCS))")) nil [93 123])
+            ("TARGET" variable (:default-value ("prog")) nil [138 151])
+            ("all" function (:arguments ("$(TARGET)")) nil [152 167])
+            ("$(TARGET)" function (:arguments ("$(OBJS)")) nil [168 228])
+            ("%.o" function (:arguments ("%.c")) nil [229 264])
+            ("clean" function nil nil [265 287])
+            ("cleantarg" function nil nil [288 316]))          
+      :file "Makefile"
+      :pointmax 316
+      :fsize 315
+      :lastmodtime '(25549 48400 121920 553000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!projects!cpp-book!chapt11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

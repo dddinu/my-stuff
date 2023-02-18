@@ -1,0 +1,2465 @@
+;; Object semanticdb-project-database-file-155561f81d0c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155561f81d0c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155561f81d46"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_GVN_H" variable (:constant-flag t) nil [702 730])
+            ("llvm/ADT/DenseMap.h" include nil nil [732 762])
+            ("llvm/ADT/MapVector.h" include nil nil [763 794])
+            ("llvm/ADT/PostOrderIterator.h" include nil nil [795 834])
+            ("llvm/ADT/SetVector.h" include nil nil [835 866])
+            ("llvm/ADT/SmallVector.h" include nil nil [867 900])
+            ("llvm/Analysis/InstructionPrecedenceTracking.h" include nil nil [901 957])
+            ("llvm/IR/Dominators.h" include nil nil [958 989])
+            ("llvm/IR/InstrTypes.h" include nil nil [990 1021])
+            ("llvm/IR/PassManager.h" include nil nil [1022 1054])
+            ("llvm/IR/ValueHandle.h" include nil nil [1055 1087])
+            ("llvm/Support/Allocator.h" include nil nil [1088 1123])
+            ("llvm/Support/Compiler.h" include nil nil [1124 1158])
+            ("cstdint" include (:system-flag t) nil [1159 1177])
+            ("utility" include (:system-flag t) nil [1178 1196])
+            ("vector" include (:system-flag t) nil [1197 1214])
+            ("llvm" type
+               (:members 
+                  ( ("AAResults" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1234 1250])
+                    ("AssumeInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1251 1268])
+                    ("AssumptionCache" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1269 1291])
+                    ("BasicBlock" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1292 1309])
+                    ("BranchInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1310 1327])
+                    ("CallInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1328 1343])
+                    ("ExtractValueInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1344 1367])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1368 1383])
+                    ("FunctionPass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1384 1403])
+                    ("LoadInst" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1404 1419])
+                    ("LoopInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1420 1435])
+                    ("MemDepResult" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1436 1455])
+                    ("MemoryDependenceResults" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1456 1486])
+                    ("MemorySSA" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1487 1503])
+                    ("MemorySSAUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1504 1527])
+                    ("NonLocalDepResult" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1528 1552])
+                    ("OptimizationRemarkEmitter" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1553 1585])
+                    ("PHINode" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1586 1600])
+                    ("TargetLibraryInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1601 1625])
+                    ("Value" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1626 1638])
+                    ("GVNOptions" type
+                       (:members 
+                          ( ("AllowPRE" variable
+                               (:default-value "None"
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2335 2366])
+                            ("AllowLoadPRE" variable
+                               (:default-value "None"
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2369 2404])
+                            ("AllowLoadInLoopPRE" variable
+                               (:default-value "None"
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2407 2448])
+                            ("AllowLoadPRESplitBackedge" variable
+                               (:default-value "None"
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2451 2499])
+                            ("AllowMemDep" variable
+                               (:default-value "None"
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("bool" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2502 2536])
+                            ("setPRE" function
+                               (:arguments 
+                                  ( ("PRE" variable (:type "bool") (reparse-symbol arg-sub-list) [2624 2633]))                                  
+                                :type ("GVNOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2605 2677])
+                            ("setLoadPRE" function
+                               (:arguments 
+                                  ( ("LoadPRE" variable (:type "bool") (reparse-symbol arg-sub-list) [2751 2764]))                                  
+                                :type ("GVNOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2728 2816])
+                            ("setLoadInLoopPRE" function
+                               (:arguments 
+                                  ( ("LoadInLoopPRE" variable (:type "bool") (reparse-symbol arg-sub-list) [2849 2868]))                                  
+                                :type ("GVNOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2820 2932])
+                            ("setLoadPRESplitBackedge" function
+                               (:arguments 
+                                  ( ("LoadPRESplitBackedge" variable (:type "bool") (reparse-symbol arg-sub-list) [3019 3045]))                                  
+                                :type ("GVNOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2983 3123])
+                            ("setMemDep" function
+                               (:arguments 
+                                  ( ("MemDep" variable (:type "bool") (reparse-symbol arg-sub-list) [3198 3210]))                                  
+                                :type ("GVNOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3176 3260]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2313 3263])
+                    ("GVNPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Options" variable (:type ("GVNOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3457 3476])
+                            ("public" label nil (reparse-symbol classsubparts) [3478 3485])
+                            ("Expression" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3488 3506])
+                            ("GVNPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Options" variable
+                                       (:default-value "{}"
+                                        :type ("GVNOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3518 3541]))                                  
+                                :type ("GVNPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3510 3564])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3628 3640])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3641 3669]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3606 3670])
+                            ("printPipeline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3693 3709])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3731 3744])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3744 3764])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3766 3788]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3674 3789])
+                            ("markInstructionForDeletion" function
+                               (:arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3925 3940]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3893 3995])
+                            ("getDominatorTree" function
+                               (:methodconst-flag t
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3999 4054])
+                            ("getAliasAnalysis" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("AAResults" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4057 4126])
+                            ("getMemDep" function
+                               (:methodconst-flag t
+                                :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4129 4187])
+                            ("isPREEnabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4191 4217])
+                            ("isLoadPREEnabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4220 4250])
+                            ("isLoadInLoopPREEnabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4253 4289])
+                            ("isLoadPRESplitBackedgeEnabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4292 4335])
+                            ("isMemDepEnabled" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4338 4367])
+                            ("ValueTable" type
+                               (:members 
+                                  ( ("valueNumbering" variable (:type ("DenseMap" type
+                                         (:template-specifier 
+                                            ( ("Value" type (:pointer 1) nil nil)
+                                              ("uint32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4573 4616])
+                                    ("expressionNumbering" variable (:type ("DenseMap" type
+                                         (:template-specifier 
+                                            ( ("Expression" type nil nil nil)
+                                              ("uint32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [4621 4672])
+                                    ("nextExprNumber" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4967 4995])
+                                    ("Expressions" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("Expression" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5001 5037])
+                                    ("ExprIdx" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5042 5072])
+                                    ("NumberingPhi" variable (:type ("DenseMap" type
+                                         (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil)
+                                              ("PHINode" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [5155 5198])
+                                    ("DenseMap" variable (:type "int") (reparse-symbol classsubparts) [5281 5341])
+                                    ("PhiTranslateTable" variable (:type ("PhiTranslateMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5346 5380])
+                                    ("AA" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("AAResults" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5386 5410])
+                                    ("MD" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5415 5453])
+                                    ("DT" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("DominatorTree" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5458 5486])
+                                    ("nextValueNumber" variable
+                                       (:default-value "1"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5492 5521])
+                                    ("createExpr" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("I" variable
+                                               (:pointer 1
+                                                :type ("Instruction" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5549 5564]))                                          
+                                        :type ("Expression" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5527 5565])
+                                    ("createCmpExpr" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("Opcode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5595 5611])
+                                            ("Predicate" variable (:type ("CmpInst::Predicate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5612 5641])
+                                            ("LHS" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5671 5682])
+                                            ("RHS" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5683 5694]))                                          
+                                        :type ("Expression" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5570 5695])
+                                    ("createExtractvalueExpr" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("EI" variable
+                                               (:pointer 1
+                                                :type ("ExtractValueInst" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5734 5755]))                                          
+                                        :type ("Expression" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5700 5756])
+                                    ("lookupOrAddCall" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("C" variable
+                                               (:pointer 1
+                                                :type ("CallInst" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5786 5798]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5761 5799])
+                                    ("phiTranslateImpl" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("BB" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5830 5851])
+                                            ("PhiBlock" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5852 5879])
+                                            ("Num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5910 5923])
+                                            ("Gvn" variable
+                                               (:reference 1
+                                                :type ("GVNPass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5924 5937]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5804 5938])
+                                    ("areCallValsEqual" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("Num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5965 5978])
+                                            ("NewNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5979 5995])
+                                            ("Pred" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5996 6019])
+                                            ("PhiBlock" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6046 6073])
+                                            ("Gvn" variable
+                                               (:reference 1
+                                                :type ("GVNPass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6074 6087]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5943 6088])
+                                    ("assignExpNewValueNum" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("exp" variable
+                                               (:reference 1
+                                                :type ("Expression" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6140 6156]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("uint32_t" type nil nil nil)
+                                                  ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [6093 6157])
+                                    ("areAllValsInBB" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6182 6195])
+                                            ("BB" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6196 6217])
+                                            ("Gvn" variable
+                                               (:reference 1
+                                                :type ("GVNPass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6218 6231]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6162 6232])
+                                    ("public" label nil (reparse-symbol classsubparts) [6236 6243])
+                                    ("ValueTable" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("ValueTable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6248 6261])
+                                    ("ValueTable" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("Arg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ValueTable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6277 6299]))                                          
+                                        :type ("ValueTable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6266 6300])
+                                    ("ValueTable" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("ValueTable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6316 6329])
+                                            ("" variable (:type ("Arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6329 6333]))                                          
+                                        :type ("ValueTable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6305 6334])
+                                    ("ValueTable" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6339 6353])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("Arg" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ValueTable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6380 6402]))                                          
+                                        :type ("ValueTable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6358 6403])
+                                    ("lookupOrAdd" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("V" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6430 6439]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6409 6440])
+                                    ("lookup" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("V" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6461 6470])
+                                            ("Verify" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [6471 6489]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6445 6497])
+                                    ("lookupOrAddCmp" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("Opcode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6526 6542])
+                                            ("Pred" variable (:type ("CmpInst::Predicate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6543 6567])
+                                            ("LHS" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6596 6607])
+                                            ("RHS" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6608 6619]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6502 6620])
+                                    ("phiTranslate" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("BB" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6647 6668])
+                                            ("PhiBlock" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6669 6696])
+                                            ("Num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6723 6736])
+                                            ("Gvn" variable
+                                               (:reference 1
+                                                :type ("GVNPass" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6737 6750]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6625 6751])
+                                    ("eraseTranslateCacheEntry" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("Num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6786 6799])
+                                            ("CurrBlock" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("BasicBlock" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6800 6828]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6756 6829])
+                                    ("exists" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("V" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6846 6855]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6834 6862])
+                                    ("add" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("V" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6876 6885])
+                                            ("num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6886 6899]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6867 6900])
+                                    ("clear" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6905 6918])
+                                    ("erase" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:pointer 1
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6934 6943]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6923 6944])
+                                    ("setAliasAnalysis" function
+                                       (:arguments 
+                                          ( ("A" variable
+                                               (:pointer 1
+                                                :type ("AAResults" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6971 6984]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6949 6996])
+                                    ("getAliasAnalysis" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :type ("AAResults" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7001 7051])
+                                    ("setMemDep" function
+                                       (:arguments 
+                                          ( ("M" variable
+                                               (:pointer 1
+                                                :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7071 7098]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7056 7110])
+                                    ("setDomTree" function
+                                       (:arguments 
+                                          ( ("D" variable
+                                               (:pointer 1
+                                                :type ("DominatorTree" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7131 7148]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7115 7160])
+                                    ("getNextUnusedValueNumber" function (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7165 7228])
+                                    ("verifyRemoved" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("Value" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7252 7266]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7233 7273]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [4550 7278])
+                            ("private" label nil (reparse-symbol classsubparts) [7280 7288])
+                            ("gvn" friend nil (reparse-symbol classsubparts) [7291 7307])
+                            ("GVNLegacyPass" variable (:type "int") (reparse-symbol classsubparts) [7309 7323])
+                            ("DenseMapInfo" type
+                               (:prototype t
+                                :template-specifier 
+                                  ( ("Expression" type nil nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [7333 7365])
+                            ("MD" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7369 7407])
+                            ("DT" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("DominatorTree" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7410 7438])
+                            ("TLI" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7441 7480])
+                            ("AC" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("AssumptionCache" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7483 7513])
+                            ("DeadBlocks" variable (:type ("SetVector" type
+                                 (:template-specifier 
+                                    ( ("BasicBlock" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7516 7551])
+                            ("ORE" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("OptimizationRemarkEmitter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7554 7595])
+                            ("ICF" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("ImplicitControlFlowTracking" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7598 7641])
+                            ("LI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("LoopInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7644 7667])
+                            ("MSSAU" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("MemorySSAUpdater" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7670 7704])
+                            ("VN" variable (:type ("ValueTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7708 7722])
+                            ("LeaderTableEntry" type
+                               (:members 
+                                  ( ("Val" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7876 7887])
+                                    ("BB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7892 7913])
+                                    ("Next" variable
+                                       (:pointer 1
+                                        :type ("LeaderTableEntry" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7918 7941]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [7846 7946])
+                            ("LeaderTable" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("uint32_t" type nil nil nil)
+                                      ("LeaderTableEntry" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7949 7998])
+                            ("TableAllocator" variable (:type ("BumpPtrAllocator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8001 8033])
+                            ("ReplaceOperandsWithMap" variable (:type ("SmallMapVector" type
+                                 (:template-specifier 
+                                    ( ("Value" type (:pointer 1) nil nil)
+                                      ("Value" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8224 8283])
+                            ("InstrsToErase" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("Instruction" type (:pointer 1) nil nil)
+                                      ("8"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8286 8330])
+                            ("BlockRPONumber" variable (:type ("DenseMap" type
+                                 (:template-specifier 
+                                    ( ("AssertingVH" type (:template-specifier 
+                                        ( ("BasicBlock" type nil nil nil))                                        ) nil nil)
+                                      ("uint32_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8435 8494])
+                            ("InvalidBlockRPONumbers" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8729 8764])
+                            ("SmallVector" variable (:type "int") (reparse-symbol classsubparts) [8788 8823])
+                            ("SmallVector" variable (:type "int") (reparse-symbol classsubparts) [8852 8896])
+                            ("SmallVector" variable (:type "int") (reparse-symbol classsubparts) [8922 8952])
+                            ("runImpl" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8969 8981])
+                                    ("RunAC" variable
+                                       (:reference 1
+                                        :type ("AssumptionCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8982 9005])
+                                    ("RunDT" variable
+                                       (:reference 1
+                                        :type ("DominatorTree" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9006 9027])
+                                    ("RunTLI" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9043 9075])
+                                    ("RunAA" variable
+                                       (:reference 1
+                                        :type ("AAResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9076 9093])
+                                    ("RunMD" variable
+                                       (:pointer 1
+                                        :type ("MemoryDependenceResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9109 9140])
+                                    ("LI" variable
+                                       (:pointer 1
+                                        :type ("LoopInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9141 9154])
+                                    ("ORE" variable
+                                       (:pointer 1
+                                        :type ("OptimizationRemarkEmitter" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9170 9201])
+                                    ("MSSA" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("MemorySSA" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9202 9227]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8956 9229])
+                            ("addToLeaderTable" function
+                               (:arguments 
+                                  ( ("N" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9333 9344])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9345 9354])
+                                    ("BB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9355 9376]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9311 9671])
+                            ("removeFromLeaderTable" function
+                               (:arguments 
+                                  ( ("N" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9826 9837])
+                                    ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9838 9853])
+                                    ("BB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9854 9869]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9799 10407])
+                            ("toSplit" variable (:type ("SmallVector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type (:template-specifier 
+                                        ( ("Instruction" type (:pointer 1) nil nil)
+                                          ("unsigned int" type nil nil nil))                                        ) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [10471 10530])
+                            ("processLoad" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10603 10615]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10586 10616])
+                            ("processNonLocalLoad" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10644 10656]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10619 10657])
+                            ("processAssumeIntrinsic" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("II" variable
+                                       (:pointer 1
+                                        :type ("AssumeInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10688 10703]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10660 10704])
+                            ("AnalyzeLoadAvailability" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Load" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10941 10956])
+                                    ("DepInfo" variable (:type ("MemDepResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10957 10978])
+                                    ("Address" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11010 11025])
+                                    ("Res" variable
+                                       (:reference 1
+                                        :type ("gvn::AvailableValue" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11026 11051]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10912 11052])
+                            ("AnalyzeLoadAvailability" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Load" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11290 11305])
+                                    ("Deps" variable
+                                       (:reference 1
+                                        :type ("LoadDepVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11306 11324])
+                                    ("ValuesPerBlock" variable
+                                       (:reference 1
+                                        :type ("AvailValInBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11356 11390])
+                                    ("UnavailableBlocks" variable
+                                       (:reference 1
+                                        :type ("UnavailBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11422 11456]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11261 11457])
+                            ("PerformLoadPRE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Load" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11481 11496])
+                                    ("ValuesPerBlock" variable
+                                       (:reference 1
+                                        :type ("AvailValInBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11497 11531])
+                                    ("UnavailableBlocks" variable
+                                       (:reference 1
+                                        :type ("UnavailBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11554 11588]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11461 11589])
+                            ("performLoopLoadPRE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Load" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11782 11797])
+                                    ("ValuesPerBlock" variable
+                                       (:reference 1
+                                        :type ("AvailValInBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11798 11832])
+                                    ("UnavailableBlocks" variable
+                                       (:reference 1
+                                        :type ("UnavailBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11859 11893]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11758 11894])
+                            ("eliminatePartiallyRedundantLoad" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Load" variable
+                                       (:pointer 1
+                                        :type ("LoadInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12061 12076])
+                                    ("ValuesPerBlock" variable
+                                       (:reference 1
+                                        :type ("AvailValInBlkVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12077 12111])
+                                    ("AvailableLoads" variable
+                                       (:reference 1
+                                        :type ("MapVector" type
+                                             (:template-specifier 
+                                                ( ("BasicBlock" type (:pointer 1) nil nil)
+                                                  ("Value" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12118 12167]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12017 12168])
+                            ("processInstruction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12223 12238]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12199 12239])
+                            ("processBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12260 12275]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12242 12276])
+                            ("dump" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("d" variable
+                                       (:reference 1
+                                        :type ("DenseMap" type
+                                             (:template-specifier 
+                                                ( ("uint32_t" type nil nil nil)
+                                                  ("Value" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12289 12320]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12279 12327])
+                            ("iterateOnFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12353 12365]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12330 12366])
+                            ("performPRE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12385 12397]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12369 12398])
+                            ("performScalarPRE" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12423 12438]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12401 12439])
+                            ("performScalarPREInsertion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Instr" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12473 12492])
+                                    ("Pred" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12493 12510])
+                                    ("Curr" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12544 12561])
+                                    ("ValNo" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12562 12581]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12442 12582])
+                            ("findLeader" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12603 12624])
+                                    ("num" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12625 12638]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12585 12639])
+                            ("cleanupGlobalSets" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [12642 12667])
+                            ("verifyRemoved" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12689 12710]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12670 12717])
+                            ("splitCriticalEdges" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12720 12746])
+                            ("splitCriticalEdges" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Pred" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12780 12797])
+                                    ("Succ" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12798 12815]))                                  
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12749 12816])
+                            ("replaceOperandsForInBlockEquality" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("I" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12858 12873]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12819 12880])
+                            ("propagateEquality" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("LHS" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12906 12917])
+                                    ("RHS" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12918 12929])
+                                    ("Root" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("BasicBlockEdge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12930 12957])
+                                    ("DominatesByEdge" variable (:type "bool") (reparse-symbol arg-sub-list) [12983 13004]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12883 13005])
+                            ("processFoldableCondBr" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BI" variable
+                                       (:pointer 1
+                                        :type ("BranchInst" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13035 13050]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [13008 13051])
+                            ("addDeadBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13072 13087]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13054 13088])
+                            ("assignValNumForDeadCode" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13091 13122])
+                            ("assignBlockRPONumber" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13151 13163]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13125 13164]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3407 13167])
+                    ("createGVNPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("NoMemDepAnalysis" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [13297 13326]))                          
+                        :type ("FunctionPass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13269 13328])
+                    ("GVNHoistPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13544 13556])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13557 13585]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13522 13586]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [13430 13589])
+                    ("GVNSinkPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13833 13845])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13846 13874]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13811 13875]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [13721 13878]))                  
+                :type "namespace")
+                nil [1216 13881]))          
+      :file "GVN.h"
+      :pointmax 13944
+      :fsize 13943
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 8920 . 8921) (symbol 8905 . 8919) (USING 8899 . 8904) (punctuation 8850 . 8851) (symbol 8832 . 8849) (USING 8826 . 8831) (punctuation 8786 . 8787) (symbol 8774 . 8785) (USING 8768 . 8773) (FRIEND 7326 . 7332) (punctuation 7308 . 7309) (punctuation 7307 . 7308) (punctuation 6328 . 6329) (punctuation 5271 . 5272) (symbol 5255 . 5270) (USING 5249 . 5254) (punctuation 6328 . 6329) (punctuation 5271 . 5272) (symbol 5255 . 5270) (USING 5249 . 5254) (punctuation 3764 . 3765) (semantic-list 3753 . 3764) (punctuation 3743 . 3744) (punctuation 2562 . 2563) (DEFAULT 2555 . 2562) (punctuation 2553 . 2554) (semantic-list 2550 . 2552) (symbol 2540 . 2550) (semantic-list 1819 . 1898) (symbol 1795 . 1818) (symbol 1791 . 1794) (NAMESPACE 1781 . 1790))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_GVN_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155561f81da6"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_INSTSIMPLIFYPASS_H" variable (:constant-flag t) nil [607 648])
+            ("llvm/IR/PassManager.h" include nil nil [650 682])
+            ("llvm" type
+               (:members 
+                  ( ("InstSimplifyPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1358 1365])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1390 1402])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1403 1431]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1368 1432]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1292 1435]))                  
+                :type "namespace")
+                nil [684 1438]))          
+      :file "InstSimplifyPass.h"
+      :pointmax 1514
+      :fsize 1513
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_INSTSIMPLIFYPASS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155561f8dc98"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_LICM_H" variable (:constant-flag t) nil [1846 1875])
+            ("llvm/Analysis/LoopInfo.h" include nil nil [1877 1912])
+            ("llvm/IR/PassManager.h" include nil nil [1913 1945])
+            ("llvm/Support/CommandLine.h" include nil nil [1946 1983])
+            ("llvm/Transforms/Scalar/LoopPassManager.h" include nil nil [1984 2035])
+            ("llvm" type
+               (:members 
+                  ( ("SetLicmMssaOptCap" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2055 2098])
+                    ("SetLicmMssaNoAccForPromotionCap" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2099 2156])
+                    ("LICMPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("LicmMssaOptCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [2256 2280])
+                            ("LicmMssaNoAccForPromotionCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [2283 2321])
+                            ("LicmAllowSpeculation" variable (:type "bool") (reparse-symbol classsubparts) [2324 2350])
+                            ("public" label nil (reparse-symbol classsubparts) [2352 2359])
+                            ("LICMPass" function
+                               (:constructor-flag t
+                                :type ("LICMPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2362 2524])
+                            ("LICMPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("LicmMssaOptCap" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2536 2560])
+                                    ("LicmMssaNoAccForPromotionCap" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2561 2599])
+                                    ("LicmAllowSpeculation" variable (:type "bool") (reparse-symbol arg-sub-list) [2611 2637]))                                  
+                                :type ("LICMPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2527 2799])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2824 2832])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2833 2857])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2882 2914])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2915 2929]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2802 2930]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2204 2933])
+                    ("LNICMPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("LicmMssaOptCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [3039 3063])
+                            ("LicmMssaNoAccForPromotionCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [3066 3104])
+                            ("LicmAllowSpeculation" variable (:type "bool") (reparse-symbol classsubparts) [3107 3133])
+                            ("public" label nil (reparse-symbol classsubparts) [3135 3142])
+                            ("LNICMPass" function
+                               (:constructor-flag t
+                                :type ("LNICMPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3145 3308])
+                            ("LNICMPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("LicmMssaOptCap" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3321 3345])
+                                    ("LicmMssaNoAccForPromotionCap" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3346 3384])
+                                    ("LicmAllowSpeculation" variable (:type "bool") (reparse-symbol arg-sub-list) [3397 3423]))                                  
+                                :type ("LNICMPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3311 3585])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("LoopNest" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3610 3622])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3623 3647])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3672 3704])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3705 3719]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3588 3720]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2985 3723]))                  
+                :type "namespace")
+                nil [2037 3725]))          
+      :file "LICM.h"
+      :pointmax 3789
+      :fsize 3788
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_LICM_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155561f8dcf8"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_LOOPUNROLLPASS_H" variable (:constant-flag t) nil [427 466])
+            ("llvm/ADT/Optional.h" include nil nil [468 498])
+            ("llvm/Analysis/LoopAnalysisManager.h" include nil nil [499 545])
+            ("llvm/IR/PassManager.h" include nil nil [546 578])
+            ("llvm/Support/CommandLine.h" include nil nil [579 616])
+            ("llvm" type
+               (:members 
+                  ( ("ForgetSCEVInLoopUnroll" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [636 680])
+                    ("Function" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [682 697])
+                    ("Loop" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [698 709])
+                    ("LPMUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [710 727])
+                    ("LoopFullUnrollPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("OptLevel" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [870 889])
+                            ("OnlyWhenForced" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1106 1132])
+                            ("ForgetSCEV" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1366 1388])
+                            ("public" label nil (reparse-symbol classsubparts) [1390 1397])
+                            ("LoopFullUnrollPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("OptLevel" variable
+                                       (:default-value "2"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [1428 1444])
+                                    ("OnlyWhenForced" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1446 1473])
+                                    ("ForgetSCEV" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1505 1528]))                                  
+                                :type ("LoopFullUnrollPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1409 1623])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1649 1657])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1658 1682])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1707 1739])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1740 1754]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1627 1755]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [798 1758])
+                    ("LoopUnrollOptions" type
+                       (:members 
+                          ( ("AllowPartial" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2302 2330])
+                            ("AllowPeeling" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2333 2361])
+                            ("AllowRuntime" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2364 2392])
+                            ("AllowUpperBound" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2395 2426])
+                            ("AllowProfileBasedPeeling" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2429 2469])
+                            ("FullUnrollMaxCount" variable (:type ("Optional" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2472 2510])
+                            ("OptLevel" variable (:type "int") (reparse-symbol classsubparts) [2513 2526])
+                            ("OnlyWhenForced" variable (:type "bool") (reparse-symbol classsubparts) [2743 2763])
+                            ("ForgetSCEV" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2997 3019])
+                            ("LoopUnrollOptions" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("OptLevel" variable
+                                       (:default-value "2"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3041 3057])
+                                    ("OnlyWhenForced" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3059 3086])
+                                    ("ForgetSCEV" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3108 3131]))                                  
+                                :type ("LoopUnrollOptions" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3023 3226])
+                            ("setPartial" function
+                               (:arguments 
+                                  ( ("Partial" variable (:type "bool") (reparse-symbol arg-sub-list) [3357 3370]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3327 3422])
+                            ("setRuntime" function
+                               (:arguments 
+                                  ( ("Runtime" variable (:type "bool") (reparse-symbol arg-sub-list) [3526 3539]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3496 3591])
+                            ("setPeeling" function
+                               (:arguments 
+                                  ( ("Peeling" variable (:type "bool") (reparse-symbol arg-sub-list) [3665 3678]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3635 3730])
+                            ("setUpperBound" function
+                               (:arguments 
+                                  ( ("UpperBound" variable (:type "bool") (reparse-symbol arg-sub-list) [3852 3868]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3819 3926])
+                            ("setOptLevel" function
+                               (:arguments 
+                                  ( ("O" variable (:type "int") (reparse-symbol arg-sub-list) [4029 4035]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3998 4077])
+                            ("setProfileBasedPeeling" function
+                               (:arguments 
+                                  ( ("O" variable (:type "int") (reparse-symbol arg-sub-list) [4180 4186]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4138 4244])
+                            ("setFullUnrollMaxCount" function
+                               (:arguments 
+                                  ( ("O" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4326 4337]))                                  
+                                :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4285 4389]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2273 4392])
+                    ("LoopUnrollPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("UnrollOpts" variable (:type ("LoopUnrollOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4675 4704])
+                            ("public" label nil (reparse-symbol classsubparts) [4706 4713])
+                            ("LoopUnrollPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("UnrollOpts" variable
+                                       (:default-value "{}"
+                                        :type ("LoopUnrollOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4882 4915]))                                  
+                                :type ("LoopUnrollPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4867 4950])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4976 4988])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4989 5017]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4954 5018])
+                            ("printPipeline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5040 5056])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5078 5091])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5091 5111])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5113 5135]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5021 5136]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4611 5139]))                  
+                :type "namespace")
+                nil [618 5142]))          
+      :file "LoopUnrollPass.h"
+      :pointmax 5216
+      :fsize 5215
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 5111 . 5112) (semantic-list 5100 . 5111) (punctuation 5090 . 5091) (EXPLICIT 4858 . 4866) (EXPLICIT 1400 . 1408))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_LOOPUNROLLPASS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155561f8dd58"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_SCCP_H" variable (:constant-flag t) nil [860 889])
+            ("llvm/ADT/STLExtras.h" include nil nil [891 922])
+            ("llvm/Analysis/TargetLibraryInfo.h" include nil nil [923 967])
+            ("llvm/Analysis/TargetTransformInfo.h" include nil nil [968 1014])
+            ("llvm/IR/DataLayout.h" include nil nil [1015 1046])
+            ("llvm/IR/Function.h" include nil nil [1047 1076])
+            ("llvm/IR/Module.h" include nil nil [1077 1104])
+            ("llvm/IR/PassManager.h" include nil nil [1105 1137])
+            ("llvm/Transforms/Utils/PredicateInfo.h" include nil nil [1138 1186])
+            ("llvm/Transforms/Utils/SCCPSolver.h" include nil nil [1187 1232])
+            ("llvm" type
+               (:members 
+                  ( ("SCCPPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1374 1381])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1406 1418])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1419 1447]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1384 1448]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1324 1451])
+                    ("runIPSCCP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1468 1478])
+                            ("DL" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1479 1500])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1516 1530])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1530 1567])
+                            ("" variable (:type ("GetTLI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1569 1576])
+                            ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1592 1605])
+                            ("" variable (:type ("AnalysisResultsForFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1605 1637])
+                            ("" variable (:type ("getAnalysis" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1639 1651]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1453 1652])
+                    ("runFunctionSpecialization" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Module" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1690 1700])
+                            ("DL" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1701 1722])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1727 1741])
+                            ("" variable
+                               (:reference 1
+                                :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1741 1772])
+                            ("" variable (:type ("GetTLI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1774 1781])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1786 1800])
+                            ("" variable
+                               (:reference 1
+                                :type ("TargetTransformInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1800 1833])
+                            ("" variable (:type ("GetTTI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1835 1842])
+                            ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1847 1861])
+                            ("" variable
+                               (:reference 1
+                                :type ("AssumptionCache" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1861 1890])
+                            ("" variable (:type ("GetAC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1892 1898])
+                            ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1903 1916])
+                            ("" variable (:type ("AnalysisResultsForFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1916 1948])
+                            ("" variable (:type ("GetAnalysis" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1950 1962]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1654 1963]))                  
+                :type "namespace")
+                nil [1234 1965]))          
+      :file "SCCP.h"
+      :pointmax 2029
+      :fsize 2028
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 1948 . 1949) (semantic-list 1936 . 1948) (punctuation 1915 . 1916) (punctuation 1890 . 1891) (semantic-list 1878 . 1890) (punctuation 1860 . 1861) (punctuation 1833 . 1834) (semantic-list 1821 . 1833) (punctuation 1799 . 1800) (punctuation 1772 . 1773) (semantic-list 1760 . 1772) (punctuation 1740 . 1741) (punctuation 1637 . 1638) (semantic-list 1625 . 1637) (punctuation 1604 . 1605) (punctuation 1567 . 1568) (semantic-list 1555 . 1567) (punctuation 1529 . 1530))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_SCCP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155561f8ddb8"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_SIMPLELOOPUNSWITCH_H" variable (:constant-flag t) nil [431 474])
+            ("llvm/Analysis/LoopAnalysisManager.h" include nil nil [476 522])
+            ("llvm/Analysis/LoopInfo.h" include nil nil [523 558])
+            ("llvm/IR/PassManager.h" include nil nil [559 591])
+            ("llvm/Transforms/Scalar/LoopPassManager.h" include nil nil [592 643])
+            ("llvm" type
+               (:members 
+                  ( ("SimpleLoopUnswitchPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("NonTrivial" variable (:type "bool") (reparse-symbol classsubparts) [2904 2920])
+                            ("Trivial" variable (:type "bool") (reparse-symbol classsubparts) [2923 2936])
+                            ("public" label nil (reparse-symbol classsubparts) [2938 2945])
+                            ("SimpleLoopUnswitchPass" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("NonTrivial" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2971 2994])
+                                    ("Trivial" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2996 3015]))                                  
+                                :type ("SimpleLoopUnswitchPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2948 3068])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3094 3102])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3103 3127])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3152 3184])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3185 3199]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3072 3200])
+                            ("printPipeline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3223 3239])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3261 3274])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3274 3294])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3296 3318]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3204 3319]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2824 3322])
+                    ("createSimpleLoopUnswitchLegacyPass" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("NonTrivial" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [3502 3525]))                          
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3461 3527]))                  
+                :type "namespace")
+                nil [645 3530]))          
+      :file "SimpleLoopUnswitch.h"
+      :pointmax 3608
+      :fsize 3607
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 3294 . 3295) (semantic-list 3283 . 3294) (punctuation 3273 . 3274))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_SIMPLELOOPUNSWITCH_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-155560dcb718"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_SCALAR_LOOPPASSMANAGER_H" variable (:constant-flag t) nil [1663 1703])
+            ("llvm/ADT/PriorityWorklist.h" include nil nil [1705 1743])
+            ("llvm/Analysis/LoopAnalysisManager.h" include nil nil [1744 1790])
+            ("llvm/Analysis/LoopInfo.h" include nil nil [1791 1826])
+            ("llvm/Analysis/LoopNestAnalysis.h" include nil nil [1827 1870])
+            ("llvm/IR/Dominators.h" include nil nil [1871 1902])
+            ("llvm/IR/PassInstrumentation.h" include nil nil [1903 1943])
+            ("llvm/IR/PassManager.h" include nil nil [1944 1976])
+            ("llvm/Transforms/Utils/LCSSA.h" include nil nil [1977 2017])
+            ("llvm/Transforms/Utils/LoopSimplify.h" include nil nil [2018 2065])
+            ("llvm/Transforms/Utils/LoopUtils.h" include nil nil [2066 2110])
+            ("memory" include (:system-flag t) nil [2111 2128])
+            ("llvm" type
+               (:members 
+                  ( ("LPMUpdater" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2224 2241])
+                    ("unnamed" type
+                       (:members 
+                          ( ("HasRunOnLoopT" variable
+                               (:default-value "decltype(std::declval<PassT>().run(
+    std::declval<Loop &>(), std::declval<LoopAnalysisManager &>(),
+    std::declval<LoopStandardAnalysisResults &>(),
+    std::declval<LPMUpdater &>()))"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2288 2493]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2243 2496])
+                    ("PassManager" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2978 2985])
+                            ("PassManager" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("PassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3291 3305])
+                                    ("" variable (:type ("Arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3309]))                                  
+                                :type ("PassManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3279 3468])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("PassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3495 3509])
+                                    ("" variable (:type ("RHS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3509 3513]))                                  
+                                :type ("PassManager" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3472 3685])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3711 3719])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3720 3744])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3769 3801])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3802 3816]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3689 3817])
+                            ("printPipeline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3840 3856])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3878 3891])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3891 3911])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3913 3935]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3821 3936])
+                            ("addPass" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("PassT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4507 4515])
+                                    ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4515 4520]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [4499 4989])
+                            ("addPass" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("PassT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5124 5132])
+                                    ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5132 5137]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5116 5651])
+                            ("addPass" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("RepeatedPass" type
+                                             (:template-specifier 
+                                                ( ("PassT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5979 6001])
+                                    ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6001 6006]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [5971 6521])
+                            ("addPass" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("RepeatedPass" type
+                                             (:template-specifier 
+                                                ( ("PassT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6656 6678])
+                                    ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6678 6683]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [6648 7217])
+                            ("isEmpty" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7221 7298])
+                            ("isRequired" function
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7302 7343])
+                            ("getNumLoopPasses" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7347 7408])
+                            ("getNumLoopNestPasses" function
+                               (:methodconst-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7411 7480])
+                            ("protected" label nil (reparse-symbol classsubparts) [7482 7492])
+                            ("detail::PassConcept" variable (:type "int") (reparse-symbol classsubparts) [7526 7644])
+                            ("detail::PassConcept" variable (:type "int") (reparse-symbol classsubparts) [7682 7804])
+                            ("IsLoopNestPass" variable (:type ("BitVector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7928 7953])
+                            ("LoopPasses" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::unique_ptr" type (:template-specifier 
+                                        ( ("LoopPassConceptT" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7956 8014])
+                            ("LoopNestPasses" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::unique_ptr" type (:template-specifier 
+                                        ( ("LoopNestPassConceptT" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [8017 8083])
+                            ("runSinglePass" function
+                               (:template 
+                                  ( ("IRUnitT" type (:type "class") nil nil)
+                                    ("PassT" type (:type "class") nil nil))                                  
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("PreservedAnalyses" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("IR" variable
+                                       (:reference 1
+                                        :type ("IRUnitT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8360 8372])
+                                    ("Pass" variable
+                                       (:reference 1
+                                        :type ("PassT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8373 8385])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8386 8410])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8427 8459])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8460 8474])
+                                    ("PI" variable
+                                       (:reference 1
+                                        :type ("PassInstrumentation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8491 8515]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [8270 8516])
+                            ("runWithLoopNestPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8560 8568])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8569 8593])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8636 8668])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8711 8725]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8520 8726])
+                            ("runWithoutLoopNestPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8772 8780])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8781 8805])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8851 8883])
+                                    ("U" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8929 8943]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8729 8944])
+                            ("private" label nil (reparse-symbol classsubparts) [8946 8954])
+                            ("getLoopFromIR" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8990 8998]))                                  
+                                :type ("Loop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8957 9012])
+                            ("getLoopFromIR" function
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("LN" variable
+                                       (:reference 1
+                                        :type ("LoopNest" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9048 9061]))                                  
+                                :type ("Loop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9015 9101]))                          
+                        :superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("Loop" type nil nil nil)
+                            ("LoopAnalysisManager" type nil nil nil)
+                            ("LoopStandardAnalysisResults" type (:reference 1) nil nil)
+                            ("LPMUpdater" type (:reference 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2711 9104])
+                    ("LoopPassManager" type
+                       (:typedef ("PassManager" type
+                             (:template-specifier 
+                                ( ("Loop" type nil nil nil)
+                                  ("LoopAnalysisManager" type nil nil nil)
+                                  ("LoopStandardAnalysisResults" type (:reference 1) nil nil)
+                                  ("LPMUpdater" type (:reference 1) nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [9360 9492])
+                    ("RequireAnalysisPass" type
+                       (:template 
+                          ( ("AnalysisT" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10030 10038])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10039 10063])
+                                    ("AR" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10088 10120])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10121 10134]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10008 10228])
+                            ("printPipeline" function
+                               (:arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10250 10266])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10288 10301])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10301 10321])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10323 10345]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10231 10486]))                          
+                        :superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("AnalysisT" type nil nil nil)
+                            ("Loop" type nil nil nil)
+                            ("LoopAnalysisManager" type nil nil nil)
+                            ("LoopStandardAnalysisResults" type (:reference 1) nil nil)
+                            ("LPMUpdater" type (:reference 1) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9672 10489])
+                    ("RequireAnalysisPass" variable (:type "int") (reparse-symbol namespacesubparts) [10624 10751])
+                    ("FunctionToLoopPassAdaptor" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [10753 10785])
+                    ("LPMUpdater" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [11570 11577])
+                            ("skipCurrentLoop" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11891 11947])
+                            ("markLoopAsDeleted" function
+                               (:arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12471 12479])
+                                    ("Name" variable (:type ("llvm::StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12480 12501]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12448 12747])
+                            ("setParentLoop" function
+                               (:arguments 
+                                  ( ("L" variable
+                                       (:pointer 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12770 12778]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12751 12847])
+                            ("addChildLoops" function
+                               (:arguments 
+                                  ( ("NewChildLoops" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Loop" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [13159 13190]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13140 13973])
+                            ("addSiblingLoops" function
+                               (:arguments 
+                                  ( ("NewSibLoops" variable (:type ("ArrayRef" type
+                                         (:template-specifier 
+                                            ( ("Loop" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [14292 14321]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14271 14786])
+                            ("revisitCurrentLoop" function (:type "void") (reparse-symbol classsubparts) [15038 15243])
+                            ("private" label nil (reparse-symbol classsubparts) [15245 15253])
+                            ("llvm" friend nil (reparse-symbol classsubparts) [15256 15273])
+                            ("FunctionToLoopPassAdaptor" variable (:type "int") (reparse-symbol classsubparts) [15275 15301])
+                            ("Worklist" variable (:type ("SmallPriorityWorklist" type
+                                 (:template-specifier 
+                                    ( ("Loop" type (:pointer 1) nil nil)
+                                      ("4"))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [15376 15419])
+                            ("LAM" variable (:type ("LoopAnalysisManager" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15484 15509])
+                            ("CurrentL" variable
+                               (:pointer 1
+                                :type ("Loop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15513 15528])
+                            ("SkipCurrentLoop" variable (:type "bool") (reparse-symbol classsubparts) [15531 15552])
+                            ("LoopNestMode" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [15555 15579])
+                            ("LPMUpdater" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Worklist" variable
+                                       (:reference 1
+                                        :type ("SmallPriorityWorklist" type
+                                             (:template-specifier 
+                                                ( ("Loop" type (:pointer 1) nil nil)
+                                                  ("4"))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15770 15813])
+                                    ("LAM" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15827 15852])
+                                    ("LoopNestMode" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [15853 15878]))                                  
+                                :type ("LPMUpdater" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15759 15947]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [11551 15950])
+                    ("runSinglePass" function
+                       (:template 
+                          ( ("IRUnitT" type (:type "class") nil nil)
+                            ("PassT" type (:type "class") nil nil))                          
+                        :type ("Optional" type
+                             (:template-specifier 
+                                ( ("PreservedAnalyses" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("IR" variable
+                               (:reference 1
+                                :type ("IRUnitT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16060 16072])
+                            ("Pass" variable
+                               (:reference 1
+                                :type ("PassT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16073 16085])
+                            ("AM" variable
+                               (:reference 1
+                                :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16086 16110])
+                            ("AR" variable
+                               (:reference 1
+                                :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16115 16147])
+                            ("U" variable
+                               (:reference 1
+                                :type ("LPMUpdater" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16148 16162])
+                            ("PI" variable
+                               (:reference 1
+                                :type ("PassInstrumentation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16163 16187]))                          
+                        :parent "LoopPassManager")
+                        (reparse-symbol namespacesubparts) [15952 16914])
+                    ("FunctionToLoopPassAdaptor" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [17988 17995])
+                            ("detail::PassConcept" variable (:type "int") (reparse-symbol classsubparts) [18025 18143])
+                            ("FunctionToLoopPassAdaptor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Pass" variable (:type ("std::unique_ptr" type
+                                         (:template-specifier 
+                                            ( ("PassConceptT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [18182 18217])
+                                    ("UseMemorySSA" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18255 18280])
+                                    ("UseBlockFrequencyInfo" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18319 18353])
+                                    ("UseBranchProbabilityInfo" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18392 18429])
+                                    ("LoopNestMode" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18468 18493]))                                  
+                                :type ("FunctionToLoopPassAdaptor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18156 18815])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18903 18915])
+                                    ("AM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18916 18944]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [18881 18945])
+                            ("printPipeline" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18967 18983])
+                                    ("" variable (:type ("function_ref" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19005 19018])
+                                    ("" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19018 19038])
+                                    ("" variable (:type ("MapClassName2PassName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19040 19062]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18948 19063])
+                            ("isRequired" function
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19067 19108])
+                            ("isLoopNestMode" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19112 19164])
+                            ("private" label nil (reparse-symbol classsubparts) [19166 19174])
+                            ("Pass" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("PassConceptT" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [19177 19212])
+                            ("LoopCanonicalizationFPM" variable (:type ("FunctionPassManager" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19216 19260])
+                            ("UseMemorySSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19264 19290])
+                            ("UseBlockFrequencyInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19293 19328])
+                            ("UseBranchProbabilityInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19331 19369])
+                            ("LoopNestMode" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19372 19396]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [17900 19399])
+                    ("createFunctionToLoopPassAdaptor" function
+                       (:arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("LoopPassT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19746 19758])
+                            ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19758 19763])
+                            ("UseMemorySSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [19764 19789])
+                            ("UseBlockFrequencyInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [19823 19857])
+                            ("UseBranchProbabilityInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [19891 19928]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19714 20450])
+                    ("createFunctionToLoopPassAdaptor" function
+                       (:arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("LoopNestPassT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20792 20808])
+                            ("" variable (:type ("Pass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20808 20813])
+                            ("UseMemorySSA" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20814 20839])
+                            ("UseBlockFrequencyInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20873 20907])
+                            ("UseBranchProbabilityInfo" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20941 20978]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20760 21587])
+                    ("createFunctionToLoopPassAdaptor" function
+                       (:type ("FunctionToLoopPassAdaptor" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("LoopPassManager" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21844 21862])
+                            ("" variable (:type ("LPM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21862 21866])
+                            ("UseMemorySSA" variable (:type "bool") (reparse-symbol arg-sub-list) [21867 21885])
+                            ("UseBlockFrequencyInfo" variable (:type "bool") (reparse-symbol arg-sub-list) [21886 21913])
+                            ("UseBranchProbabilityInfo" variable (:type "bool") (reparse-symbol arg-sub-list) [21918 21948]))                          
+                        :typemodifiers ("inline")
+                        :template-specifier 
+                          ( ("LoopPassManager" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [21745 22654])
+                    ("PrintLoopPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("OS" variable (:type ("raw_ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22773 22789])
+                            ("Banner" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22792 22811])
+                            ("public" label nil (reparse-symbol classsubparts) [22813 22820])
+                            ("PrintLoopPass" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PrintLoopPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22823 22839])
+                            ("PrintLoopPass" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22856 22872])
+                                    ("Banner" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22873 22903]))                                  
+                                :type ("PrintLoopPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22842 22905])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22931 22939])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22940 22962])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22987 23017])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23018 23031]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [22909 23032]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [22711 23035]))                  
+                :type "namespace")
+                nil [2130 23037]))          
+      :file "LoopPassManager.h"
+      :pointmax 23090
+      :fsize 23089
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 21861 . 21862) (punctuation 20807 . 20808) (punctuation 20758 . 20759) (symbol 20733 . 20758) (punctuation 20707 . 20708) (symbol 20702 . 20707) (punctuation 20701 . 20702) (punctuation 20700 . 20701) (punctuation 20699 . 20700) (symbol 20686 . 20699) (punctuation 20684 . 20685) (symbol 20671 . 20684) (punctuation 20670 . 20671) (symbol 20659 . 20670) (punctuation 20658 . 20659) (punctuation 20657 . 20658) (symbol 20646 . 20657) (punctuation 20645 . 20646) (punctuation 20644 . 20645) (symbol 20641 . 20644) (INLINE 20634 . 20640) (punctuation 20632 . 20633) (symbol 20619 . 20632) (TYPENAME 20610 . 20618) (punctuation 20609 . 20610) (TEMPLATE 20600 . 20608) (punctuation 19757 . 19758) (punctuation 19712 . 19713) (symbol 19687 . 19712) (punctuation 19661 . 19662) (symbol 19656 . 19661) (punctuation 19655 . 19656) (punctuation 19654 . 19655) (punctuation 19653 . 19654) (symbol 19644 . 19653) (punctuation 19642 . 19643) (symbol 19629 . 19642) (punctuation 19628 . 19629) (symbol 19617 . 19628) (punctuation 19616 . 19617) (symbol 19605 . 19616) (punctuation 19604 . 19605) (punctuation 19603 . 19604) (symbol 19600 . 19603) (INLINE 19593 . 19599) (punctuation 19591 . 19592) (symbol 19582 . 19591) (TYPENAME 19573 . 19581) (punctuation 19572 . 19573) (TEMPLATE 19563 . 19571) (punctuation 19038 . 19039) (semantic-list 19027 . 19038) (punctuation 19017 . 19018) (EXPLICIT 18147 . 18155) (punctuation 18017 . 18018) (symbol 18004 . 18016) (USING 17998 . 18003) (punctuation 15274 . 15275) (punctuation 15273 . 15274) (punctuation 10618 . 10619) (symbol 10594 . 10617) (USING 10588 . 10593) (punctuation 10586 . 10587) (symbol 10577 . 10586) (TYPENAME 10568 . 10576) (punctuation 10567 . 10568) (TEMPLATE 10558 . 10566) (punctuation 10321 . 10322) (semantic-list 10310 . 10321) (punctuation 10300 . 10301) (punctuation 7674 . 7675) (symbol 7653 . 7673) (USING 7647 . 7652) (punctuation 7518 . 7519) (symbol 7501 . 7517) (USING 7495 . 7500) (punctuation 6677 . 6678) (punctuation 6640 . 6641) (symbol 6635 . 6640) (punctuation 6634 . 6635) (punctuation 6633 . 6634) (punctuation 6632 . 6633) (symbol 6627 . 6632) (punctuation 6625 . 6626) (symbol 6612 . 6625) (punctuation 6611 . 6612) (symbol 6600 . 6611) (punctuation 6599 . 6600) (punctuation 6598 . 6599) (symbol 6587 . 6598) (punctuation 6586 . 6587) (punctuation 6585 . 6586) (symbol 6582 . 6585) (symbol 6553 . 6575) (punctuation 6549 . 6550) (symbol 6544 . 6549) (TYPENAME 6535 . 6543) (punctuation 6534 . 6535) (TEMPLATE 6525 . 6533) (punctuation 6000 . 6001) (punctuation 5963 . 5964) (symbol 5958 . 5963) (punctuation 5957 . 5958) (punctuation 5956 . 5957) (punctuation 5955 . 5956) (symbol 5950 . 5955) (punctuation 5948 . 5949) (symbol 5935 . 5948) (punctuation 5934 . 5935) (symbol 5923 . 5934) (punctuation 5922 . 5923) (symbol 5911 . 5922) (punctuation 5910 . 5911) (punctuation 5909 . 5910) (symbol 5906 . 5909) (symbol 5877 . 5899) (punctuation 5873 . 5874) (symbol 5868 . 5873) (TYPENAME 5859 . 5867) (punctuation 5858 . 5859) (TEMPLATE 5849 . 5857) (punctuation 5131 . 5132) (punctuation 5108 . 5109) (symbol 5103 . 5108) (punctuation 5102 . 5103) (punctuation 5101 . 5102) (punctuation 5100 . 5101) (symbol 5095 . 5100) (punctuation 5093 . 5094) (symbol 5080 . 5093) (punctuation 5079 . 5080) (symbol 5068 . 5079) (punctuation 5067 . 5068) (punctuation 5066 . 5067) (symbol 5055 . 5066) (punctuation 5054 . 5055) (punctuation 5053 . 5054) (symbol 5050 . 5053) (symbol 5021 . 5043) (punctuation 5017 . 5018) (symbol 5012 . 5017) (TYPENAME 5003 . 5011) (punctuation 5002 . 5003) (TEMPLATE 4993 . 5001) (punctuation 4514 . 4515) (punctuation 4491 . 4492) (symbol 4486 . 4491) (punctuation 4485 . 4486) (punctuation 4484 . 4485) (punctuation 4483 . 4484) (symbol 4478 . 4483) (punctuation 4476 . 4477) (symbol 4463 . 4476) (punctuation 4462 . 4463) (symbol 4451 . 4462) (punctuation 4450 . 4451) (symbol 4439 . 4450) (punctuation 4438 . 4439) (punctuation 4437 . 4438) (symbol 4434 . 4437) (symbol 4405 . 4427) (punctuation 4401 . 4402) (symbol 4396 . 4401) (TYPENAME 4387 . 4395) (punctuation 4386 . 4387) (TEMPLATE 4377 . 4385) (punctuation 3911 . 3912) (semantic-list 3900 . 3911) (punctuation 3890 . 3891) (punctuation 3508 . 3509) (punctuation 3304 . 3305) (punctuation 3020 . 3021) (DEFAULT 3013 . 3020) (punctuation 3011 . 3012) (semantic-list 3008 . 3010) (symbol 2997 . 3008) (EXPLICIT 2988 . 2996) (USING 2282 . 2287) (punctuation 2280 . 2281) (symbol 2275 . 2280) (TYPENAME 2266 . 2274) (punctuation 2265 . 2266) (TEMPLATE 2256 . 2264))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_SCALAR_LOOPPASSMANAGER_H")
+          )
+))
+  :file "!usr!include!llvm!Transforms!Scalar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

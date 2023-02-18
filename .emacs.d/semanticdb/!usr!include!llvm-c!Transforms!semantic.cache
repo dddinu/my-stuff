@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file-155561f69af8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155561f69af8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155561f6d9d0"
+      :major-mode c-mode
+      :tags 
+        '( ("LLVM_C_TRANSFORMS_PASSMANAGERBUILDER_H" variable (:constant-flag t) nil [1029 1067])
+            ("llvm-c/ExternC.h" include nil nil [1069 1096])
+            ("llvm-c/Types.h" include nil nil [1097 1122])
+            ("LLVMPassManagerBuilderRef" type
+               (:typedef ("LLVMOpaquePassManagerBuilder" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [1124 1195])
+            ("LLVMPassManagerBuilderCreate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1426 1431]))                  
+                :type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil))
+                nil [1371 1432])
+            ("LLVMPassManagerBuilderDispose" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1468 1498]))                  
+                :type "void")
+                nil [1433 1499])
+            ("LLVMPassManagerBuilderSetOptLevel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1587 1617])
+                    ("OptLevel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1652 1670]))                  
+                :type "void")
+                nil [1548 1671])
+            ("LLVMPassManagerBuilderSetSizeLevel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1761 1791])
+                    ("SizeLevel" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1827 1846]))                  
+                :type "void")
+                nil [1721 1847])
+            ("LLVMPassManagerBuilderSetDisableUnitAtATime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1955 1985])
+                    ("Value" variable (:type ("LLVMBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2030 2045]))                  
+                :type "void")
+                nil [1906 2046])
+            ("LLVMPassManagerBuilderSetDisableUnrollLoops" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2154 2184])
+                    ("Value" variable (:type ("LLVMBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2229 2244]))                  
+                :type "void")
+                nil [2105 2245])
+            ("LLVMPassManagerBuilderSetDisableSimplifyLibCalls" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2392])
+                    ("Value" variable (:type ("LLVMBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2442 2457]))                  
+                :type "void")
+                nil [2308 2458])
+            ("LLVMPassManagerBuilderUseInlinerWithThreshold" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2557 2587])
+                    ("Threshold" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2634 2653]))                  
+                :type "void")
+                nil [2506 2654])
+            ("LLVMPassManagerBuilderPopulateFunctionPassManager" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2777 2807])
+                    ("PM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2858 2880]))                  
+                :type "void")
+                nil [2722 2881])
+            ("LLVMPassManagerBuilderPopulateModulePassManager" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3000 3030])
+                    ("PM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3079 3101]))                  
+                :type "void")
+                nil [2947 3102])
+            ("LLVMPassManagerBuilderPopulateLTOPassManager" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("PMB" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3215 3245])
+                    ("PM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3296 3318])
+                    ("Internalize" variable (:type ("LLVMBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3369 3390])
+                    ("RunInliner" variable (:type ("LLVMBool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3441 3461]))                  
+                :type "void")
+                nil [3165 3462]))          
+      :file "PassManagerBuilder.h"
+      :pointmax 3507
+      :fsize 3506
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((symbol 3479 . 3498) (symbol 1197 . 1218))
+      :lexical-table 
+        '(("LLVM_C_TRANSFORMS_PASSMANAGERBUILDER_H")
+          )
+))
+  :file "!usr!include!llvm-c!Transforms!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

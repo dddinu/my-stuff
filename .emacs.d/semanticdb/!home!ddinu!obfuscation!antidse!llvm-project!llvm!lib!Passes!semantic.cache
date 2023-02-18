@@ -1,0 +1,1810 @@
+;; Object semanticdb-project-database-file-155b10fb6d14
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155b10fb6d14"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155b10fb6cd4"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Passes/PassBuilder.h" include nil nil [707 743])
+            ("llvm/ADT/StringSwitch.h" include nil nil [744 778])
+            ("llvm/Analysis/AliasAnalysisEvaluator.h" include nil nil [779 828])
+            ("llvm/Analysis/AliasSetTracker.h" include nil nil [829 871])
+            ("llvm/Analysis/AssumptionCache.h" include nil nil [872 914])
+            ("llvm/Analysis/BasicAliasAnalysis.h" include nil nil [915 960])
+            ("llvm/Analysis/BlockFrequencyInfo.h" include nil nil [961 1006])
+            ("llvm/Analysis/BranchProbabilityInfo.h" include nil nil [1007 1055])
+            ("llvm/Analysis/CFGPrinter.h" include nil nil [1056 1093])
+            ("llvm/Analysis/CFLAndersAliasAnalysis.h" include nil nil [1094 1143])
+            ("llvm/Analysis/CFLSteensAliasAnalysis.h" include nil nil [1144 1193])
+            ("llvm/Analysis/CGSCCPassManager.h" include nil nil [1194 1237])
+            ("llvm/Analysis/CallGraph.h" include nil nil [1238 1274])
+            ("llvm/Analysis/CostModel.h" include nil nil [1275 1311])
+            ("llvm/Analysis/CycleAnalysis.h" include nil nil [1312 1352])
+            ("llvm/Analysis/DDG.h" include nil nil [1353 1383])
+            ("llvm/Analysis/DDGPrinter.h" include nil nil [1384 1421])
+            ("llvm/Analysis/Delinearization.h" include nil nil [1422 1464])
+            ("llvm/Analysis/DemandedBits.h" include nil nil [1465 1504])
+            ("llvm/Analysis/DependenceAnalysis.h" include nil nil [1505 1550])
+            ("llvm/Analysis/DivergenceAnalysis.h" include nil nil [1551 1596])
+            ("llvm/Analysis/DomPrinter.h" include nil nil [1597 1634])
+            ("llvm/Analysis/DominanceFrontier.h" include nil nil [1635 1679])
+            ("llvm/Analysis/FunctionPropertiesAnalysis.h" include nil nil [1680 1733])
+            ("llvm/Analysis/GlobalsModRef.h" include nil nil [1734 1774])
+            ("llvm/Analysis/IRSimilarityIdentifier.h" include nil nil [1775 1824])
+            ("llvm/Analysis/IVUsers.h" include nil nil [1825 1859])
+            ("llvm/Analysis/InlineAdvisor.h" include nil nil [1860 1900])
+            ("llvm/Analysis/InlineSizeEstimatorAnalysis.h" include nil nil [1901 1955])
+            ("llvm/Analysis/InstCount.h" include nil nil [1956 1992])
+            ("llvm/Analysis/LazyCallGraph.h" include nil nil [1993 2033])
+            ("llvm/Analysis/LazyValueInfo.h" include nil nil [2034 2074])
+            ("llvm/Analysis/Lint.h" include nil nil [2075 2106])
+            ("llvm/Analysis/LoopAccessAnalysis.h" include nil nil [2107 2152])
+            ("llvm/Analysis/LoopCacheAnalysis.h" include nil nil [2153 2197])
+            ("llvm/Analysis/LoopInfo.h" include nil nil [2198 2233])
+            ("llvm/Analysis/LoopNestAnalysis.h" include nil nil [2234 2277])
+            ("llvm/Analysis/MemDerefPrinter.h" include nil nil [2278 2320])
+            ("llvm/Analysis/MemoryDependenceAnalysis.h" include nil nil [2321 2372])
+            ("llvm/Analysis/MemorySSA.h" include nil nil [2373 2409])
+            ("llvm/Analysis/ModuleDebugInfoPrinter.h" include nil nil [2410 2459])
+            ("llvm/Analysis/ModuleSummaryAnalysis.h" include nil nil [2460 2508])
+            ("llvm/Analysis/MustExecute.h" include nil nil [2509 2547])
+            ("llvm/Analysis/ObjCARCAliasAnalysis.h" include nil nil [2548 2595])
+            ("llvm/Analysis/OptimizationRemarkEmitter.h" include nil nil [2596 2648])
+            ("llvm/Analysis/PhiValues.h" include nil nil [2649 2685])
+            ("llvm/Analysis/PostDominators.h" include nil nil [2686 2727])
+            ("llvm/Analysis/ProfileSummaryInfo.h" include nil nil [2728 2773])
+            ("llvm/Analysis/RegionInfo.h" include nil nil [2774 2811])
+            ("llvm/Analysis/ScalarEvolution.h" include nil nil [2812 2854])
+            ("llvm/Analysis/ScalarEvolutionAliasAnalysis.h" include nil nil [2855 2910])
+            ("llvm/Analysis/ScopedNoAliasAA.h" include nil nil [2911 2953])
+            ("llvm/Analysis/StackLifetime.h" include nil nil [2954 2994])
+            ("llvm/Analysis/StackSafetyAnalysis.h" include nil nil [2995 3041])
+            ("llvm/Analysis/TargetLibraryInfo.h" include nil nil [3042 3086])
+            ("llvm/Analysis/TargetTransformInfo.h" include nil nil [3087 3133])
+            ("llvm/Analysis/TypeBasedAliasAnalysis.h" include nil nil [3134 3183])
+            ("llvm/IR/Dominators.h" include nil nil [3184 3215])
+            ("llvm/IR/IRPrintingPasses.h" include nil nil [3216 3253])
+            ("llvm/IR/PassManager.h" include nil nil [3254 3286])
+            ("llvm/IR/PrintPasses.h" include nil nil [3287 3319])
+            ("llvm/IR/SafepointIRVerifier.h" include nil nil [3320 3360])
+            ("llvm/IR/Verifier.h" include nil nil [3361 3390])
+            ("llvm/Support/CommandLine.h" include nil nil [3391 3428])
+            ("llvm/Support/Debug.h" include nil nil [3429 3460])
+            ("llvm/Support/ErrorHandling.h" include nil nil [3461 3500])
+            ("llvm/Support/FormatVariadic.h" include nil nil [3501 3541])
+            ("llvm/Support/Regex.h" include nil nil [3542 3573])
+            ("llvm/Target/TargetMachine.h" include nil nil [3574 3612])
+            ("llvm/Transforms/AggressiveInstCombine/AggressiveInstCombine.h" include nil nil [3613 3685])
+            ("llvm/Transforms/Coroutines/CoroCleanup.h" include nil nil [3686 3737])
+            ("llvm/Transforms/Coroutines/CoroEarly.h" include nil nil [3738 3787])
+            ("llvm/Transforms/Coroutines/CoroElide.h" include nil nil [3788 3837])
+            ("llvm/Transforms/Coroutines/CoroSplit.h" include nil nil [3838 3887])
+            ("llvm/Transforms/IPO/AlwaysInliner.h" include nil nil [3888 3934])
+            ("llvm/Transforms/IPO/Annotation2Metadata.h" include nil nil [3935 3987])
+            ("llvm/Transforms/IPO/ArgumentPromotion.h" include nil nil [3988 4038])
+            ("llvm/Transforms/IPO/Attributor.h" include nil nil [4039 4082])
+            ("llvm/Transforms/IPO/BlockExtractor.h" include nil nil [4083 4130])
+            ("llvm/Transforms/IPO/CalledValuePropagation.h" include nil nil [4131 4186])
+            ("llvm/Transforms/IPO/ConstantMerge.h" include nil nil [4187 4233])
+            ("llvm/Transforms/IPO/CrossDSOCFI.h" include nil nil [4234 4278])
+            ("llvm/Transforms/IPO/DeadArgumentElimination.h" include nil nil [4279 4335])
+            ("llvm/Transforms/IPO/ElimAvailExtern.h" include nil nil [4336 4384])
+            ("llvm/Transforms/IPO/ForceFunctionAttrs.h" include nil nil [4385 4436])
+            ("llvm/Transforms/IPO/FunctionAttrs.h" include nil nil [4437 4483])
+            ("llvm/Transforms/IPO/FunctionImport.h" include nil nil [4484 4531])
+            ("llvm/Transforms/IPO/GlobalDCE.h" include nil nil [4532 4574])
+            ("llvm/Transforms/IPO/GlobalOpt.h" include nil nil [4575 4617])
+            ("llvm/Transforms/IPO/GlobalSplit.h" include nil nil [4618 4662])
+            ("llvm/Transforms/IPO/HotColdSplitting.h" include nil nil [4663 4712])
+            ("llvm/Transforms/IPO/IROutliner.h" include nil nil [4713 4756])
+            ("llvm/Transforms/IPO/InferFunctionAttrs.h" include nil nil [4757 4808])
+            ("llvm/Transforms/IPO/Inliner.h" include nil nil [4809 4849])
+            ("llvm/Transforms/IPO/Internalize.h" include nil nil [4850 4894])
+            ("llvm/Transforms/IPO/LoopExtractor.h" include nil nil [4895 4941])
+            ("llvm/Transforms/IPO/LowerTypeTests.h" include nil nil [4942 4989])
+            ("llvm/Transforms/IPO/MergeFunctions.h" include nil nil [4990 5037])
+            ("llvm/Transforms/IPO/ModuleInliner.h" include nil nil [5038 5084])
+            ("llvm/Transforms/IPO/OpenMPOpt.h" include nil nil [5085 5127])
+            ("llvm/Transforms/IPO/PartialInlining.h" include nil nil [5128 5176])
+            ("llvm/Transforms/IPO/SCCP.h" include nil nil [5177 5214])
+            ("llvm/Transforms/IPO/SampleProfile.h" include nil nil [5215 5261])
+            ("llvm/Transforms/IPO/SampleProfileProbe.h" include nil nil [5262 5313])
+            ("llvm/Transforms/IPO/StripDeadPrototypes.h" include nil nil [5314 5366])
+            ("llvm/Transforms/IPO/StripSymbols.h" include nil nil [5367 5412])
+            ("llvm/Transforms/IPO/SyntheticCountsPropagation.h" include nil nil [5413 5472])
+            ("llvm/Transforms/IPO/WholeProgramDevirt.h" include nil nil [5473 5524])
+            ("llvm/Transforms/InstCombine/InstCombine.h" include nil nil [5525 5577])
+            ("llvm/Transforms/Instrumentation.h" include nil nil [5578 5622])
+            ("llvm/Transforms/Instrumentation/AddressSanitizer.h" include nil nil [5623 5684])
+            ("llvm/Transforms/Instrumentation/BoundsChecking.h" include nil nil [5685 5744])
+            ("llvm/Transforms/Instrumentation/CGProfile.h" include nil nil [5745 5799])
+            ("llvm/Transforms/Instrumentation/ControlHeightReduction.h" include nil nil [5800 5867])
+            ("llvm/Transforms/Instrumentation/DataFlowSanitizer.h" include nil nil [5868 5930])
+            ("llvm/Transforms/Instrumentation/GCOVProfiler.h" include nil nil [5931 5988])
+            ("llvm/Transforms/Instrumentation/HWAddressSanitizer.h" include nil nil [5989 6052])
+            ("llvm/Transforms/Instrumentation/InstrOrderFile.h" include nil nil [6053 6112])
+            ("llvm/Transforms/Instrumentation/InstrProfiling.h" include nil nil [6113 6172])
+            ("llvm/Transforms/Instrumentation/MemProfiler.h" include nil nil [6173 6229])
+            ("llvm/Transforms/Instrumentation/MemorySanitizer.h" include nil nil [6230 6290])
+            ("llvm/Transforms/Instrumentation/PGOInstrumentation.h" include nil nil [6291 6354])
+            ("llvm/Transforms/Instrumentation/PoisonChecking.h" include nil nil [6355 6414])
+            ("llvm/Transforms/Instrumentation/SanitizerCoverage.h" include nil nil [6415 6477])
+            ("llvm/Transforms/Instrumentation/ThreadSanitizer.h" include nil nil [6478 6538])
+            ("llvm/Transforms/ObjCARC.h" include nil nil [6539 6575])
+            ("llvm/Transforms/Scalar/ADCE.h" include nil nil [6576 6616])
+            ("llvm/Transforms/Scalar/AlignmentFromAssumptions.h" include nil nil [6617 6677])
+            ("llvm/Transforms/Scalar/AnnotationRemarks.h" include nil nil [6678 6731])
+            ("llvm/Transforms/Scalar/BDCE.h" include nil nil [6732 6772])
+            ("llvm/Transforms/Scalar/CallSiteSplitting.h" include nil nil [6773 6826])
+            ("llvm/Transforms/Scalar/ConstantHoisting.h" include nil nil [6827 6879])
+            ("llvm/Transforms/Scalar/ConstraintElimination.h" include nil nil [6880 6937])
+            ("llvm/Transforms/Scalar/CorrelatedValuePropagation.h" include nil nil [6938 7000])
+            ("llvm/Transforms/Scalar/DCE.h" include nil nil [7001 7040])
+            ("llvm/Transforms/Scalar/DFAJumpThreading.h" include nil nil [7041 7093])
+            ("llvm/Transforms/Scalar/DeadStoreElimination.h" include nil nil [7094 7150])
+            ("llvm/Transforms/Scalar/DivRemPairs.h" include nil nil [7151 7198])
+            ("llvm/Transforms/Scalar/EarlyCSE.h" include nil nil [7199 7243])
+            ("llvm/Transforms/Scalar/FlattenCFG.h" include nil nil [7244 7290])
+            ("llvm/Transforms/Scalar/Float2Int.h" include nil nil [7291 7336])
+            ("llvm/Transforms/Scalar/GVN.h" include nil nil [7337 7376])
+            ("llvm/Transforms/Scalar/GuardWidening.h" include nil nil [7377 7426])
+            ("llvm/Transforms/Scalar/IVUsersPrinter.h" include nil nil [7427 7477])
+            ("llvm/Transforms/Scalar/IndVarSimplify.h" include nil nil [7478 7528])
+            ("llvm/Transforms/Scalar/InductiveRangeCheckElimination.h" include nil nil [7529 7595])
+            ("llvm/Transforms/Scalar/InferAddressSpaces.h" include nil nil [7596 7650])
+            ("llvm/Transforms/Scalar/InstSimplifyPass.h" include nil nil [7651 7703])
+            ("llvm/Transforms/Scalar/JumpThreading.h" include nil nil [7704 7753])
+            ("llvm/Transforms/Scalar/LICM.h" include nil nil [7754 7794])
+            ("llvm/Transforms/Scalar/LoopAccessAnalysisPrinter.h" include nil nil [7795 7856])
+            ("llvm/Transforms/Scalar/LoopBoundSplit.h" include nil nil [7857 7907])
+            ("llvm/Transforms/Scalar/LoopDataPrefetch.h" include nil nil [7908 7960])
+            ("llvm/Transforms/Scalar/LoopDeletion.h" include nil nil [7961 8009])
+            ("llvm/Transforms/Scalar/LoopDistribute.h" include nil nil [8010 8060])
+            ("llvm/Transforms/Scalar/LoopFlatten.h" include nil nil [8061 8108])
+            ("llvm/Transforms/Scalar/LoopFuse.h" include nil nil [8109 8153])
+            ("llvm/Transforms/Scalar/LoopIdiomRecognize.h" include nil nil [8154 8208])
+            ("llvm/Transforms/Scalar/LoopInstSimplify.h" include nil nil [8209 8261])
+            ("llvm/Transforms/Scalar/LoopInterchange.h" include nil nil [8262 8313])
+            ("llvm/Transforms/Scalar/LoopLoadElimination.h" include nil nil [8314 8369])
+            ("llvm/Transforms/Scalar/LoopPassManager.h" include nil nil [8370 8421])
+            ("llvm/Transforms/Scalar/LoopPredication.h" include nil nil [8422 8473])
+            ("llvm/Transforms/Scalar/LoopReroll.h" include nil nil [8474 8520])
+            ("llvm/Transforms/Scalar/LoopRotation.h" include nil nil [8521 8569])
+            ("llvm/Transforms/Scalar/LoopSimplifyCFG.h" include nil nil [8570 8621])
+            ("llvm/Transforms/Scalar/LoopSink.h" include nil nil [8622 8666])
+            ("llvm/Transforms/Scalar/LoopStrengthReduce.h" include nil nil [8667 8721])
+            ("llvm/Transforms/Scalar/LoopUnrollAndJamPass.h" include nil nil [8722 8778])
+            ("llvm/Transforms/Scalar/LoopUnrollPass.h" include nil nil [8779 8829])
+            ("llvm/Transforms/Scalar/LoopVersioningLICM.h" include nil nil [8830 8884])
+            ("llvm/Transforms/Scalar/LowerAtomic.h" include nil nil [8885 8932])
+            ("llvm/Transforms/Scalar/LowerConstantIntrinsics.h" include nil nil [8933 8992])
+            ("llvm/Transforms/Scalar/LowerExpectIntrinsic.h" include nil nil [8993 9049])
+            ("llvm/Transforms/Scalar/LowerGuardIntrinsic.h" include nil nil [9050 9105])
+            ("llvm/Transforms/Scalar/LowerMatrixIntrinsics.h" include nil nil [9106 9163])
+            ("llvm/Transforms/Scalar/LowerWidenableCondition.h" include nil nil [9164 9223])
+            ("llvm/Transforms/Scalar/MakeGuardsExplicit.h" include nil nil [9224 9278])
+            ("llvm/Transforms/Scalar/MemCpyOptimizer.h" include nil nil [9279 9330])
+            ("llvm/Transforms/Scalar/MergeICmps.h" include nil nil [9331 9377])
+            ("llvm/Transforms/Scalar/MergedLoadStoreMotion.h" include nil nil [9378 9435])
+            ("llvm/Transforms/Scalar/NaryReassociate.h" include nil nil [9436 9487])
+            ("llvm/Transforms/Scalar/NewGVN.h" include nil nil [9488 9530])
+            ("llvm/Transforms/Scalar/PartiallyInlineLibCalls.h" include nil nil [9531 9590])
+            ("llvm/Transforms/Scalar/Reassociate.h" include nil nil [9591 9638])
+            ("llvm/Transforms/Scalar/Reg2Mem.h" include nil nil [9639 9682])
+            ("llvm/Transforms/Scalar/RewriteStatepointsForGC.h" include nil nil [9683 9742])
+            ("llvm/Transforms/Scalar/SCCP.h" include nil nil [9743 9783])
+            ("llvm/Transforms/Scalar/SROA.h" include nil nil [9784 9824])
+            ("llvm/Transforms/Scalar/ScalarizeMaskedMemIntrin.h" include nil nil [9825 9885])
+            ("llvm/Transforms/Scalar/Scalarizer.h" include nil nil [9886 9932])
+            ("llvm/Transforms/Scalar/SeparateConstOffsetFromGEP.h" include nil nil [9933 9995])
+            ("llvm/Transforms/Scalar/SimpleLoopUnswitch.h" include nil nil [9996 10050])
+            ("llvm/Transforms/Scalar/SimplifyCFG.h" include nil nil [10051 10098])
+            ("llvm/Transforms/Scalar/Sink.h" include nil nil [10099 10139])
+            ("llvm/Transforms/Scalar/SpeculativeExecution.h" include nil nil [10140 10196])
+            ("llvm/Transforms/Scalar/StraightLineStrengthReduce.h" include nil nil [10197 10259])
+            ("llvm/Transforms/Scalar/StructurizeCFG.h" include nil nil [10260 10310])
+            ("llvm/Transforms/Scalar/TailRecursionElimination.h" include nil nil [10311 10371])
+            ("llvm/Transforms/Scalar/WarnMissedTransforms.h" include nil nil [10372 10428])
+            ("llvm/Transforms/Utils/AddDiscriminators.h" include nil nil [10429 10481])
+            ("llvm/Transforms/Utils/AssumeBundleBuilder.h" include nil nil [10482 10536])
+            ("llvm/Transforms/Utils/BreakCriticalEdges.h" include nil nil [10537 10590])
+            ("llvm/Transforms/Utils/CanonicalizeAliases.h" include nil nil [10591 10645])
+            ("llvm/Transforms/Utils/CanonicalizeFreezeInLoops.h" include nil nil [10646 10706])
+            ("llvm/Transforms/Utils/Debugify.h" include nil nil [10707 10750])
+            ("llvm/Transforms/Utils/EntryExitInstrumenter.h" include nil nil [10751 10807])
+            ("llvm/Transforms/Utils/FixIrreducible.h" include nil nil [10808 10857])
+            ("llvm/Transforms/Utils/HelloWorld.h" include nil nil [10858 10903])
+            ("llvm/Transforms/Utils/InjectTLIMappings.h" include nil nil [10904 10956])
+            ("llvm/Transforms/Utils/InstructionNamer.h" include nil nil [10957 11008])
+            ("llvm/Transforms/Utils/LCSSA.h" include nil nil [11009 11049])
+            ("llvm/Transforms/Utils/LibCallsShrinkWrap.h" include nil nil [11050 11103])
+            ("llvm/Transforms/Utils/LoopSimplify.h" include nil nil [11104 11151])
+            ("llvm/Transforms/Utils/LoopVersioning.h" include nil nil [11152 11201])
+            ("llvm/Transforms/Utils/LowerInvoke.h" include nil nil [11202 11248])
+            ("llvm/Transforms/Utils/LowerSwitch.h" include nil nil [11249 11295])
+            ("llvm/Transforms/Utils/Mem2Reg.h" include nil nil [11296 11338])
+            ("llvm/Transforms/Utils/MetaRenamer.h" include nil nil [11339 11385])
+            ("llvm/Transforms/Utils/NameAnonGlobals.h" include nil nil [11386 11436])
+            ("llvm/Transforms/Utils/RelLookupTableConverter.h" include nil nil [11437 11495])
+            ("llvm/Transforms/Utils/StripGCRelocates.h" include nil nil [11496 11547])
+            ("llvm/Transforms/Utils/StripNonLineTableDebugInfo.h" include nil nil [11548 11609])
+            ("llvm/Transforms/Utils/SymbolRewriter.h" include nil nil [11610 11659])
+            ("llvm/Transforms/Utils/UnifyFunctionExitNodes.h" include nil nil [11660 11717])
+            ("llvm/Transforms/Utils/UnifyLoopExits.h" include nil nil [11718 11767])
+            ("llvm/Transforms/Vectorize/LoadStoreVectorizer.h" include nil nil [11768 11826])
+            ("llvm/Transforms/Vectorize/LoopVectorize.h" include nil nil [11827 11879])
+            ("llvm/Transforms/Vectorize/SLPVectorizer.h" include nil nil [11880 11932])
+            ("llvm/Transforms/Vectorize/VectorCombine.h" include nil nil [11933 11985])
+            ("llvm/Transforms/Obfuscation/Flattening.h" include nil nil [11986 12037])
+            ("llvm/Transforms/Obfuscation/Substitution.h" include nil nil [12038 12091])
+            ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [12092 12149])
+            ("llvm/Transforms/Obfuscation/Split.h" include nil nil [12150 12196])
+            ("llvm/Transforms/Obfuscation/StringObfuscation.h" include nil nil [12197 12255])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [12257 12278])
+            ("DefaultAliasRegex" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("Regex" type (:type "class") nil nil))
+                nil [12280 12392])
+            ("llvm" type
+               (:members 
+                  ( ("PrintPipelinePasses" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12479 12586]))                          
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [12411 12588]))                  
+                :type "namespace")
+                nil [12394 12590])
+            ("unnamed" type
+               (:members 
+                  ( ("NoOpModulePass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12955 12965])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12966 12990]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12933 13033])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13037 13089]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [12875 13092])
+                    ("NoOpModuleAnalysis" type
+                       (:superclasses 
+                          ( ("AnalysisInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("AnalysisInfoMixin" variable
+                               (:typemodifiers ("friend")
+                                :type "int")
+                                (reparse-symbol classsubparts) [13197 13242])
+                            ("Key" variable
+                               (:typemodifiers ("static")
+                                :type ("AnalysisKey" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13245 13268])
+                            ("public" label nil (reparse-symbol classsubparts) [13270 13277])
+                            ("Result" type (:type "struct") (reparse-symbol classsubparts) [13280 13297])
+                            ("run" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13311 13320])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13321 13345]))                                  
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13300 13366])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13369 13425]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [13121 13428])
+                    ("NoOpCGSCCPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("C" variable
+                                       (:reference 1
+                                        :type ("LazyCallGraph::SCC" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13549 13571])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("CGSCCAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13572 13595])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LazyCallGraph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13620 13636])
+                                    ("UR" variable
+                                       (:reference 1
+                                        :type ("CGSCCUpdateResult" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13637 13659]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13527 13702])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13705 13756]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [13471 13759])
+                    ("NoOpCGSCCAnalysis" type
+                       (:superclasses 
+                          ( ("AnalysisInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("AnalysisInfoMixin" variable
+                               (:typemodifiers ("friend")
+                                :type "int")
+                                (reparse-symbol classsubparts) [13861 13905])
+                            ("Key" variable
+                               (:typemodifiers ("static")
+                                :type ("AnalysisKey" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13908 13931])
+                            ("public" label nil (reparse-symbol classsubparts) [13933 13940])
+                            ("Result" type (:type "struct") (reparse-symbol classsubparts) [13943 13960])
+                            ("run" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("LazyCallGraph::SCC" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13974 13995])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("CGSCCAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13996 14019])
+                                    ("G" variable
+                                       (:reference 1
+                                        :type ("LazyCallGraph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14020 14037]))                                  
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13963 14064])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14067 14122]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [13787 14125])
+                    ("NoOpFunctionPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14255 14267])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14268 14294]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14233 14337])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14340 14394]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [14171 14397])
+                    ("NoOpFunctionAnalysis" type
+                       (:superclasses 
+                          ( ("AnalysisInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("AnalysisInfoMixin" variable
+                               (:typemodifiers ("friend")
+                                :type "int")
+                                (reparse-symbol classsubparts) [14508 14555])
+                            ("Key" variable
+                               (:typemodifiers ("static")
+                                :type ("AnalysisKey" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14558 14581])
+                            ("public" label nil (reparse-symbol classsubparts) [14583 14590])
+                            ("Result" type (:type "struct") (reparse-symbol classsubparts) [14593 14610])
+                            ("run" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14624 14635])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14636 14662]))                                  
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14613 14683])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14686 14744]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [14428 14747])
+                    ("NoOpLoopNestPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("LoopNest" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14878 14890])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14891 14913])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14938 14968])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14969 14982]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14856 15025])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15028 15082]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [14794 15085])
+                    ("NoOpLoopPass" type
+                       (:superclasses 
+                          ( ("PassInfoMixin" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("run" function
+                               (:arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15203 15211])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15212 15234])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15259 15289])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LPMUpdater" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15290 15303]))                                  
+                                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15181 15346])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15349 15399]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [15127 15402])
+                    ("NoOpLoopAnalysis" type
+                       (:superclasses 
+                          ( ("AnalysisInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("AnalysisInfoMixin" variable
+                               (:typemodifiers ("friend")
+                                :type "int")
+                                (reparse-symbol classsubparts) [15501 15544])
+                            ("Key" variable
+                               (:typemodifiers ("static")
+                                :type ("AnalysisKey" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15547 15570])
+                            ("public" label nil (reparse-symbol classsubparts) [15572 15579])
+                            ("Result" type (:type "struct") (reparse-symbol classsubparts) [15582 15599])
+                            ("run" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Loop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15613 15620])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15621 15643])
+                                    ("" variable
+                                       (:reference 1
+                                        :type ("LoopStandardAnalysisResults" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15644 15674]))                                  
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15602 15701])
+                            ("name" function
+                               (:typemodifiers ("static")
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [15704 15758]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15429 15761])
+                    ("NoOpModuleAnalysis::Key" variable (:type ("AnalysisKey" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [15763 15799])
+                    ("NoOpCGSCCAnalysis::Key" variable (:type ("AnalysisKey" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [15800 15835])
+                    ("NoOpFunctionAnalysis::Key" variable (:type ("AnalysisKey" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [15836 15874])
+                    ("NoOpLoopAnalysis::Key" variable (:type ("AnalysisKey" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [15875 15909])
+                    ("shouldPopulateClassToPassNames" function (:type "bool") (reparse-symbol namespacesubparts) [16230 16373]))                  
+                :type "namespace")
+                nil [12610 16376])
+            ("PassBuilder" function
+               (:constructor-flag t
+                :parent "PassBuilder"
+                :arguments 
+                  ( ("TM" variable
+                       (:pointer 1
+                        :type ("TargetMachine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16416 16434])
+                    ("PTO" variable (:type ("PipelineTuningOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16435 16461])
+                    ("PGOOpt" variable (:type ("Optional" type
+                         (:template-specifier 
+                            ( ("PGOOptions" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [16487 16515])
+                    ("PIC" variable
+                       (:pointer 1
+                        :type ("PassInstrumentationCallbacks" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16541 16575]))                  
+                :type ("PassBuilder" type (:type "class") nil nil))
+                nil [16391 18553])
+            ("registerModuleAnalyses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MAM" variable
+                       (:reference 1
+                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18596 18623]))                  
+                :type "void")
+                nil [18555 18852])
+            ("registerCGSCCAnalyses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("CGAM" variable
+                       (:reference 1
+                        :type ("CGSCCAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18894 18921]))                  
+                :type "void")
+                nil [18854 19151])
+            ("registerFunctionAnalyses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("FAM" variable
+                       (:reference 1
+                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19196 19225]))                  
+                :type "void")
+                nil [19153 19697])
+            ("registerLoopAnalyses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("LAM" variable
+                       (:reference 1
+                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19738 19763]))                  
+                :type "void")
+                nil [19699 19990])
+            ("parseRepeatPassName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20033 20048]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [19992 20229])
+            ("parseDevirtPassName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20272 20287]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [20231 20467])
+            ("checkParametrizedPassName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20507 20522])
+                    ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20523 20542]))                  
+                :type "bool")
+                nil [20469 20750])
+            ("unnamed" type
+               (:members 
+                  ( ("decltype" function
+                       (:arguments 
+                          ( ("" variable (:type ("Parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21600 21619]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [21591 22227])
+                    ("parseLoopUnrollOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22326 22343]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("LoopUnrollOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [22275 23813])
+                    ("parseSinglePassOption" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23852 23869])
+                            ("OptionName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23870 23891])
+                            ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23929 23948]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [23815 24351])
+                    ("parseInlinerPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24392 24409]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24353 24486])
+                    ("parseEarlyCSEPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24528 24545]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24488 24611])
+                    ("parseEntryExitInstrumenterPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24666 24683]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24613 24767])
+                    ("parseLoopExtractorPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24814 24831]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24769 24902])
+                    ("parseLowerMatrixIntrinsicsPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24957 24974]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24904 25054])
+                    ("parseASanPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25111 25128]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("AddressSanitizerOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [25056 25557])
+                    ("parseHWASanPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25618 25635]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("HWAddressSanitizerOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [25559 26138])
+                    ("parseMSanPassOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26194 26211]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("MemorySanitizerOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [26140 27151])
+                    ("parseSimplifyCFGOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27253 27270]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("SimplifyCFGOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [27200 28681])
+                    ("parseLoopVectorizeOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28789 28806]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("LoopVectorizeOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [28732 29387])
+                    ("parseLoopUnswitchOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29446 29463]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("std::pair" type (:template-specifier 
+                                    ( ("bool" type nil nil nil)
+                                      ("bool" type nil nil nil))                                    ) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [29389 30022])
+                    ("parseMergedLoadStoreMotionOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30073 30090]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30024 30579])
+                    ("parseGVNOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30618 30635]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("GVNOptions" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [30581 31315])
+                    ("parseStackLifetimeOptions" function
+                       (:arguments 
+                          ( ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31381 31398]))                          
+                        :type ("Expected" type
+                             (:template-specifier 
+                                ( ("StackLifetime::LivenessType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [31317 31942]))                  
+                :type "namespace")
+                nil [20752 31945])
+            ("startsWithDefaultPipelineAliasPrefix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32100 32115]))                  
+                :type "bool")
+                nil [32051 32221])
+            ("callbacksAcceptPassName" function
+               (:template 
+                  ( ("PassManagerT" type (:type "class") nil nil)
+                    ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32802 32817])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32818 32840]))                  
+                :typemodifiers ("static"))
+                nil [32712 33003])
+            ("isModulePassName" function
+               (:template 
+                  ( ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33065 33080])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33081 33103]))                  
+                :typemodifiers ("static"))
+                nil [33005 34205])
+            ("isCGSCCPassName" function
+               (:template 
+                  ( ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34266 34281])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34282 34304]))                  
+                :typemodifiers ("static"))
+                nil [34207 35253])
+            ("isFunctionPassName" function
+               (:template 
+                  ( ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35317 35332])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35333 35355]))                  
+                :typemodifiers ("static"))
+                nil [35255 36279])
+            ("isLoopNestPassName" function
+               (:template 
+                  ( ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36343 36358])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36359 36381])
+                    ("UseMemorySSA" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [36413 36432]))                  
+                :typemodifiers ("static"))
+                nil [36281 36909])
+            ("isLoopPassName" function
+               (:template 
+                  ( ("CallbacksT" type (:type "class") nil nil))                  
+                :type "bool"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36969 36984])
+                    ("Callbacks" variable
+                       (:reference 1
+                        :type ("CallbacksT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36985 37007])
+                    ("UseMemorySSA" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [37035 37054]))                  
+                :typemodifiers ("static"))
+                nil [36911 37888])
+            ("parsePipelineText" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Text" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37973 37988]))                  
+                :type ("Optional" type
+                     (:template-specifier 
+                        ( ("std::vector" type (:template-specifier 
+                            ( ("PassBuilder::PipelineElement" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [37890 39588])
+            ("parseModulePass" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39625 39648])
+                    ("E" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PipelineElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39684 39709]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [39590 49046])
+            ("parseCGSCCPass" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("CGPM" variable
+                       (:reference 1
+                        :type ("CGSCCPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49082 49105])
+                    ("E" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PipelineElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49140 49165]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [49048 55616])
+            ("parseFunctionPass" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("FPM" variable
+                       (:reference 1
+                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55655 55680])
+                    ("E" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PipelineElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55718 55743]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [55618 61250])
+            ("parseLoopPass" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("LPM" variable
+                       (:reference 1
+                        :type ("LoopPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61285 61306])
+                    ("E" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PipelineElement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61340 61365]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [61252 64989])
+            ("parseAAPassName" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("AA" variable
+                       (:reference 1
+                        :type ("AAManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65025 65039])
+                    ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65040 65055]))                  
+                :type "bool")
+                nil [64991 65999])
+            ("parseLoopPassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("LPM" variable
+                       (:reference 1
+                        :type ("LoopPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66042 66063])
+                    ("Pipeline" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("PipelineElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [66105 66140]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [66001 66282])
+            ("parseFunctionPassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("FPM" variable
+                       (:reference 1
+                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66334 66359])
+                    ("Pipeline" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("PipelineElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [66360 66395]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [66284 66541])
+            ("parseCGSCCPassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("CGPM" variable
+                       (:reference 1
+                        :type ("CGSCCPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66585 66608])
+                    ("Pipeline" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("PipelineElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [66651 66686]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [66543 66830])
+            ("crossRegisterProxies" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("LAM" variable
+                       (:reference 1
+                        :type ("LoopAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66871 66896])
+                    ("FAM" variable
+                       (:reference 1
+                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66936 66965])
+                    ("CGAM" variable
+                       (:reference 1
+                        :type ("CGSCCAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67005 67032])
+                    ("MAM" variable
+                       (:reference 1
+                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67072 67099]))                  
+                :type "void")
+                nil [66832 67634])
+            ("parseModulePassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67679 67702])
+                    ("Pipeline" variable (:type ("ArrayRef" type
+                         (:template-specifier 
+                            ( ("PipelineElement" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [67746 67781]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [67636 67925])
+            ("parsePassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68188 68211])
+                    ("PipelineText" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68249 68272]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [68151 70092])
+            ("parsePassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("CGPM" variable
+                       (:reference 1
+                        :type ("CGSCCPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70210 70233])
+                    ("PipelineText" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70271 70294]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [70173 70932])
+            ("parsePassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("FPM" variable
+                       (:reference 1
+                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71056 71081])
+                    ("PipelineText" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71119 71142]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [71019 71791])
+            ("parsePassPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("CGPM" variable
+                       (:reference 1
+                        :type ("LoopPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71908 71930])
+                    ("PipelineText" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71968 71991]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [71871 72320])
+            ("parseAAPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("AA" variable
+                       (:reference 1
+                        :type ("AAManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72357 72371])
+                    ("PipelineText" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72372 72395]))                  
+                :type ("Error" type (:type "class") nil nil))
+                nil [72322 72940])
+            ("isAAPassName" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72973 72992]))                  
+                :type "bool")
+                nil [72942 73398])
+            ("isAnalysisPassName" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73437 73456]))                  
+                :type "bool")
+                nil [73400 74578])
+            ("printPassName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74606 74625])
+                    ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74626 74642]))                  
+                :type "void")
+                nil [74580 74680])
+            ("printPassName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("PassName" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74707 74726])
+                    ("Params" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74727 74744])
+                    ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74771 74787]))                  
+                :type "void")
+                nil [74681 74843])
+            ("printPassNames" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74878 74894]))                  
+                :type "void")
+                nil [74845 77091])
+            ("registerParseTopLevelPipelineCallback" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("std::function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77154 77174])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [77174 77226])
+                    ("" variable (:type ("C" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77237 77239]))                  
+                :type "void")
+                nil [77093 77292]))          
+      :file "PassBuilder.cpp"
+      :pointmax 77293
+      :fsize 77292
+      :lastmodtime '(25572 26064 733242 241000)
+      :unmatched-syntax '((punctuation 77236 . 77237) (punctuation 77226 . 77227) (semantic-list 77178 . 77226) (punctuation 77173 . 77174) (semantic-list 21606 . 21619) (punctuation 21589 . 21590) (punctuation 21588 . 21589) (semantic-list 21491 . 21587) (symbol 21472 . 21491) (punctuation 21518 . 21519) (symbol 21467 . 21471) (punctuation 21518 . 21519) (punctuation 21465 . 21466) (symbol 21441 . 21465) (TYPENAME 21432 . 21440) (punctuation 21431 . 21432) (TEMPLATE 21422 . 21430) (punctuation 21518 . 21519) (semantic-list 12487 . 12586) (string 12450 . 12473) (string 12322 . 12390)))
+    (semanticdb-table "semanticdb-table-155b10fb6cf4"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Analysis/AliasAnalysis.h" include nil nil [707 747])
+            ("llvm/Analysis/BasicAliasAnalysis.h" include nil nil [748 793])
+            ("llvm/Analysis/CGSCCPassManager.h" include nil nil [794 837])
+            ("llvm/Analysis/GlobalsModRef.h" include nil nil [838 878])
+            ("llvm/Analysis/InlineAdvisor.h" include nil nil [879 919])
+            ("llvm/Analysis/OptimizationRemarkEmitter.h" include nil nil [920 972])
+            ("llvm/Analysis/ProfileSummaryInfo.h" include nil nil [973 1018])
+            ("llvm/Analysis/ScopedNoAliasAA.h" include nil nil [1019 1061])
+            ("llvm/Analysis/TypeBasedAliasAnalysis.h" include nil nil [1062 1111])
+            ("llvm/IR/PassManager.h" include nil nil [1112 1144])
+            ("llvm/Passes/OptimizationLevel.h" include nil nil [1145 1187])
+            ("llvm/Passes/PassBuilder.h" include nil nil [1188 1224])
+            ("llvm/Support/CommandLine.h" include nil nil [1225 1262])
+            ("llvm/Support/ErrorHandling.h" include nil nil [1263 1302])
+            ("llvm/Support/PGOOptions.h" include nil nil [1303 1339])
+            ("llvm/Target/TargetMachine.h" include nil nil [1340 1378])
+            ("llvm/Transforms/AggressiveInstCombine/AggressiveInstCombine.h" include nil nil [1379 1451])
+            ("llvm/Transforms/Coroutines/CoroCleanup.h" include nil nil [1452 1503])
+            ("llvm/Transforms/Coroutines/CoroEarly.h" include nil nil [1504 1553])
+            ("llvm/Transforms/Coroutines/CoroElide.h" include nil nil [1554 1603])
+            ("llvm/Transforms/Coroutines/CoroSplit.h" include nil nil [1604 1653])
+            ("llvm/Transforms/IPO/AlwaysInliner.h" include nil nil [1654 1700])
+            ("llvm/Transforms/IPO/Annotation2Metadata.h" include nil nil [1701 1753])
+            ("llvm/Transforms/IPO/ArgumentPromotion.h" include nil nil [1754 1804])
+            ("llvm/Transforms/IPO/Attributor.h" include nil nil [1805 1848])
+            ("llvm/Transforms/IPO/CalledValuePropagation.h" include nil nil [1849 1904])
+            ("llvm/Transforms/IPO/ConstantMerge.h" include nil nil [1905 1951])
+            ("llvm/Transforms/IPO/CrossDSOCFI.h" include nil nil [1952 1996])
+            ("llvm/Transforms/IPO/DeadArgumentElimination.h" include nil nil [1997 2053])
+            ("llvm/Transforms/IPO/ElimAvailExtern.h" include nil nil [2054 2102])
+            ("llvm/Transforms/IPO/ForceFunctionAttrs.h" include nil nil [2103 2154])
+            ("llvm/Transforms/IPO/FunctionAttrs.h" include nil nil [2155 2201])
+            ("llvm/Transforms/IPO/GlobalDCE.h" include nil nil [2202 2244])
+            ("llvm/Transforms/IPO/GlobalOpt.h" include nil nil [2245 2287])
+            ("llvm/Transforms/IPO/GlobalSplit.h" include nil nil [2288 2332])
+            ("llvm/Transforms/IPO/HotColdSplitting.h" include nil nil [2333 2382])
+            ("llvm/Transforms/IPO/IROutliner.h" include nil nil [2383 2426])
+            ("llvm/Transforms/IPO/InferFunctionAttrs.h" include nil nil [2427 2478])
+            ("llvm/Transforms/IPO/Inliner.h" include nil nil [2479 2519])
+            ("llvm/Transforms/IPO/LowerTypeTests.h" include nil nil [2520 2567])
+            ("llvm/Transforms/IPO/MergeFunctions.h" include nil nil [2568 2615])
+            ("llvm/Transforms/IPO/ModuleInliner.h" include nil nil [2616 2662])
+            ("llvm/Transforms/IPO/OpenMPOpt.h" include nil nil [2663 2705])
+            ("llvm/Transforms/IPO/PartialInlining.h" include nil nil [2706 2754])
+            ("llvm/Transforms/IPO/SCCP.h" include nil nil [2755 2792])
+            ("llvm/Transforms/IPO/SampleProfile.h" include nil nil [2793 2839])
+            ("llvm/Transforms/IPO/SampleProfileProbe.h" include nil nil [2840 2891])
+            ("llvm/Transforms/IPO/SyntheticCountsPropagation.h" include nil nil [2892 2951])
+            ("llvm/Transforms/IPO/WholeProgramDevirt.h" include nil nil [2952 3003])
+            ("llvm/Transforms/InstCombine/InstCombine.h" include nil nil [3004 3056])
+            ("llvm/Transforms/Instrumentation/CGProfile.h" include nil nil [3057 3111])
+            ("llvm/Transforms/Instrumentation/ControlHeightReduction.h" include nil nil [3112 3179])
+            ("llvm/Transforms/Instrumentation/InstrOrderFile.h" include nil nil [3180 3239])
+            ("llvm/Transforms/Instrumentation/InstrProfiling.h" include nil nil [3240 3299])
+            ("llvm/Transforms/Instrumentation/MemProfiler.h" include nil nil [3300 3356])
+            ("llvm/Transforms/Instrumentation/PGOInstrumentation.h" include nil nil [3357 3420])
+            ("llvm/Transforms/Scalar/ADCE.h" include nil nil [3421 3461])
+            ("llvm/Transforms/Scalar/AlignmentFromAssumptions.h" include nil nil [3462 3522])
+            ("llvm/Transforms/Scalar/AnnotationRemarks.h" include nil nil [3523 3576])
+            ("llvm/Transforms/Scalar/BDCE.h" include nil nil [3577 3617])
+            ("llvm/Transforms/Scalar/CallSiteSplitting.h" include nil nil [3618 3671])
+            ("llvm/Transforms/Scalar/ConstraintElimination.h" include nil nil [3672 3729])
+            ("llvm/Transforms/Scalar/CorrelatedValuePropagation.h" include nil nil [3730 3792])
+            ("llvm/Transforms/Scalar/DFAJumpThreading.h" include nil nil [3793 3845])
+            ("llvm/Transforms/Scalar/DeadStoreElimination.h" include nil nil [3846 3902])
+            ("llvm/Transforms/Scalar/DivRemPairs.h" include nil nil [3903 3950])
+            ("llvm/Transforms/Scalar/EarlyCSE.h" include nil nil [3951 3995])
+            ("llvm/Transforms/Scalar/Float2Int.h" include nil nil [3996 4041])
+            ("llvm/Transforms/Scalar/GVN.h" include nil nil [4042 4081])
+            ("llvm/Transforms/Scalar/IndVarSimplify.h" include nil nil [4082 4132])
+            ("llvm/Transforms/Scalar/InstSimplifyPass.h" include nil nil [4133 4185])
+            ("llvm/Transforms/Scalar/JumpThreading.h" include nil nil [4186 4235])
+            ("llvm/Transforms/Scalar/LICM.h" include nil nil [4236 4276])
+            ("llvm/Transforms/Scalar/LoopDeletion.h" include nil nil [4277 4325])
+            ("llvm/Transforms/Scalar/LoopDistribute.h" include nil nil [4326 4376])
+            ("llvm/Transforms/Scalar/LoopFlatten.h" include nil nil [4377 4424])
+            ("llvm/Transforms/Scalar/LoopIdiomRecognize.h" include nil nil [4425 4479])
+            ("llvm/Transforms/Scalar/LoopInstSimplify.h" include nil nil [4480 4532])
+            ("llvm/Transforms/Scalar/LoopInterchange.h" include nil nil [4533 4584])
+            ("llvm/Transforms/Scalar/LoopLoadElimination.h" include nil nil [4585 4640])
+            ("llvm/Transforms/Scalar/LoopPassManager.h" include nil nil [4641 4692])
+            ("llvm/Transforms/Scalar/LoopRotation.h" include nil nil [4693 4741])
+            ("llvm/Transforms/Scalar/LoopSimplifyCFG.h" include nil nil [4742 4793])
+            ("llvm/Transforms/Scalar/LoopSink.h" include nil nil [4794 4838])
+            ("llvm/Transforms/Scalar/LoopUnrollAndJamPass.h" include nil nil [4839 4895])
+            ("llvm/Transforms/Scalar/LoopUnrollPass.h" include nil nil [4896 4946])
+            ("llvm/Transforms/Scalar/LowerConstantIntrinsics.h" include nil nil [4947 5006])
+            ("llvm/Transforms/Scalar/LowerExpectIntrinsic.h" include nil nil [5007 5063])
+            ("llvm/Transforms/Scalar/LowerMatrixIntrinsics.h" include nil nil [5064 5121])
+            ("llvm/Transforms/Scalar/MemCpyOptimizer.h" include nil nil [5122 5173])
+            ("llvm/Transforms/Scalar/MergedLoadStoreMotion.h" include nil nil [5174 5231])
+            ("llvm/Transforms/Scalar/NewGVN.h" include nil nil [5232 5274])
+            ("llvm/Transforms/Scalar/Reassociate.h" include nil nil [5275 5322])
+            ("llvm/Transforms/Scalar/SCCP.h" include nil nil [5323 5363])
+            ("llvm/Transforms/Scalar/SROA.h" include nil nil [5364 5404])
+            ("llvm/Transforms/Scalar/SimpleLoopUnswitch.h" include nil nil [5405 5459])
+            ("llvm/Transforms/Scalar/SimplifyCFG.h" include nil nil [5460 5507])
+            ("llvm/Transforms/Scalar/SpeculativeExecution.h" include nil nil [5508 5564])
+            ("llvm/Transforms/Scalar/TailRecursionElimination.h" include nil nil [5565 5625])
+            ("llvm/Transforms/Scalar/WarnMissedTransforms.h" include nil nil [5626 5682])
+            ("llvm/Transforms/Utils/AddDiscriminators.h" include nil nil [5683 5735])
+            ("llvm/Transforms/Utils/AssumeBundleBuilder.h" include nil nil [5736 5790])
+            ("llvm/Transforms/Utils/CanonicalizeAliases.h" include nil nil [5791 5845])
+            ("llvm/Transforms/Utils/InjectTLIMappings.h" include nil nil [5846 5898])
+            ("llvm/Transforms/Utils/LibCallsShrinkWrap.h" include nil nil [5899 5952])
+            ("llvm/Transforms/Utils/Mem2Reg.h" include nil nil [5953 5995])
+            ("llvm/Transforms/Utils/NameAnonGlobals.h" include nil nil [5996 6046])
+            ("llvm/Transforms/Utils/RelLookupTableConverter.h" include nil nil [6047 6105])
+            ("llvm/Transforms/Utils/SimplifyCFGOptions.h" include nil nil [6106 6159])
+            ("llvm/Transforms/Vectorize/LoopVectorize.h" include nil nil [6160 6212])
+            ("llvm/Transforms/Vectorize/SLPVectorizer.h" include nil nil [6213 6265])
+            ("llvm/Transforms/Vectorize/VectorCombine.h" include nil nil [6266 6318])
+            ("llvm/Transforms/Utils/LowerSwitch.h" include nil nil [6320 6366])
+            ("llvm/Transforms/Obfuscation/Flattening.h" include nil nil [6367 6418])
+            ("llvm/Transforms/Obfuscation/Substitution.h" include nil nil [6419 6472])
+            ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [6473 6530])
+            ("llvm/Transforms/Obfuscation/Split.h" include nil nil [6531 6577])
+            ("llvm/Transforms/Obfuscation/StringObfuscation.h" include nil nil [6578 6636])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [6638 6659])
+            ("UseInlineAdvisor" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6740 6778])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6780 6791])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6796 6868])
+                    ("" variable (:type ("cl::values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6874 7288]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("InliningAdvisorMode" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [6661 7290])
+            ("EnableSyntheticCounts" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7371 7386])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7388 7399])
+                    ("" variable (:type ("cl::ZeroOrMore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7400 7415])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7420 7498]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7292 7500])
+            ("EnablePGOInlineDeferral" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7632 7646])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7676 7687])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7716 7761]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7549 7763])
+            ("EnableMemProfiler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7823 7838])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7879 7890])
+                    ("" variable (:type ("cl::ZeroOrMore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7891 7906])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7946 7980]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7765 7982])
+            ("EnableModuleInliner" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8091 8106])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8108 8119])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8161 8194]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7984 8196])
+            ("PerformMandatoryInliningsFirst" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8283 8297])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8299 8310])
+                    ("" variable (:type ("cl::ZeroOrMore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8311 8326])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8331 8427]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8198 8429])
+            ("EnableO3NonTrivialUnswitching" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8524 8538])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8540 8551])
+                    ("" variable (:type ("cl::ZeroOrMore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8556 8571])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8572 8627]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8431 8629])
+            ("EnableEagerlyInvalidateAnalyses" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8720 8734])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8736 8747])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8752 8817]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8631 8819])
+            ("EnableNoRerunSimplificationPipeline" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8926 8941])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8943 8954])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8959 9196]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8821 9198])
+            ("EnableMergeFunctions" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9273 9288])
+                    ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9290 9301])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9306 9378]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9200 9380])
+            ("AesSeed" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9429 9441])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9479 9516]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9382 9518])
+            ("Seed" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9561 9573])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9602 9633]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [9520 9635])
+            ("PipelineTuningOptions" function
+               (:constructor-flag t
+                :parent "PipelineTuningOptions"
+                :type ("PipelineTuningOptions" type (:type "class") nil nil))
+                nil [9637 10260])
+            ("llvm" type
+               (:members 
+                  ( ("MaxDevirtIterations" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10280 10325])
+                    ("EnableConstraintElimination" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10326 10375])
+                    ("EnableFunctionSpecialization" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10376 10426])
+                    ("EnableGVNHoist" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10427 10463])
+                    ("EnableGVNSink" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10464 10499])
+                    ("EnableHotColdSplit" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10500 10540])
+                    ("EnableIROutliner" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10541 10579])
+                    ("EnableOrderFileInstrumentation" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10580 10632])
+                    ("EnableCHR" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10633 10664])
+                    ("EnableLoopInterchange" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10665 10708])
+                    ("EnableUnrollAndJam" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10709 10749])
+                    ("EnableLoopFlatten" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10750 10789])
+                    ("EnableDFAJumpThreading" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10790 10834])
+                    ("RunNewGVN" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10835 10866])
+                    ("RunPartialInlining" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10867 10907])
+                    ("ExtraVectorizerPasses" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10908 10951])
+                    ("FlattenedProfileUsed" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10953 10995])
+                    ("AttributorRun" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("AttributorRunOption" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [10997 11047])
+                    ("EnableKnowledgeRetention" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11048 11094])
+                    ("EnableMatrix" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11096 11130])
+                    ("DisablePreInliner" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("bool" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11132 11171])
+                    ("PreInlineThreshold" variable
+                       (:typemodifiers ("extern")
+                        :type ("cl::opt" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [11172 11211]))                  
+                :type "namespace")
+                nil [10262 11213])
+            ("invokePeepholeEPCallbacks" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("FPM" variable
+                       (:reference 1
+                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11277 11302])
+                    ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11347 11371]))                  
+                :type "void")
+                nil [11233 11432])
+            ("addAnnotationRemarksPass" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11511 11534]))                  
+                :type "void")
+                nil [11474 11671])
+            ("isLTOPreLink" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11771 11796]))                  
+                :type "bool")
+                nil [11746 11910])
+            ("buildO1FunctionSimplificationPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12060 12084])
+                    ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12136 12161]))                  
+                :type ("FunctionPassManager" type (:type "class") nil nil))
+                nil [11989 17908])
+            ("buildFunctionSimplificationPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17979 18003])
+                    ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18053 18078]))                  
+                :type ("FunctionPassManager" type (:type "class") nil nil))
+                nil [17910 26751])
+            ("addRequiredLTOPreLinkPasses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26799 26822]))                  
+                :type "void")
+                nil [26753 26905])
+            ("addPGOInstrPasses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26943 26966])
+                    ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27003 27027])
+                    ("RunProfileGen" variable (:type "bool") (reparse-symbol arg-sub-list) [27028 27047])
+                    ("IsCS" variable (:type "bool") (reparse-symbol arg-sub-list) [27084 27094])
+                    ("ProfileFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27095 27119])
+                    ("ProfileRemappingFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27156 27189]))                  
+                :type "void")
+                nil [26907 29766])
+            ("addPGOInstrPassesForO0" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("MPM" variable
+                       (:reference 1
+                        :type ("ModulePassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29809 29832])
+                    ("RunProfileGen" variable (:type "bool") (reparse-symbol arg-sub-list) [29874 29893])
+                    ("IsCS" variable (:type "bool") (reparse-symbol arg-sub-list) [29894 29904])
+                    ("ProfileFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29946 29970])
+                    ("ProfileRemappingFile" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30012 30045]))                  
+                :type "void")
+                nil [29768 30847])
+            ("getInlineParamsFromOptLevel" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30897 30921]))                  
+                :type ("InlineParams" type (:type "class") nil nil))
+                nil [30849 30998])
+            ("buildInlinerPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31059 31083])
+                    ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31118 31143]))                  
+                :type ("ModuleInlinerWrapperPass" type (:type "class") nil nil))
+                nil [31000 34027])
+            ("buildModuleInlinerPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34087 34111])
+                    ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34152 34177]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [34029 35205])
+            ("buildModuleSimplificationPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35272 35296])
+                    ("Phase" variable (:type ("ThinOrFullLTOPhase" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35344 35369]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [35207 43139])
+            ("addVectorPasses" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43241 43265])
+                    ("FPM" variable
+                       (:reference 1
+                        :type ("FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43300 43325])
+                    ("IsFullLTO" variable (:type "bool") (reparse-symbol arg-sub-list) [43326 43341]))                  
+                :type "void")
+                nil [43207 49107])
+            ("buildModuleOptimizationPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49172 49196])
+                    ("LTOPreLink" variable (:type "bool") (reparse-symbol arg-sub-list) [49242 49258]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [49109 56673])
+            ("buildPerModuleDefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56736 56760])
+                    ("LTOPreLink" variable (:type "bool") (reparse-symbol arg-sub-list) [56804 56820]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [56675 58014])
+            ("buildThinLTOPreLinkDefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58082 58106]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [58016 60367])
+            ("buildThinLTODefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60433 60457])
+                    ("ImportSummary" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ModuleSummaryIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60458 60498]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [60369 62575])
+            ("buildLTOPreLinkDefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62639 62663]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [62577 62943])
+            ("buildLTODefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63000 63024])
+                    ("ExportSummary" variable
+                       (:pointer 1
+                        :type ("ModuleSummaryIndex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63062 63096]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [62945 74305])
+            ("buildO0DefaultPipeline" function
+               (:parent "PassBuilder"
+                :arguments 
+                  ( ("Level" variable (:type ("OptimizationLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74361 74385])
+                    ("LTOPreLink" variable (:type "bool") (reparse-symbol arg-sub-list) [74440 74456]))                  
+                :type ("ModulePassManager" type (:type "class") nil nil))
+                nil [74307 77870])
+            ("buildDefaultAAPipeline" function
+               (:parent "PassBuilder"
+                :type ("AAManager" type (:type "class") nil nil))
+                nil [77872 78893]))          
+      :file "PassBuilderPipelines.cpp"
+      :pointmax 78894
+      :fsize 78893
+      :lastmodtime '(25572 26064 733242 241000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!obfuscation!antidse!llvm-project!llvm!lib!Passes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

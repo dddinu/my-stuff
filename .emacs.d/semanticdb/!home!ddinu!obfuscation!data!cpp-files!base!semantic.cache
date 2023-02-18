@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file-15644aec0058
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15644aec0058"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15644ae9a1b0"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("n" variable (:type "int") nil [43 49])
+            ("l" variable
+               (:dereference 1
+                :type "int")
+                nil [50 61])
+            ("main" function (:type "int") nil [63 435]))          
+      :file "file_1.cpp"
+      :pointmax 435
+      :fsize 434
+      :lastmodtime '(25573 9228 889346 754000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15644b01c374"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("algorithm" include (:system-flag t) nil [21 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [42 62])
+            ("find_max" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [76 86])
+                    ("f" variable (:type "int") (reparse-symbol arg-sub-list) [86 92])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [92 98]))                  
+                :type "int")
+                nil [63 175])
+            ("main" function (:type "int") nil [176 512]))          
+      :file "file_10.cpp"
+      :pointmax 513
+      :fsize 512
+      :lastmodtime '(25573 22469 585485 709000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!obfuscation!data!cpp-files!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

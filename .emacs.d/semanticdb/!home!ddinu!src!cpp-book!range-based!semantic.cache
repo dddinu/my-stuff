@@ -1,0 +1,170 @@
+;; Object semanticdb-project-database-file-155a0d5812de
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155a0d5812de"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155a0d58f13c"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("FibonacciIterator.hpp" include nil nil [19 51])
+            ("FibonacciRange.hpp" include nil nil [52 81])
+            ("main" function (:type "int") nil [83 282]))          
+      :file "main.cpp"
+      :pointmax 286
+      :fsize 285
+      :lastmodtime '(25527 16167 576494 877000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155a0d5bd372"
+      :major-mode c-mode
+      :tags 
+        '( ("FibonacciIterator" type
+               (:members 
+                  ( ("!=" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [60 66]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [44 73])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("FibonacciIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [77 109])
+                    ("" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :type "int")
+                        (reparse-symbol classsubparts) [115 137])
+                    ("private" label nil (reparse-symbol classsubparts) [140 148])
+                    ("current" variable (:type "int") (reparse-symbol classsubparts) [151 166])
+                    ("last" variable (:type "int") (reparse-symbol classsubparts) [169 181]))                  
+                :type "struct")
+                nil [15 184]))          
+      :file "FibonacciIterator.h"
+      :pointmax 185
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-155a0d413090"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciIterator.hpp" include nil nil [1 33])
+            ("!=" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "FibonacciIterator"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [70 76]))                  
+                :type "bool")
+                nil [35 109])
+            ("++" function
+               (:operator-flag t
+                :parent "FibonacciIterator"
+                :type ("FibonacciIterator" type (:type "class") nil nil))
+                nil [111 242])
+            ("" function
+               (:methodconst-flag t
+                :operator-flag t
+                :function-pointer t
+                :parent "FibonacciIterator"
+                :type "int")
+                nil [244 306]))          
+      :file "FibonacciIterator.cpp"
+      :pointmax 307
+      :fsize 306
+      :lastmodtime '(25527 15903 665469 365000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155a0d67cb64"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciIterator" type
+               (:members 
+                  ( ("!=" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [60 66]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [44 73])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("FibonacciIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [77 109])
+                    ("" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :type "int")
+                        (reparse-symbol classsubparts) [115 137])
+                    ("private" label nil (reparse-symbol classsubparts) [140 148])
+                    ("current" variable (:type "int") (reparse-symbol classsubparts) [151 166])
+                    ("last" variable (:type "int") (reparse-symbol classsubparts) [169 181]))                  
+                :type "struct")
+                nil [15 184]))          
+      :file "FibonacciIterator.hpp"
+      :pointmax 185
+      :fsize 184
+      :lastmodtime '(25527 15718 153759 585000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2)))
+    (semanticdb-table "semanticdb-table-155a0d5efbb0"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciRange.hpp" include nil nil [1 30])
+            ("begin" function
+               (:methodconst-flag t
+                :parent "FibonacciRange"
+                :type ("FibonacciIterator" type (:type "class") nil nil))
+                nil [32 113])
+            ("end" function
+               (:methodconst-flag t
+                :parent "FibonacciRange"
+                :type "int")
+                nil [115 164]))          
+      :file "FibonacciRange.cpp"
+      :pointmax 165
+      :fsize 164
+      :lastmodtime '(25527 16318 708507 559000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155a0d40eaee"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciIterator.hpp" include nil nil [15 47])
+            ("FibonacciRange" type
+               (:members 
+                  ( ("FibonacciRange" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [99 107]))                          
+                        :type ("FibonacciRange" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [84 125])
+                    ("begin" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("FibonacciIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [129 161])
+                    ("end" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [165 181])
+                    ("private" label nil (reparse-symbol classsubparts) [183 191])
+                    ("max" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [194 208]))                  
+                :type "struct")
+                nil [49 211]))          
+      :file "FibonacciRange.hpp"
+      :pointmax 212
+      :fsize 211
+      :lastmodtime '(25527 16342 14970 625000)
+      :unmatched-syntax '((EXPLICIT 75 . 83) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (EXPLICIT 75 . 83) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (EXPLICIT 75 . 83) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (EXPLICIT 41 . 49) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2) (EXPLICIT 41 . 49) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!ddinu!src!cpp-book!range-based!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

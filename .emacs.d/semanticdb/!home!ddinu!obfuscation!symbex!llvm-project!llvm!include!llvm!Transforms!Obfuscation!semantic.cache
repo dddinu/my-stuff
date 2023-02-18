@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file-15556095265c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15556095265c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155560952688"
+      :major-mode c++-mode
+      :tags 
+        '( ("_OBFUSCATION_SYMBEXSPLIT_H_" variable (:constant-flag t) nil [537 564])
+            ("llvm/ADT/Statistic.h" include nil nil [566 597])
+            ("llvm/CodeGen/ISDOpcodes.h" include nil nil [598 634])
+            ("llvm/IR/BasicBlock.h" include nil nil [635 666])
+            ("llvm/IR/Constants.h" include nil nil [667 697])
+            ("llvm/IR/Function.h" include nil nil [698 727])
+            ("llvm/IR/GlobalValue.h" include nil nil [728 760])
+            ("llvm/IR/InstrTypes.h" include nil nil [761 792])
+            ("llvm/IR/Instructions.h" include nil nil [793 826])
+            ("llvm/IR/LLVMContext.h" include nil nil [827 859])
+            ("llvm/IR/Module.h" include nil nil [860 887])
+            ("llvm/IR/Type.h" include nil nil [888 913])
+            ("llvm/Pass.h" include nil nil [914 936])
+            ("llvm/Support/CommandLine.h" include nil nil [937 974])
+            ("llvm/Support/Debug.h" include nil nil [975 1006])
+            ("llvm/Support/raw_ostream.h" include nil nil [1007 1044])
+            ("llvm/Transforms/IPO.h" include nil nil [1045 1077])
+            ("llvm/Transforms/Obfuscation/CryptoUtils.h" include nil nil [1078 1130])
+            ("llvm/Transforms/Utils/BasicBlockUtils.h" include nil nil [1131 1181])
+            ("llvm/Transforms/Utils/Cloning.h" include nil nil [1182 1224])
+            ("llvm" type
+               (:members 
+                  ( ("createSymbexSplit" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1243 1269])
+                    ("createSymbexSplit" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [1294 1304]))                          
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1270 1305]))                  
+                :type "namespace")
+                nil [1226 1307]))          
+      :file "SymbexSplit.h"
+      :pointmax 1334
+      :fsize 1333
+      :lastmodtime '(25573 19088 353649 874000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_OBFUSCATION_SYMBEXSPLIT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-15556118d32c"
+      :major-mode c++-mode
+      :tags 
+        '( ("_OBFUSCATION_BOGUSCONTROLFLOW_H_" variable (:constant-flag t) nil [553 585])
+            ("llvm/ADT/Statistic.h" include nil nil [587 618])
+            ("llvm/CodeGen/ISDOpcodes.h" include nil nil [619 655])
+            ("llvm/IR/BasicBlock.h" include nil nil [656 687])
+            ("llvm/IR/Constants.h" include nil nil [688 718])
+            ("llvm/IR/Function.h" include nil nil [719 748])
+            ("llvm/IR/GlobalValue.h" include nil nil [749 781])
+            ("llvm/IR/InstrTypes.h" include nil nil [782 813])
+            ("llvm/IR/Instructions.h" include nil nil [814 847])
+            ("llvm/IR/LLVMContext.h" include nil nil [848 880])
+            ("llvm/IR/Module.h" include nil nil [881 908])
+            ("llvm/IR/Type.h" include nil nil [909 934])
+            ("llvm/Pass.h" include nil nil [935 957])
+            ("llvm/Support/CommandLine.h" include nil nil [958 995])
+            ("llvm/Support/Debug.h" include nil nil [996 1027])
+            ("llvm/Support/raw_ostream.h" include nil nil [1028 1065])
+            ("llvm/Transforms/IPO.h" include nil nil [1066 1098])
+            ("llvm/Transforms/Obfuscation/CryptoUtils.h" include nil nil [1099 1151])
+            ("llvm/Transforms/Utils/BasicBlockUtils.h" include nil nil [1152 1202])
+            ("llvm/Transforms/Utils/Cloning.h" include nil nil [1203 1245])
+            ("llvm" type
+               (:members 
+                  ( ("createBogus" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1264 1284])
+                    ("createBogus" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [1303 1313]))                          
+                        :type ("Pass" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1285 1314]))                  
+                :type "namespace")
+                nil [1247 1316]))          
+      :file "BogusControlFlow.h"
+      :pointmax 1343
+      :fsize 1342
+      :lastmodtime '(25573 11105 992408 700000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_OBFUSCATION_BOGUSCONTROLFLOW_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-1555611ceab0"
+      :file "CryptoUtils.h"
+      :fsize 3713
+      :lastmodtime '(25573 11105 992408 700000)))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!include!llvm!Transforms!Obfuscation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

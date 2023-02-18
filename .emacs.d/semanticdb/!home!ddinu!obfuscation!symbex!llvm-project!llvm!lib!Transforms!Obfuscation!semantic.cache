@@ -1,0 +1,280 @@
+;; Object semanticdb-project-database-file-157f746332b2
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-157f746332b2"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-157f74633272"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/Obfuscation/SymbexSplit.h" include nil nil [3802 3854])
+            ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [3855 3901])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [3904 3925])
+            ("unnamed" type
+               (:members 
+                  ( ("SymbexSplit" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [3985 4000])
+                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [4026 4036])
+                            ("SymbexSplit" function
+                               (:constructor-flag t
+                                :type ("SymbexSplit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4039 4074])
+                            ("SymbexSplit" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [4089 4099]))                                  
+                                :type ("SymbexSplit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [4077 4164]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3940 4444]))                  
+                :type "namespace")
+                nil [3927 4475])
+            ("SymbexSplit::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [4507 4532])
+            ("X" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("RegisterPass" type
+                     (:template-specifier 
+                        ( ("SymbexSplit" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4533 4603])
+            ("createSymbexSplit" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("Pass" type (:type "class") nil nil))
+                nil [4605 4666])
+            ("createSymbexSplit" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [4698 4708]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [4668 4742]))          
+      :file "SymbexSplit.cpp"
+      :pointmax 4743
+      :fsize 4742
+      :lastmodtime '(25576 19529 905243 847000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-157f74633292"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [3813 3870])
+            ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [3871 3917])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [3936 3946])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumFunction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3976 3988]))                  
+                :type "int")
+                nil [3966 4030])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumTimesOnFunctions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4041 4061]))                  
+                :type "int")
+                nil [4031 4108])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("InitNumBasicBlocks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4119 4138]))                  
+                :type "int")
+                nil [4109 4201])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumModifiedBasicBlocks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4212 4235]))                  
+                :type "int")
+                nil [4202 4274])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumAddedBasicBlocks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4285 4305]))                  
+                :type "int")
+                nil [4275 4366])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("FinalNumBasicBlocks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4377 4397]))                  
+                :type "int")
+                nil [4367 4458])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [4460 4481])
+            ("defaultObfRate" variable
+               (:constant-flag t
+                :default-value "30"
+                :type "int")
+                nil [4507 4557])
+            ("defaultObfTime" variable
+               (:constant-flag t
+                :default-value "1"
+                :type "int")
+                nil [4507 4557])
+            ("ObfProbRate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4623 4743])
+                    ("" variable (:type ("cl::value_desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4761 4795])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4797 4821])
+                    ("" variable (:type ("cl::Optional" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4839 4852]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4559 4853])
+            ("ObfTimes" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4913 4978])
+                    ("" variable (:type ("cl::value_desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4993 5026])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5028 5052])
+                    ("" variable (:type ("cl::Optional" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5067 5080]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4855 5081])
+            ("unnamed" type
+               (:members 
+                  ( ("BogusControlFlow" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [5145 5160])
+                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [5186 5196])
+                            ("BogusControlFlow" function
+                               (:constructor-flag t
+                                :type ("BogusControlFlow" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5199 5239])
+                            ("BogusControlFlow" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [5259 5269]))                                  
+                                :type ("BogusControlFlow" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [5242 5341])
+                            ("runOnFunction" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5516 5528]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5489 6122])
+                            ("bogus" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6163 6175]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6152 9634])
+                            ("addBogusFlow" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("basicBlock" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9780 9803])
+                                    ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9804 9816]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9754 14040])
+                            ("createAlteredBasicBlock" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("basicBlock" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14512 14535])
+                                    ("Name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "\"gen\""
+                                        :type ("Twine" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14582 14607])
+                                    ("F" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14655 14670]))                                  
+                                :type ("BasicBlock" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14468 23505])
+                            ("doF" function
+                               (:arguments 
+                                  ( ("M" variable
+                                       (:reference 1
+                                        :type ("Module" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [23884 23894]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [23875 28656]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [5095 28684]))                  
+                :type "namespace")
+                nil [5083 28743])
+            ("BogusControlFlow::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [28758 28788])
+            ("X" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("RegisterPass" type
+                     (:template-specifier 
+                        ( ("BogusControlFlow" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [28789 28912])
+            ("createBogus" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("Pass" type (:type "class") nil nil))
+                nil [28914 28974])
+            ("createBogus" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [29000 29010]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [28976 29049]))          
+      :file "BogusControlFlow.cpp"
+      :pointmax 29050
+      :fsize 29049
+      :lastmodtime '(25573 11105 992408 700000)
+      :unmatched-syntax '((string 28880 . 28910) (string 28829 . 28838) (semantic-list 5036 . 5052) (semantic-list 5007 . 5026) (semantic-list 4921 . 4978) (string 4888 . 4898) (semantic-list 4805 . 4821) (semantic-list 4775 . 4795) (semantic-list 4631 . 4743) (string 4595 . 4605) (string 4408 . 4456) (string 4316 . 4364) (string 4236 . 4272) (string 4149 . 4199) (string 4062 . 4106) (string 3989 . 4028))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"BogusControlFlow\"" 3947 . 3965)))
+          )
+))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!Transforms!Obfuscation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

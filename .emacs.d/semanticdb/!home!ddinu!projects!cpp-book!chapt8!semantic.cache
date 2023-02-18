@@ -1,0 +1,218 @@
+;; Object semanticdb-project-database-file-158dc4d52cba
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158dc4d52cba"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158dc4d52b9a"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciIterator.hpp" include nil nil [15 47])
+            ("FibonacciRange" type
+               (:members 
+                  ( ("FibonacciRange" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [98 106]))                          
+                        :type ("FibonacciRange" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [83 122])
+                    ("begin" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type ("FibonacciIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [125 157])
+                    ("end" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [160 176])
+                    ("private" label nil (reparse-symbol classsubparts) [178 186])
+                    ("max" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [188 202]))                  
+                :type "struct")
+                nil [49 205]))          
+      :file "FibonacciRange.hpp"
+      :pointmax 206
+      :fsize 205
+      :lastmodtime '(25540 52131 623525 609000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52bba"
+      :file "FibonacciIterator.hpp"
+      :fsize 184
+      :lastmodtime '(25527 15718 153759 585000))
+    (semanticdb-table "semanticdb-table-158dc4d52bda"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstdio" include (:system-flag t) nil [1 18])
+            ("FibonacciRange.hpp" include nil nil [19 48])
+            ("PrimeRange.hpp" include nil nil [49 74])
+            ("main" function (:type "int") nil [76 574]))          
+      :file "main.cpp"
+      :pointmax 575
+      :fsize 574
+      :lastmodtime '(25546 53709 52426 580000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52bfa"
+      :file "PrimeRange.hpp"
+      :fsize 247
+      :lastmodtime '(25527 17920 487979 915000))
+    (semanticdb-table "semanticdb-table-158dc4d52c1a"
+      :major-mode c++-mode
+      :tags 
+        '( ("PrimeIterator.hpp" include nil nil [1 29])
+            ("!=" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "PrimeIterator"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [62 68]))                  
+                :type "bool")
+                nil [31 100])
+            ("++" function
+               (:operator-flag t
+                :parent "PrimeIterator"
+                :type ("PrimeIterator" type (:type "class") nil nil))
+                nil [102 234])
+            ("" function
+               (:methodconst-flag t
+                :operator-flag t
+                :function-pointer t
+                :parent "PrimeIterator"
+                :type "int")
+                nil [236 293])
+            ("is_prime" function
+               (:parent "PrimeIterator"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [324 332]))                  
+                :type "bool")
+                nil [295 559])
+            ("get_next_prime" function
+               (:parent "PrimeIterator"
+                :type "int")
+                nil [560 750]))          
+      :file "PrimeIterator.cpp"
+      :pointmax 751
+      :fsize 750
+      :lastmodtime '(25540 46449 350629 85000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52c3a"
+      :major-mode c++-mode
+      :tags 
+        '( ("PrimeIterator" type
+               (:members 
+                  ( ("!=" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [55 61]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [39 68])
+                    ("++" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :type ("PrimeIterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71 99])
+                    ("" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :type "int")
+                        (reparse-symbol classsubparts) [102 124])
+                    ("private" label nil (reparse-symbol classsubparts) [126 134])
+                    ("current" variable (:type "int") (reparse-symbol classsubparts) [136 151])
+                    ("is_prime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [187 195]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [173 196])
+                    ("get_next_prime" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [198 219]))                  
+                :type "struct")
+                nil [15 222]))          
+      :file "PrimeIterator.hpp"
+      :pointmax 223
+      :fsize 222
+      :lastmodtime '(25540 47169 977101 320000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52c5a"
+      :major-mode c++-mode
+      :tags 
+        '( ("PrimeRange.hpp" include nil nil [1 26])
+            ("begin" function
+               (:methodconst-flag t
+                :parent "PrimeRange"
+                :type ("PrimeIterator" type (:type "class") nil nil))
+                nil [28 96])
+            ("end" function
+               (:methodconst-flag t
+                :parent "PrimeRange"
+                :type "int")
+                nil [98 142])
+            ("get_max_prime" function
+               (:parent "PrimeRange"
+                :arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [174 182]))                  
+                :type "int")
+                nil [144 263]))          
+      :file "PrimeRange.cpp"
+      :pointmax 264
+      :fsize 263
+      :lastmodtime '(25540 47034 735681 293000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52c7a"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciIterator.hpp" include nil nil [1 33])
+            ("!=" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "FibonacciIterator"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [70 76]))                  
+                :type "bool")
+                nil [35 111])
+            ("++" function
+               (:operator-flag t
+                :parent "FibonacciIterator"
+                :type ("FibonacciIterator" type (:type "class") nil nil))
+                nil [113 252])
+            ("" function
+               (:methodconst-flag t
+                :operator-flag t
+                :function-pointer t
+                :parent "FibonacciIterator"
+                :type "int")
+                nil [254 318]))          
+      :file "FibonacciIterator.cpp"
+      :pointmax 319
+      :fsize 318
+      :lastmodtime '(25540 52282 484733 631000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-158dc4d52c9a"
+      :major-mode c++-mode
+      :tags 
+        '( ("FibonacciRange.hpp" include nil nil [1 30])
+            ("begin" function
+               (:methodconst-flag t
+                :parent "FibonacciRange"
+                :type ("FibonacciIterator" type (:type "class") nil nil))
+                nil [32 112])
+            ("end" function
+               (:methodconst-flag t
+                :parent "FibonacciRange"
+                :type "int")
+                nil [114 162]))          
+      :file "FibonacciRange.cpp"
+      :pointmax 163
+      :fsize 162
+      :lastmodtime '(25541 51314 748073 911000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!projects!cpp-book!chapt8!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

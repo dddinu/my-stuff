@@ -1,0 +1,341 @@
+;; Object semanticdb-project-database-file-155b116ae4e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155b116ae4e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155b113aea38"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_TRANSFORMS_IPO_PASSMANAGERBUILDER_H" variable (:constant-flag t) nil [667 707])
+            ("llvm-c/Transforms/PassManagerBuilder.h" include nil nil [709 758])
+            ("functional" include (:system-flag t) nil [759 780])
+            ("memory" include (:system-flag t) nil [781 798])
+            ("string" include (:system-flag t) nil [799 816])
+            ("vector" include (:system-flag t) nil [817 834])
+            ("llvm" type
+               (:members 
+                  ( ("ModuleSummaryIndex" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [853 878])
+                    ("Pass" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [879 890])
+                    ("TargetLibraryInfoImpl" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [891 919])
+                    ("legacy" type
+                       (:members 
+                          ( ("FunctionPassManager" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1016 1042])
+                            ("PassManagerBase" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1043 1065]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [997 1067])
+                    ("PassManagerBuilder" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2241 2248])
+                            ("ExtensionFn" variable (:type "int") (reparse-symbol classsubparts) [2518 2530])
+                            ("GlobalExtensionID" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2533 2563])
+                            ("ExtensionPointTy" type
+                               (:members 
+                                  ( ("EP_EarlyAsPossible" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2783 2802])
+                                    ("EP_ModuleOptimizerEarly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [2947 2971])
+                                    ("EP_LoopOptimizerEnd" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3096 3116])
+                                    ("EP_ScalarOptimizerLate" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3311 3334])
+                                    ("EP_OptimizerLast" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3450 3467])
+                                    ("EP_VectorizerStart" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3662 3681])
+                                    ("EP_EnabledOnOptLevel0" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [3884 3906])
+                                    ("EP_Peephole" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4149 4161])
+                                    ("EP_LateLoopOptimizations" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4568 4593])
+                                    ("EP_CGSCCOptimizerLate" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4813 4835])
+                                    ("EP_FullLinkTimeOptimizationEarly" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5001 5034])
+                                    ("EP_FullLinkTimeOptimizationLast" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5198 5230]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [2567 5235])
+                            ("OptLevel" variable (:type "unsigned int") (reparse-symbol classsubparts) [5352 5370])
+                            ("SizeLevel" variable (:type "unsigned int") (reparse-symbol classsubparts) [5464 5483])
+                            ("LibraryInfo" variable
+                               (:pointer 1
+                                :type ("TargetLibraryInfoImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5671 5706])
+                            ("Inliner" variable
+                               (:pointer 1
+                                :type ("Pass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5822 5836])
+                            ("ExportSummary" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("ModuleSummaryIndex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6001 6045])
+                            ("ImportSummary" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type ("ModuleSummaryIndex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6208 6258])
+                            ("DisableUnrollLoops" variable (:type "bool") (reparse-symbol classsubparts) [6262 6286])
+                            ("CallGraphProfile" variable (:type "bool") (reparse-symbol classsubparts) [6289 6311])
+                            ("SLPVectorize" variable (:type "bool") (reparse-symbol classsubparts) [6314 6332])
+                            ("LoopVectorize" variable (:type "bool") (reparse-symbol classsubparts) [6335 6354])
+                            ("LoopsInterleaved" variable (:type "bool") (reparse-symbol classsubparts) [6357 6379])
+                            ("RerollLoops" variable (:type "bool") (reparse-symbol classsubparts) [6382 6399])
+                            ("NewGVN" variable (:type "bool") (reparse-symbol classsubparts) [6402 6414])
+                            ("DisableGVNLoadPRE" variable (:type "bool") (reparse-symbol classsubparts) [6417 6440])
+                            ("ForgetAllSCEVInLoopUnroll" variable (:type "bool") (reparse-symbol classsubparts) [6443 6474])
+                            ("VerifyInput" variable (:type "bool") (reparse-symbol classsubparts) [6477 6494])
+                            ("VerifyOutput" variable (:type "bool") (reparse-symbol classsubparts) [6497 6515])
+                            ("MergeFunctions" variable (:type "bool") (reparse-symbol classsubparts) [6518 6538])
+                            ("PrepareForLTO" variable (:type "bool") (reparse-symbol classsubparts) [6541 6560])
+                            ("PrepareForThinLTO" variable (:type "bool") (reparse-symbol classsubparts) [6563 6586])
+                            ("PerformThinLTO" variable (:type "bool") (reparse-symbol classsubparts) [6589 6609])
+                            ("DivergentTarget" variable (:type "bool") (reparse-symbol classsubparts) [6612 6633])
+                            ("LicmMssaOptCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [6636 6660])
+                            ("LicmMssaNoAccForPromotionCap" variable (:type "unsigned int") (reparse-symbol classsubparts) [6663 6701])
+                            ("EnablePGOInstrGen" variable (:type "bool") (reparse-symbol classsubparts) [6748 6771])
+                            ("EnablePGOCSInstrGen" variable (:type "bool") (reparse-symbol classsubparts) [6835 6860])
+                            ("EnablePGOCSInstrUse" variable (:type "bool") (reparse-symbol classsubparts) [6920 6945])
+                            ("PGOInstrGen" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7022 7046])
+                            ("PGOInstrUse" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7086 7110])
+                            ("PGOSampleUse" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7157 7182])
+                            ("private" label nil (reparse-symbol classsubparts) [7184 7192])
+                            ("Extensions" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type (:template-specifier 
+                                        ( ("ExtensionPointTy" type nil nil nil)
+                                          ("ExtensionFn" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [7276 7341])
+                            ("public" label nil (reparse-symbol classsubparts) [7343 7350])
+                            ("PassManagerBuilder" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PassManagerBuilder" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7353 7374])
+                            ("PassManagerBuilder" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [7377 7399])
+                            ("addGlobalExtension" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("Ty" variable (:type ("ExtensionPointTy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7733 7753])
+                                    ("Fn" variable (:type ("ExtensionFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7800 7815]))                                  
+                                :type ("GlobalExtensionID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7689 7816])
+                            ("removeGlobalExtension" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("ExtensionID" variable (:type ("GlobalExtensionID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8141 8171]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8107 8172])
+                            ("addExtension" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Ty" variable (:type ("ExtensionPointTy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8193 8213])
+                                    ("Fn" variable (:type ("ExtensionFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8214 8229]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8175 8230])
+                            ("private" label nil (reparse-symbol classsubparts) [8232 8240])
+                            ("addExtensionsToPM" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("ETy" variable (:type ("ExtensionPointTy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8266 8287])
+                                    ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8313 8341]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8243 8348])
+                            ("addInitialAliasAnalysisPasses" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8386 8414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8351 8421])
+                            ("addLTOOptimizationPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8454 8482]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8424 8483])
+                            ("addLateLTOOptimizationPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8520 8548]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8486 8549])
+                            ("addPGOInstrPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MPM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8575 8604])
+                                    ("IsCS" variable (:type "bool") (reparse-symbol arg-sub-list) [8605 8615]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8552 8616])
+                            ("addFunctionSimplificationPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MPM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8656 8685]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8619 8686])
+                            ("addVectorPasses" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8710 8738])
+                                    ("IsFullLTO" variable (:type "bool") (reparse-symbol arg-sub-list) [8739 8754]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8689 8755])
+                            ("public" label nil (reparse-symbol classsubparts) [8757 8764])
+                            ("populateFunctionPassManager" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("FPM" variable
+                                       (:reference 1
+                                        :type ("legacy::FunctionPassManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9019 9052]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8986 9053])
+                            ("populateModulePassManager" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MPM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9161 9190]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9130 9191])
+                            ("populateLTOPassManager" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9222 9250]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9194 9251])
+                            ("populateThinLTOPassManager" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PM" variable
+                                       (:reference 1
+                                        :type ("legacy::PassManagerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9286 9314]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9254 9315]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2214 9318])
+                    ("RegisterStandardPasses" type
+                       (:members 
+                          ( ("ExtensionID" variable (:type ("PassManagerBuilder::GlobalExtensionID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9661 9711])
+                            ("public" label nil (reparse-symbol classsubparts) [9713 9720])
+                            ("RegisterStandardPasses" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("Ty" variable (:type ("PassManagerBuilder::ExtensionPointTy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9746 9786])
+                                    ("Fn" variable (:type ("PassManagerBuilder::ExtensionFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9812 9847]))                                  
+                                :type ("RegisterStandardPasses" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9723 9930])
+                            ("RegisterStandardPasses" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [9934 10251]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [9628 10254])
+                    ("unwrap" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("P" variable (:type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10290 10318]))                          
+                        :type ("PassManagerBuilder" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10256 10375])
+                    ("wrap" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("P" variable
+                               (:pointer 1
+                                :type ("PassManagerBuilder" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10415 10437]))                          
+                        :type ("LLVMPassManagerBuilderRef" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10377 10498]))                  
+                :type "namespace")
+                nil [836 10501]))          
+      :file "PassManagerBuilder.h"
+      :pointmax 10531
+      :fsize 10530
+      :lastmodtime '(25573 11044 599729 429000)
+      :unmatched-syntax '((punctuation 2510 . 2511) (semantic-list 2417 . 2510) (VOID 2413 . 2417) (punctuation 2412 . 2413) (symbol 2404 . 2412) (punctuation 2403 . 2404) (punctuation 2402 . 2403) (symbol 2399 . 2402) (TYPEDEF 2391 . 2398))
+      :lexical-table 
+        '(("LLVM_TRANSFORMS_IPO_PASSMANAGERBUILDER_H")
+          )
+))
+  :file "!home!ddinu!obfuscation!antidse!llvm-project!llvm!include!llvm!Transforms!IPO!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1349 @@
+;; Object semanticdb-project-database-file-1555626fe870
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1555626fe870"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1555626fe8ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_BINARYFORMAT_DWARF_H" variable (:constant-flag t) nil [809 834])
+            ("llvm/Support/Compiler.h" include nil nil [836 870])
+            ("llvm/Support/DataTypes.h" include nil nil [871 906])
+            ("llvm/Support/ErrorHandling.h" include nil nil [907 946])
+            ("llvm/Support/Format.h" include nil nil [947 979])
+            ("llvm/Support/FormatVariadicDetails.h" include nil nil [980 1027])
+            ("llvm/ADT/Triple.h" include nil nil [1028 1056])
+            ("limits" include (:system-flag t) nil [1058 1075])
+            ("llvm" type
+               (:members 
+                  ( ("StringRef" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1094 1110])
+                    ("Optional" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1111 1147])
+                    ("dwarf" type
+                       (:members 
+                          ( ("uint32_t" variable (:type "int") (reparse-symbol namespacesubparts) [1505 2972])
+                            ("uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [3053 3082])
+                            ("DW_CIE_ID" variable
+                               (:constant-flag t
+                                :default-value "UINT32_MAX"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3218 3256])
+                            ("DW64_CIE_ID" variable
+                               (:constant-flag t
+                                :default-value "UINT64_MAX"
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3257 3297])
+                            ("DW_INVALID_OFFSET" variable
+                               (:constant-flag t
+                                :default-value "UINT32_MAX"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3374 3420])
+                            ("uint16_t" variable (:type "int") (reparse-symbol namespacesubparts) [3433 3679])
+                            ("isType" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("T" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3700 3706]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [3681 3994])
+                            ("uint16_t" variable (:type "int") (reparse-symbol namespacesubparts) [4029 4200])
+                            ("uint16_t" variable (:type "int") (reparse-symbol namespacesubparts) [4214 4394])
+                            ("LocationAtom" type
+                               (:members 
+                                  ( ("DW_OP_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (4540 4544)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4524 4544])
+                                    ("DW_OP_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (4564 4568)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4548 4568])
+                                    ("DW_OP_LLVM_fragment" variable
+                                       (:constant-flag t
+                                        :default-value (4594 4600)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4572 4600])
+                                    ("DW_OP_LLVM_convert" variable
+                                       (:constant-flag t
+                                        :default-value (4666 4672)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4645 4672])
+                                    ("DW_OP_LLVM_tag_offset" variable
+                                       (:constant-flag t
+                                        :default-value (4742 4748)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4718 4748])
+                                    ("DW_OP_LLVM_entry_value" variable
+                                       (:constant-flag t
+                                        :default-value (4816 4822)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4791 4822])
+                                    ("DW_OP_LLVM_implicit_pointer" variable
+                                       (:constant-flag t
+                                        :default-value (4894 4900)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4864 4900])
+                                    ("DW_OP_LLVM_arg" variable
+                                       (:constant-flag t
+                                        :default-value (4954 4960)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [4937 4960]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [4396 5010])
+                            ("uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [5028 5197])
+                            ("DecimalSignEncoding" type
+                               (:members 
+                                  ( ("DW_DS_unsigned" variable
+                                       (:constant-flag t
+                                        :default-value (5280 5284)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5263 5284])
+                                    ("DW_DS_leading_overpunch" variable
+                                       (:constant-flag t
+                                        :default-value (5314 5318)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5288 5318])
+                                    ("DW_DS_trailing_overpunch" variable
+                                       (:constant-flag t
+                                        :default-value (5349 5353)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5322 5353])
+                                    ("DW_DS_leading_separate" variable
+                                       (:constant-flag t
+                                        :default-value (5382 5386)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5357 5386])
+                                    ("DW_DS_trailing_separate" variable
+                                       (:constant-flag t
+                                        :default-value (5416 5420)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5390 5420]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5199 5423])
+                            ("EndianityEncoding" type
+                               (:members 
+                                  ( ("DW_END_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (5592 5596)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5575 5596])
+                                    ("DW_END_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (5617 5621)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5600 5621]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5425 5624])
+                            ("AccessAttribute" type
+                               (:members 
+                                  ( ("DW_ACCESS_public" variable
+                                       (:constant-flag t
+                                        :default-value (5695 5699)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5676 5699])
+                                    ("DW_ACCESS_protected" variable
+                                       (:constant-flag t
+                                        :default-value (5725 5729)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5703 5729])
+                                    ("DW_ACCESS_private" variable
+                                       (:constant-flag t
+                                        :default-value (5753 5757)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5733 5757]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5626 5760])
+                            ("VisibilityAttribute" type
+                               (:members 
+                                  ( ("DW_VIS_local" variable
+                                       (:constant-flag t
+                                        :default-value (5828 5832)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5813 5832])
+                                    ("DW_VIS_exported" variable
+                                       (:constant-flag t
+                                        :default-value (5854 5858)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5836 5858])
+                                    ("DW_VIS_qualified" variable
+                                       (:constant-flag t
+                                        :default-value (5881 5885)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [5862 5885]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5762 5888])
+                            ("VirtualityAttribute" type
+                               (:members 
+                                  ( ("DW_VIRTUALITY_max" variable
+                                       (:constant-flag t
+                                        :default-value (6044 6048)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6024 6048]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [5890 6051])
+                            ("DefaultedMemberAttribute" type
+                               (:members 
+                                  ( ("DW_DEFAULTED_max" variable
+                                       (:constant-flag t
+                                        :default-value (6209 6213)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6190 6213]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6053 6216])
+                            ("SourceLanguage" type
+                               (:members 
+                                  ( ("DW_LANG_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (6403 6409)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6385 6409])
+                                    ("DW_LANG_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (6431 6437)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [6413 6437]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [6218 6440])
+                            ("isCPlusPlus" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("S" variable (:type ("SourceLanguage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6466 6483]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6442 7842])
+                            ("isFortran" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("S" variable (:type ("SourceLanguage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7866 7883]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [7844 9246])
+                            ("CaseSensitivity" type
+                               (:members 
+                                  ( ("DW_ID_case_sensitive" variable
+                                       (:constant-flag t
+                                        :default-value (9323 9327)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9300 9327])
+                                    ("DW_ID_up_case" variable
+                                       (:constant-flag t
+                                        :default-value (9347 9351)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9331 9351])
+                                    ("DW_ID_down_case" variable
+                                       (:constant-flag t
+                                        :default-value (9373 9377)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9355 9377])
+                                    ("DW_ID_case_insensitive" variable
+                                       (:constant-flag t
+                                        :default-value (9406 9410)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9381 9410]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9248 9413])
+                            ("CallingConvention" type
+                               (:members 
+                                  ( ("DW_CC_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (9575 9579)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9559 9579])
+                                    ("DW_CC_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (9599 9603)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9583 9603]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9415 9606])
+                            ("InlineAttribute" type
+                               (:members 
+                                  ( ("DW_INL_not_inlined" variable
+                                       (:constant-flag t
+                                        :default-value (9672 9676)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9651 9676])
+                                    ("DW_INL_inlined" variable
+                                       (:constant-flag t
+                                        :default-value (9697 9701)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9680 9701])
+                                    ("DW_INL_declared_not_inlined" variable
+                                       (:constant-flag t
+                                        :default-value (9735 9739)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9705 9739])
+                                    ("DW_INL_declared_inlined" variable
+                                       (:constant-flag t
+                                        :default-value (9769 9773)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9743 9773]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9608 9776])
+                            ("ArrayDimensionOrdering" type
+                               (:members 
+                                  ( ("DW_ORD_row_major" variable
+                                       (:constant-flag t
+                                        :default-value (9849 9853)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9830 9853])
+                                    ("DW_ORD_col_major" variable
+                                       (:constant-flag t
+                                        :default-value (9876 9880)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9857 9880]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9778 9883])
+                            ("DiscriminantList" type
+                               (:members 
+                                  ( ("DW_DSC_label" variable
+                                       (:constant-flag t
+                                        :default-value (9962 9966)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9947 9966])
+                                    ("DW_DSC_range" variable
+                                       (:constant-flag t
+                                        :default-value (9985 9989)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [9970 9989]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [9885 9992])
+                            ("uint8_t" variable (:type "int") (reparse-symbol namespacesubparts) [10058 10161])
+                            ("LineNumberExtendedOps" type
+                               (:members 
+                                  ( ("DW_LNE_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (10345 10349)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10328 10349])
+                                    ("DW_LNE_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (10370 10374)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10353 10374]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10206 10377])
+                            ("LineNumberEntryFormat" type
+                               (:members 
+                                  ( ("DW_LNCT_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (10521 10527)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10503 10527])
+                                    ("DW_LNCT_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (10549 10555)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10531 10555]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10379 10559])
+                            ("MacinfoRecordType" type
+                               (:members 
+                                  ( ("DW_MACINFO_define" variable
+                                       (:constant-flag t
+                                        :default-value (10636 10640)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10616 10640])
+                                    ("DW_MACINFO_undef" variable
+                                       (:constant-flag t
+                                        :default-value (10663 10667)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10644 10667])
+                                    ("DW_MACINFO_start_file" variable
+                                       (:constant-flag t
+                                        :default-value (10695 10699)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10671 10699])
+                                    ("DW_MACINFO_end_file" variable
+                                       (:constant-flag t
+                                        :default-value (10725 10729)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10703 10729])
+                                    ("DW_MACINFO_vendor_ext" variable
+                                       (:constant-flag t
+                                        :default-value (10757 10761)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10733 10761]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10561 10764])
+                            ("MacroEntryType" type
+                               (:members 
+                                  ( ("DW_MACRO_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (10957 10961)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10938 10961])
+                                    ("DW_MACRO_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (10984 10988)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [10965 10988]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [10819 10991])
+                            ("GnuMacroEntryType" type
+                               (:members 
+                                  ( ("DW_MACRO_GNU_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (11207 11211)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11184 11211])
+                                    ("DW_MACRO_GNU_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (11238 11242)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11215 11242]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [11054 11245])
+                            ("RnglistEntries" type (:type "enum") (reparse-symbol namespacesubparts) [11294 11409])
+                            ("LoclistEntries" type (:type "enum") (reparse-symbol namespacesubparts) [11456 11571])
+                            ("CallFrameInfo" type
+                               (:members 
+                                  ( ("DW_CFA_extended" variable
+                                       (:constant-flag t
+                                        :default-value (11806 11810)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11788 11810])
+                                    ("DW_CFA_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (11832 11836)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11815 11836])
+                                    ("DW_CFA_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (11857 11861)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11840 11861]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [11611 11864])
+                            ("Constants" type
+                               (:members 
+                                  ( ("DW_CHILDREN_no" variable
+                                       (:constant-flag t
+                                        :default-value (11921 11925)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11904 11925])
+                                    ("DW_CHILDREN_yes" variable
+                                       (:constant-flag t
+                                        :default-value (11947 11951)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11929 11951])
+                                    ("DW_EH_PE_absptr" variable
+                                       (:constant-flag t
+                                        :default-value (11974 11978)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11956 11978])
+                                    ("DW_EH_PE_omit" variable
+                                       (:constant-flag t
+                                        :default-value (11998 12002)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [11982 12002])
+                                    ("DW_EH_PE_uleb128" variable
+                                       (:constant-flag t
+                                        :default-value (12025 12029)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12006 12029])
+                                    ("DW_EH_PE_udata2" variable
+                                       (:constant-flag t
+                                        :default-value (12051 12055)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12033 12055])
+                                    ("DW_EH_PE_udata4" variable
+                                       (:constant-flag t
+                                        :default-value (12077 12081)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12059 12081])
+                                    ("DW_EH_PE_udata8" variable
+                                       (:constant-flag t
+                                        :default-value (12103 12107)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12085 12107])
+                                    ("DW_EH_PE_sleb128" variable
+                                       (:constant-flag t
+                                        :default-value (12130 12134)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12111 12134])
+                                    ("DW_EH_PE_sdata2" variable
+                                       (:constant-flag t
+                                        :default-value (12156 12160)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12138 12160])
+                                    ("DW_EH_PE_sdata4" variable
+                                       (:constant-flag t
+                                        :default-value (12182 12186)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12164 12186])
+                                    ("DW_EH_PE_sdata8" variable
+                                       (:constant-flag t
+                                        :default-value (12208 12212)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12190 12212])
+                                    ("DW_EH_PE_signed" variable
+                                       (:constant-flag t
+                                        :default-value (12234 12238)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12216 12238])
+                                    ("DW_EH_PE_pcrel" variable
+                                       (:constant-flag t
+                                        :default-value (12259 12263)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12242 12263])
+                                    ("DW_EH_PE_textrel" variable
+                                       (:constant-flag t
+                                        :default-value (12286 12290)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12267 12290])
+                                    ("DW_EH_PE_datarel" variable
+                                       (:constant-flag t
+                                        :default-value (12313 12317)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12294 12317])
+                                    ("DW_EH_PE_funcrel" variable
+                                       (:constant-flag t
+                                        :default-value (12340 12344)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12321 12344])
+                                    ("DW_EH_PE_aligned" variable
+                                       (:constant-flag t
+                                        :default-value (12367 12371)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12348 12371])
+                                    ("DW_EH_PE_indirect" variable
+                                       (:constant-flag t
+                                        :default-value (12395 12399)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [12375 12399]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [11866 12402])
+                            ("ApplePropertyAttributes" type (:type "enum") (reparse-symbol namespacesubparts) [12556 12702])
+                            ("Index" type
+                               (:members 
+                                  ( ("DW_IDX_lo_user" variable
+                                       (:constant-flag t
+                                        :default-value (13041 13047)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13024 13047])
+                                    ("DW_IDX_hi_user" variable
+                                       (:constant-flag t
+                                        :default-value (13068 13074)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13051 13074]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [12918 13077])
+                            ("isUnitType" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("UnitType" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13102 13119]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [13079 13334])
+                            ("isUnitType" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("T" variable (:type ("dwarf::Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13359 13372]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [13336 13551])
+                            ("AcceleratorTable" type
+                               (:members 
+                                  ( ("DW_ATOM_null" variable
+                                       (:constant-flag t
+                                        :default-value (13681 13683)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13666 13683])
+                                    ("DW_ATOM_die_offset" variable
+                                       (:constant-flag t
+                                        :default-value (13757 13759)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13736 13759])
+                                    ("DW_ATOM_cu_offset" variable
+                                       (:constant-flag t
+                                        :default-value (13824 13826)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13804 13826])
+                                    ("DW_ATOM_die_tag" variable
+                                       (:constant-flag t
+                                        :default-value (13950 13952)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13932 13952])
+                                    ("DW_ATOM_type_flags" variable
+                                       (:constant-flag t
+                                        :default-value (13995 13997)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [13974 13997])
+                                    ("DW_ATOM_type_type_flags" variable
+                                       (:constant-flag t
+                                        :default-value (14056 14058)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14030 14058])
+                                    ("DW_ATOM_qual_name_hash" variable
+                                       (:constant-flag t
+                                        :default-value (14115 14117)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14090 14117])
+                                    ("DW_FLAG_type_implementation" variable
+                                       (:constant-flag t
+                                        :default-value (14316 14318)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14286 14318])
+                                    ("DW_hash_function_djb" variable
+                                       (:constant-flag t
+                                        :default-value (14399 14401)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14376 14401]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [13610 14404])
+                            ("GDBIndexEntryKind" type
+                               (:members 
+                                  ( ("GIEK_NONE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14509 14519])
+                                    ("GIEK_TYPE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14522 14532])
+                                    ("GIEK_VARIABLE" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14535 14549])
+                                    ("GIEK_FUNCTION" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14552 14566])
+                                    ("GIEK_OTHER" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14569 14580])
+                                    ("GIEK_UNUSED5" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14583 14596])
+                                    ("GIEK_UNUSED6" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14599 14612])
+                                    ("GIEK_UNUSED7" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14615 14629]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [14482 14630])
+                            ("GDBIndexEntryLinkage" type
+                               (:members 
+                                  ( ("GIEL_EXTERNAL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14660 14674])
+                                    ("GIEL_STATIC" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [14675 14688]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [14632 14689])
+                            ("TagString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Tag" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14952 14965]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14932 14966])
+                            ("ChildrenString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Children" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14992 15010]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14967 15011])
+                            ("AttributeString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Attribute" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15038 15057]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15012 15058])
+                            ("FormEncodingString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15088 15106]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15059 15107])
+                            ("OperationEncodingString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15142 15160]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15108 15161])
+                            ("AttributeEncodingString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15196 15214]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15162 15215])
+                            ("DecimalSignString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Sign" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15244 15258]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15216 15259])
+                            ("EndianityString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Endian" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15286 15302]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15260 15303])
+                            ("AccessibilityString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Access" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15334 15350]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15304 15351])
+                            ("DefaultedMemberString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("DefaultedEncodings" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15384 15412]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15352 15413])
+                            ("VisibilityString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Visibility" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15441 15461]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15414 15462])
+                            ("VirtualityString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Virtuality" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15490 15510]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15463 15511])
+                            ("LanguageString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Language" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15537 15555]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15512 15556])
+                            ("CaseString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Case" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15578 15592]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15557 15593])
+                            ("ConventionString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Convention" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15621 15641]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15594 15642])
+                            ("InlineCodeString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Code" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15670 15684]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15643 15685])
+                            ("ArrayOrderString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Order" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15713 15728]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15686 15729])
+                            ("LNStandardString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Standard" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15757 15775]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15730 15776])
+                            ("LNExtendedString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15804 15822]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15777 15823])
+                            ("MacinfoString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15848 15866]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15824 15867])
+                            ("MacroString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15890 15908]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15868 15909])
+                            ("GnuMacroString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15935 15953]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15910 15954])
+                            ("RangeListEncodingString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15989 16007]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15955 16008])
+                            ("LocListEncodingString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16041 16059]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16009 16060])
+                            ("CallFrameString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Encoding" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16087 16105])
+                                    ("Arch" variable (:type ("Triple::ArchType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16106 16128]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16061 16129])
+                            ("ApplePropertyString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16160 16169]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16130 16170])
+                            ("UnitTypeString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16196 16205]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16171 16206])
+                            ("AtomTypeString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Atom" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16232 16246]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16207 16247])
+                            ("GDBIndexEntryKindString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Kind" variable (:type ("GDBIndexEntryKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16282 16305]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16248 16306])
+                            ("GDBIndexEntryLinkageString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Linkage" variable (:type ("GDBIndexEntryLinkage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16344 16373]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16307 16374])
+                            ("IndexString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16397 16410]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16375 16411])
+                            ("FormatString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Format" variable (:type ("DwarfFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16435 16454]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16412 16455])
+                            ("FormatString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("IsDWARF64" variable (:type "bool") (reparse-symbol arg-sub-list) [16479 16494]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16456 16495])
+                            ("RLEString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("RLE" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16516 16529]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [16496 16530])
+                            ("getTag" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("TagString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17003 17023]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [16987 17024])
+                            ("getOperationEncoding" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("OperationEncodingString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17055 17089]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17025 17090])
+                            ("getVirtuality" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("VirtualityString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17114 17141]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17091 17142])
+                            ("getLanguage" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("LanguageString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17164 17189]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17143 17190])
+                            ("getCallingConvention" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("LanguageString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17221 17246]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17191 17247])
+                            ("getAttributeEncoding" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("EncodingString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17278 17303]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17248 17304])
+                            ("getMacinfo" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MacinfoString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17325 17349]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17305 17350])
+                            ("getMacro" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("MacroString" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17369 17391]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17351 17392])
+                            ("TagVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17758 17764]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17738 17765])
+                            ("AttributeVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("A" variable (:type ("Attribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17792 17804]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17766 17805])
+                            ("FormVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable (:type ("Form" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17827 17834]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17806 17835])
+                            ("OperationVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("O" variable (:type ("LocationAtom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17862 17877]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17836 17878])
+                            ("AttributeEncodingVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("E" variable (:type ("TypeKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17913 17924]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17879 17925])
+                            ("LanguageVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable (:type ("SourceLanguage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17951 17968]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [17926 17969])
+                            ("TagVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("T" variable (:type ("Tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18234 18240]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18215 18241])
+                            ("AttributeVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("A" variable (:type ("Attribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18267 18279]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18242 18280])
+                            ("FormVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable (:type ("Form" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18301 18308]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18281 18309])
+                            ("OperationVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("O" variable (:type ("LocationAtom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18335 18350]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18310 18351])
+                            ("AttributeEncodingVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("E" variable (:type ("TypeKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18385 18396]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18352 18397])
+                            ("LanguageVendor" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable (:type ("SourceLanguage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18422 18439]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [18398 18440])
+                            ("LanguageLowerBound" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("L" variable (:type ("SourceLanguage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18487 18504]))                                  
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [18449 18505])
+                            ("getDwarfOffsetByteSize" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("Format" variable (:type ("DwarfFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18615 18634]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18577 18792])
+                            ("FormParams" type
+                               (:members 
+                                  ( ("Version" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18993 19010])
+                                    ("AddrSize" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19013 19030])
+                                    ("Format" variable (:type ("DwarfFormat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [19033 19052])
+                                    ("DwarfUsesRelocationsAcrossSections" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [19161 19209])
+                                    ("getRefAddrByteSize" function
+                                       (:methodconst-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19390 19512])
+                                    ("getDwarfOffsetByteSize" function
+                                       (:methodconst-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19591 19685]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [18971 19754])
+                            ("getUnitLengthFieldByteSize" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("Format" variable (:type ("DwarfFormat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19876 19895]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19834 20054])
+                            ("getFixedFormByteSize" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Form" variable (:type ("dwarf::Form" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20610 20627])
+                                    ("Params" variable (:type ("FormParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20628 20646]))                                  
+                                :type ("Optional" type
+                                     (:template-specifier 
+                                        ( ("uint8_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [20571 20647])
+                            ("isValidFormForVersion" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable (:type ("Form" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20800 20807])
+                                    ("Version" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20808 20825])
+                                    ("ExtensionsOk" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [20826 20850]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [20773 20852])
+                            ("AttributeValueString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Attr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20979 20993])
+                                    ("Val" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20994 21007]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20948 21008])
+                            ("AtomValueString" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Atom" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21125 21139])
+                                    ("Val" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21140 21153]))                                  
+                                :type ("StringRef" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [21099 21154])
+                            ("PubIndexEntryDescriptor" type
+                               (:members 
+                                  ( ("Kind" variable (:type ("GDBIndexEntryKind" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21529 21552])
+                                    ("Linkage" variable (:type ("GDBIndexEntryLinkage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21555 21584])
+                                    ("PubIndexEntryDescriptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("Kind" variable (:type ("GDBIndexEntryKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21611 21634])
+                                            ("Linkage" variable (:type ("GDBIndexEntryLinkage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21635 21664]))                                          
+                                        :type ("PubIndexEntryDescriptor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [21587 21704])
+                                    ("PubIndexEntryDescriptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("Kind" variable (:type ("GDBIndexEntryKind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21746 21769]))                                          
+                                        :type ("PubIndexEntryDescriptor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [21722 21815])
+                                    ("PubIndexEntryDescriptor" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("Value" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21851 21865]))                                          
+                                        :type ("PubIndexEntryDescriptor" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [21827 22106])
+                                    ("toBits" function
+                                       (:methodconst-flag t
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22109 22197])
+                                    ("private" label nil (reparse-symbol classsubparts) [22199 22207])
+                                    ("" type
+                                       (:members 
+                                          ( ("KIND_OFFSET" variable
+                                               (:constant-flag t
+                                                :default-value (22235 22236)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22221 22236])
+                                            ("KIND_MASK" variable
+                                               (:constant-flag t
+                                                :default-value (22254 22255)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22242 22255])
+                                            ("KIND_OFFSET" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22259 22271])
+                                            ("LINKAGE_OFFSET" variable
+                                               (:constant-flag t
+                                                :default-value (22293 22294)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22276 22294])
+                                            ("LINKAGE_MASK" variable
+                                               (:constant-flag t
+                                                :default-value (22315 22316)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22300 22316])
+                                            ("LINKAGE_OFFSET" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [22320 22338]))                                          
+                                        :type "enum")
+                                        (reparse-symbol classsubparts) [22210 22339]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [21494 22342])
+                            ("EnumTraits" type
+                               (:template 
+                                  ( ("Enum" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("std::false_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22344 22415])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"AT\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [22503 22523])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22555 22564]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22526 22574])
+                                    ("AttributeString" variable (:type "int") (reparse-symbol classsubparts) [22577 22594]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Attribute" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22417 22597])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"FORM\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [22680 22702])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22734 22743]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22705 22753])
+                                    ("FormEncodingString" variable (:type "int") (reparse-symbol classsubparts) [22756 22776]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Form" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22599 22779])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"IDX\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [22863 22884])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22916 22925]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22887 22935])
+                                    ("IndexString" variable (:type "int") (reparse-symbol classsubparts) [22938 22951]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Index" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22781 22954])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"TAG\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [23036 23057])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23089 23098]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [23060 23108])
+                                    ("TagString" variable (:type "int") (reparse-symbol classsubparts) [23111 23122]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("Tag" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [22956 23125])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"LNS\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [23217 23238])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23270 23279]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [23241 23289])
+                                    ("LNStandardString" variable (:type "int") (reparse-symbol classsubparts) [23292 23310]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("LineNumberOps" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [23127 23313])
+                            ("EnumTraits" type
+                               (:type "struct"
+                                :members 
+                                  ( ("Type" variable
+                                       (:dereference 1
+                                        :default-value "\"OP\""
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [23404 23424])
+                                    ("StringRef" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable (:type ("StringFn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23456 23465]))                                          
+                                        :type ("constexpr" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [23427 23475])
+                                    ("OperationEncodingString" variable (:type "int") (reparse-symbol classsubparts) [23478 23503]))                                  
+                                :superclasses 
+                                  ( ("std::true_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("LocationAtom" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [23315 23506])
+                            ("computeTombstoneAddress" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("AddressByteSize" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23548 23572]))                                  
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [23508 23652]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1149 23655])
+                    ("format_provider" type
+                       (:template 
+                          ( ("Enum" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("format" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("E" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Enum" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24053 24067])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [24068 24084])
+                                    ("Style" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24085 24101]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24034 24317]))                          
+                        :template-specifier 
+                          ( ("Enum" type nil nil nil)
+                            ("std::enable_if_t" type (:template-specifier 
+                              ( ("dwarf::EnumTraits::value" type nil nil nil))                              ) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [23926 24320]))                  
+                :type "namespace")
+                nil [1077 24322]))          
+      :file "Dwarf.h"
+      :pointmax 24356
+      :fsize 24355
+      :lastmodtime '(25462 30192 0 0)
+      :unmatched-syntax '((punctuation 23476 . 23477) (punctuation 23455 . 23456) (symbol 23394 . 23403) (STATIC 23387 . 23393) (punctuation 23290 . 23291) (punctuation 23269 . 23270) (symbol 23207 . 23216) (STATIC 23200 . 23206) (punctuation 23109 . 23110) (punctuation 23088 . 23089) (symbol 23026 . 23035) (STATIC 23019 . 23025) (punctuation 22936 . 22937) (punctuation 22915 . 22916) (symbol 22853 . 22862) (STATIC 22846 . 22852) (punctuation 22754 . 22755) (punctuation 22733 . 22734) (symbol 22670 . 22679) (STATIC 22663 . 22669) (punctuation 22575 . 22576) (punctuation 22554 . 22555) (symbol 22493 . 22502) (STATIC 22486 . 22492) (punctuation 22318 . 22319) (punctuation 22317 . 22318) (punctuation 22257 . 22258) (punctuation 22256 . 22257) (punctuation 22318 . 22319) (punctuation 22317 . 22318) (punctuation 22257 . 22258) (punctuation 22256 . 22257) (EXPLICIT 21818 . 21826) (semantic-list 19720 . 19751) (CONST 19714 . 19719) (semantic-list 19711 . 19713) (BOOL 19707 . 19711) (OPERATOR 19698 . 19706) (EXPLICIT 19689 . 19697) (spp-include "llvm/BinaryFormat/Dwarf.def" 12983 . 13021) (spp-macro-def 12939 . 12952) (punctuation 12915 . 12916) (semantic-list 12776 . 12915) (CHAR 12771 . 12775) (UNSIGNED 12762 . 12770) (punctuation 12760 . 12761) (symbol 12751 . 12759) (ENUM 12746 . 12750) (spp-include "llvm/BinaryFormat/Dwarf.def" 12661 . 12699) (spp-macro-def 12595 . 12619) (spp-include "llvm/BinaryFormat/Dwarf.def" 11747 . 11785) (spp-macro-def 11692 . 11710) (spp-macro-def 11640 . 11653) (spp-include "llvm/BinaryFormat/Dwarf.def" 11530 . 11568) (spp-macro-def 11486 . 11499) (spp-include "llvm/BinaryFormat/Dwarf.def" 11368 . 11406) (spp-macro-def 11324 . 11337) (spp-include "llvm/BinaryFormat/Dwarf.def" 11143 . 11181) (spp-macro-def 11087 . 11106) (spp-include "llvm/BinaryFormat/Dwarf.def" 10897 . 10935) (spp-macro-def 10849 . 10864) (spp-include "llvm/BinaryFormat/Dwarf.def" 10462 . 10500) (spp-macro-def 10416 . 10430) (spp-include "llvm/BinaryFormat/Dwarf.def" 10287 . 10325) (spp-macro-def 10243 . 10256) (punctuation 10056 . 10057) (symbol 10042 . 10055) (ENUM 10037 . 10041) (spp-include "llvm/BinaryFormat/Dwarf.def" 9518 . 9556) (spp-macro-def 9476 . 9488) (spp-include "llvm/BinaryFormat/Dwarf.def" 6344 . 6382) (spp-macro-def 6248 . 6262) (spp-include "llvm/BinaryFormat/Dwarf.def" 6149 . 6187) (spp-macro-def 6093 . 6112) (spp-include "llvm/BinaryFormat/Dwarf.def" 5983 . 6021) (spp-macro-def 5925 . 5945) (spp-include "llvm/BinaryFormat/Dwarf.def" 5534 . 5572) (spp-macro-def 5490 . 5503) (punctuation 5026 . 5027) (symbol 5017 . 5025) (ENUM 5012 . 5016) (spp-include "llvm/BinaryFormat/Dwarf.def" 4483 . 4521) (spp-macro-def 4424 . 4436) (punctuation 4212 . 4213) (symbol 4207 . 4211) (ENUM 4202 . 4206) (punctuation 4027 . 4028) (symbol 4017 . 4026) (ENUM 4012 . 4016) (punctuation 3431 . 3432) (symbol 3427 . 3430) (ENUM 3422 . 3426) (punctuation 3051 . 3052) (symbol 3039 . 3050) (ENUM 3034 . 3038) (punctuation 1503 . 1504) (symbol 1489 . 1502) (ENUM 1484 . 1488))
+      :lexical-table 
+        '(("HANDLE_DW_VIRTUALITY" (spp-arg-list ("ID" "NAME") 5945 . 5955) . 
+              ((spp-symbol-merge ((symbol "DW_VIRTUALITY_" 5956 . 5970) (symbol "NAME" 5972 . 5976)) 5956 . 5976) (punctuation "=" 5977 . 5978) (symbol "ID" 5979 . 5981) (punctuation "," 5981 . 5982)))
+          ("HANDLE_DW_LNCT" (spp-arg-list ("ID" "NAME") 10430 . 10440) . 
+              ((spp-symbol-merge ((symbol "DW_LNCT_" 10441 . 10449) (symbol "NAME" 10451 . 10455)) 10441 . 10455) (punctuation "=" 10456 . 10457) (symbol "ID" 10458 . 10460) (punctuation "," 10460 . 10461)))
+          ("HANDLE_DW_LLE" (spp-arg-list ("ID" "NAME") 11499 . 11509) . 
+              ((spp-symbol-merge ((symbol "DW_LLE_" 11510 . 11517) (symbol "NAME" 11519 . 11523)) 11510 . 11523) (punctuation "=" 11524 . 11525) (symbol "ID" 11526 . 11528) (punctuation "," 11528 . 11529)))
+          ("HANDLE_DW_CFA" (spp-arg-list ("ID" "NAME") 11653 . 11663) . 
+              ((spp-symbol-merge ((symbol "DW_CFA_" 11664 . 11671) (symbol "NAME" 11673 . 11677)) 11664 . 11677) (punctuation "=" 11678 . 11679) (symbol "ID" 11680 . 11682) (punctuation "," 11682 . 11683)))
+          ("HANDLE_DW_UT" (spp-arg-list ("ID" "NAME") 12798 . 12808) . 
+              ((spp-symbol-merge ((symbol "DW_UT_" 12809 . 12815) (symbol "NAME" 12817 . 12821)) 12809 . 12821) (punctuation "=" 12822 . 12823) (symbol "ID" 12824 . 12826) (punctuation "," 12826 . 12827)))
+          ("HANDLE_DW_TAG" (spp-arg-list ("ID" "NAME" "VERSION" "VENDOR" "KIND") 3465 . 3498) . 
+              ((spp-symbol-merge ((symbol "DW_TAG_" 3499 . 3506) (symbol "NAME" 3508 . 3512)) 3499 . 3512) (punctuation "=" 3513 . 3514) (symbol "ID" 3515 . 3517) (punctuation "," 3517 . 3518)))
+          ("HANDLE_DW_FORM" (spp-arg-list ("ID" "NAME" "VERSION" "VENDOR") 4247 . 4274) . 
+              ((spp-symbol-merge ((symbol "DW_FORM_" 4275 . 4283) (symbol "NAME" 4285 . 4289)) 4275 . 4289) (punctuation "=" 4290 . 4291) (symbol "ID" 4292 . 4294) (punctuation "," 4294 . 4295)))
+          ("HANDLE_DW_RLE" (spp-arg-list ("ID" "NAME") 11337 . 11347) . 
+              ((spp-symbol-merge ((symbol "DW_RLE_" 11348 . 11355) (symbol "NAME" 11357 . 11361)) 11348 . 11361) (punctuation "=" 11362 . 11363) (symbol "ID" 11364 . 11366) (punctuation "," 11366 . 11367)))
+          ("HANDLE_DW_ATE" (spp-arg-list ("ID" "NAME" "VERSION" "VENDOR") 5059 . 5086) . 
+              ((spp-symbol-merge ((symbol "DW_ATE_" 5087 . 5094) (symbol "NAME" 5096 . 5100)) 5087 . 5100) (punctuation "=" 5101 . 5102) (symbol "ID" 5103 . 5105) (punctuation "," 5105 . 5106)))
+          ("HANDLE_DW_DEFAULTED" (spp-arg-list ("ID" "NAME") 6112 . 6122) . 
+              ((spp-symbol-merge ((symbol "DW_DEFAULTED_" 6123 . 6136) (symbol "NAME" 6138 . 6142)) 6123 . 6142) (punctuation "=" 6143 . 6144) (symbol "ID" 6145 . 6147) (punctuation "," 6147 . 6148)))
+          ("HANDLE_DW_MACRO_GNU" (spp-arg-list ("ID" "NAME") 11106 . 11116) . 
+              ((spp-symbol-merge ((symbol "DW_MACRO_GNU_" 11117 . 11130) (symbol "NAME" 11132 . 11136)) 11117 . 11136) (punctuation "=" 11137 . 11138) (symbol "ID" 11139 . 11141) (punctuation "," 11141 . 11142)))
+          ("HANDLE_DW_OP" (spp-arg-list ("ID" "NAME" "VERSION" "VENDOR") 4436 . 4463) . 
+              ((spp-symbol-merge ((symbol "DW_OP_" 4464 . 4470) (symbol "NAME" 4472 . 4476)) 4464 . 4476) (punctuation "=" 4477 . 4478) (symbol "ID" 4479 . 4481) (punctuation "," 4481 . 4482)))
+          ("HANDLE_DW_AT" (spp-arg-list ("ID" "NAME" "VERSION" "VENDOR") 4060 . 4087) . 
+              ((spp-symbol-merge ((symbol "DW_AT_" 4088 . 4094) (symbol "NAME" 4096 . 4100)) 4088 . 4100) (punctuation "=" 4101 . 4102) (symbol "ID" 4103 . 4105) (punctuation "," 4105 . 4106)))
+          ("HANDLE_DW_LNE" (spp-arg-list ("ID" "NAME") 10256 . 10266) . 
+              ((spp-symbol-merge ((symbol "DW_LNE_" 10267 . 10274) (symbol "NAME" 10276 . 10280)) 10267 . 10280) (punctuation "=" 10281 . 10282) (symbol "ID" 10283 . 10285) (punctuation "," 10285 . 10286)))
+          ("HANDLE_DW_MACRO" (spp-arg-list ("ID" "NAME") 10864 . 10874) . 
+              ((spp-symbol-merge ((symbol "DW_MACRO_" 10875 . 10884) (symbol "NAME" 10886 . 10890)) 10875 . 10890) (punctuation "=" 10891 . 10892) (symbol "ID" 10893 . 10895) (punctuation "," 10895 . 10896)))
+          ("HANDLE_DW_CFA_PRED" (spp-arg-list ("ID" "NAME" "ARCH") 11710 . 11726) . 
+              ((spp-symbol-merge ((symbol "DW_CFA_" 11727 . 11734) (symbol "NAME" 11736 . 11740)) 11727 . 11740) (punctuation "=" 11741 . 11742) (symbol "ID" 11743 . 11745) (punctuation "," 11745 . 11746)))
+          ("HANDLE_DW_APPLE_PROPERTY" (spp-arg-list ("ID" "NAME") 12619 . 12629) . 
+              ((spp-symbol-merge ((symbol "DW_APPLE_PROPERTY_" 12630 . 12648) (symbol "NAME" 12650 . 12654)) 12630 . 12654) (punctuation "=" 12655 . 12656) (symbol "ID" 12657 . 12659) (punctuation "," 12659 . 12660)))
+          ("HANDLE_DW_END" (spp-arg-list ("ID" "NAME") 5503 . 5513) . 
+              ((spp-symbol-merge ((symbol "DW_END_" 5514 . 5521) (symbol "NAME" 5523 . 5527)) 5514 . 5527) (punctuation "=" 5528 . 5529) (symbol "ID" 5530 . 5532) (punctuation "," 5532 . 5533)))
+          ("HANDLE_DW_LANG" (spp-arg-list ("ID" "NAME" "LOWER_BOUND" "VERSION" "VENDOR") 6262 . 6302) . 
+              ((spp-symbol-merge ((symbol "DW_LANG_" 6323 . 6331) (symbol "NAME" 6333 . 6337)) 6323 . 6337) (punctuation "=" 6338 . 6339) (symbol "ID" 6340 . 6342) (punctuation "," 6342 . 6343)))
+          ("HANDLE_DW_LNS" (spp-arg-list ("ID" "NAME") 10089 . 10099) . 
+              ((spp-symbol-merge ((symbol "DW_LNS_" 10100 . 10107) (symbol "NAME" 10109 . 10113)) 10100 . 10113) (punctuation "=" 10114 . 10115) (symbol "ID" 10116 . 10118) (punctuation "," 10118 . 10119)))
+          ("HANDLE_DW_IDX" (spp-arg-list ("ID" "NAME") 12952 . 12962) . 
+              ((spp-symbol-merge ((symbol "DW_IDX_" 12963 . 12970) (symbol "NAME" 12972 . 12976)) 12963 . 12976) (punctuation "=" 12977 . 12978) (symbol "ID" 12979 . 12981) (punctuation "," 12981 . 12982)))
+          ("HANDLE_DW_CC" (spp-arg-list ("ID" "NAME") 9488 . 9498) . 
+              ((spp-symbol-merge ((symbol "DW_CC_" 9499 . 9505) (symbol "NAME" 9507 . 9511)) 9499 . 9511) (punctuation "=" 9512 . 9513) (symbol "ID" 9514 . 9516) (punctuation "," 9516 . 9517)))
+          ("LLVM_BINARYFORMAT_DWARF_H")
+          )
+))
+  :file "!usr!include!llvm!BinaryFormat!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
