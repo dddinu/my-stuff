@@ -1,0 +1,2 @@
+figrep.bash
+google.bash
