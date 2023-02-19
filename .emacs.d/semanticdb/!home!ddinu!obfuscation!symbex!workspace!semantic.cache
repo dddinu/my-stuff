@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-1558ab906cc0
+;; Object semanticdb-project-database-file-15788bfc891a
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-1558ab906cc0"
+(semanticdb-project-database-file "semanticdb-project-database-file-15788bfc891a"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-1558ab81b3a4"
+    (semanticdb-table "semanticdb-table-15788bfc88da"
       :major-mode c-mode
       :tags 
         '( ("stdio.h" include (:system-flag t) nil [1 19])
@@ -23,7 +23,7 @@
       :fsize 239
       :lastmodtime '(25576 18944 250399 890000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-1558ab8ae628"
+    (semanticdb-table "semanticdb-table-15788bfc88fa"
       :major-mode c-mode
       :tags 
         '( ("stdio.h" include (:system-flag t) nil [1 19])
@@ -37,11 +37,11 @@
                         :type "char")
                         (reparse-symbol arg-sub-list) [60 73]))                  
                 :type "int")
-                nil [41 412]))          
+                nil [41 410]))          
       :file "Split10_file_11.c"
-      :pointmax 413
-      :fsize 412
-      :lastmodtime '(25579 1035 991297 195000)
+      :pointmax 411
+      :fsize 410
+      :lastmodtime '(25585 36329 232978 960000)
       :unmatched-syntax nil))
   :file "!home!ddinu!obfuscation!symbex!workspace!semantic.cache"
   :semantic-tag-version "2.0"
