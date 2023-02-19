@@ -31,7 +31,6 @@ alias google='~/scripts/google.bash'
 
 PS1='[\d] <\[\e[1;34m\w\[\e[0m>\n[\t] 🧙 [\u@\h]\$ '
 
-
 ### ------- TIGRESS SETTINGS -------###
 
 # save the unappended path
@@ -43,7 +42,6 @@ export PATH=/home/ddinu/opt/tigress/3.1:$PATH
 ### ------- OD-LLVM SETTINGS -------###
 
 export PATH=/home/ddinu/obfuscation/symbex/llvm-project/build/bin:$PATH
-
 
 ### ------- DECORATION -------###
 
