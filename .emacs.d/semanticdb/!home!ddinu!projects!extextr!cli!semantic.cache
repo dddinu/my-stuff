@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-156b7c904e70
+;; Object semanticdb-project-database-file-158465da55dc
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-156b7c904e70"
+(semanticdb-project-database-file "semanticdb-project-database-file-158465da55dc"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-156b7c904eaa"
+    (semanticdb-table "semanticdb-table-158465da559c"
       :major-mode c++-mode
       :tags 
         '( ("iostream" include (:system-flag t) nil [1 20])
@@ -27,7 +27,7 @@
             ("remove_duplicates" function
                (:arguments 
                   ( ("v" variable
-                       (:pointer 1
+                       (:reference 1
                         :type ("std::vector" type
                              (:template-specifier 
                                 ( ("std::string" type nil nil nil))                                
@@ -35,23 +35,23 @@
                               nil nil))
                         (reparse-symbol arg-sub-list) [340 368]))                  
                 :type "void")
-                nil [317 481])
+                nil [317 475])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [493 502])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [487 496])
                     ("argv" variable
                        (:pointer 1
                         :dereference 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [503 516]))                  
+                        (reparse-symbol arg-sub-list) [497 510]))                  
                 :type "int")
-                nil [484 1256]))          
+                nil [478 1249]))          
       :file "main.cpp"
-      :pointmax 1257
-      :fsize 1256
-      :lastmodtime '(25582 64677 257237 366000)
+      :pointmax 1250
+      :fsize 1249
+      :lastmodtime '(25586 40985 71628 509000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-156b7d1bcbaa"
+    (semanticdb-table "semanticdb-table-158465da55bc"
       :major-mode makefile-gmake-mode
       :tags 
         '( ("CXX" variable (:default-value ("g++")) nil [20 29])
@@ -67,8 +67,8 @@
             ("cleantarg" function nil nil [283 311]))          
       :file "Makefile"
       :pointmax 311
-      :fsize 310
-      :lastmodtime '(25582 63376 805762 21000)
+      :fsize 329
+      :lastmodtime '(25586 40951 678534 197000)
       :unmatched-syntax nil))
   :file "!home!ddinu!projects!extextr!cli!semantic.cache"
   :semantic-tag-version "2.0"
