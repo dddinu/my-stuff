@@ -1,0 +1,426 @@
+;; Object semanticdb-project-database-file-15698d1abcb0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15698d1abcb0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15698c7b5224"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_ANALYSIS_LAZYVALUEINFO_H" variable (:constant-flag t) nil [596 625])
+            ("llvm/IR/PassManager.h" include nil nil [627 659])
+            ("llvm/Pass.h" include nil nil [660 682])
+            ("llvm" type
+               (:members 
+                  ( ("AssumptionCache" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [703 725])
+                    ("Constant" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [728 743])
+                    ("ConstantRange" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [746 766])
+                    ("DataLayout" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [769 786])
+                    ("DominatorTree" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [789 809])
+                    ("Instruction" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [812 830])
+                    ("TargetLibraryInfo" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [833 857])
+                    ("Value" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [860 872])
+                    ("LazyValueInfo" type
+                       (:members 
+                          ( ("LazyValueInfoWrapperPass" friend nil (reparse-symbol classsubparts) [975 1012])
+                            ("AC" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("AssumptionCache" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1016 1046])
+                            ("DL" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "nullptr"
+                                :type ("DataLayout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1049 1080])
+                            ("TLI" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("TargetLibraryInfo" type
+                                     (:prototype t
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1083 1122])
+                            ("PImpl" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "void")
+                                (reparse-symbol classsubparts) [1125 1147])
+                            ("public" label nil (reparse-symbol classsubparts) [1245 1252])
+                            ("LazyValueInfo" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1255 1272])
+                            ("LazyValueInfo" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("AC_" variable
+                                       (:pointer 1
+                                        :type ("AssumptionCache" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1318 1339])
+                                    ("DL_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("DataLayout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1340 1362])
+                                    ("TLI_" variable
+                                       (:pointer 1
+                                        :type ("TargetLibraryInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1379 1403]))                                  
+                                :type ("LazyValueInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1304 1442])
+                            ("LazyValueInfo" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("LazyValueInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1459 1475])
+                                    ("" variable (:type ("Arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1475 1479]))                                  
+                                :type ("LazyValueInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1445 1573])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("LazyValueInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1601 1617])
+                                    ("" variable (:type ("Arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1617 1621]))                                  
+                                :type ("LazyValueInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1576 1767])
+                            ("Tristate" type
+                               (:members 
+                                  ( ("Unknown" variable
+                                       (:constant-flag t
+                                        :default-value (1856 1858)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1846 1858])
+                                    ("False" variable
+                                       (:constant-flag t
+                                        :default-value (1868 1869)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1860 1869])
+                                    ("True" variable
+                                       (:constant-flag t
+                                        :default-value (1878 1879)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1871 1879]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1826 1884])
+                            ("getPredicateOnEdge" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Pred" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2114 2128])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2129 2138])
+                                    ("C" variable
+                                       (:pointer 1
+                                        :type ("Constant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2139 2151])
+                                    ("FromBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2182 2201])
+                                    ("ToBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2202 2219])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2250 2277]))                                  
+                                :type ("Tristate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2086 2279])
+                            ("getPredicateAt" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Pred" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2560 2574])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2575 2584])
+                                    ("C" variable
+                                       (:pointer 1
+                                        :type ("Constant" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2585 2597])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2624 2642])
+                                    ("UseBlockValue" variable (:type "bool") (reparse-symbol arg-sub-list) [2643 2662]))                                  
+                                :type ("Tristate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2536 2663])
+                            ("getPredicateAt" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Pred" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3014 3028])
+                                    ("LHS" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3029 3040])
+                                    ("RHS" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3041 3052])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3079 3097])
+                                    ("UseBlockValue" variable (:type "bool") (reparse-symbol arg-sub-list) [3098 3117]))                                  
+                                :type ("Tristate" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2990 3118])
+                            ("getConstant" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3270 3279])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3280 3298]))                                  
+                                :type ("Constant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3248 3299])
+                            ("getConstantRange" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3513 3522])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3523 3541])
+                                    ("UndefAllowed" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [3575 3599]))                                  
+                                :type ("ConstantRange" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3482 3601])
+                            ("getConstantOnEdge" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3753 3762])
+                                    ("FromBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3763 3782])
+                                    ("ToBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3783 3800])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3831 3858]))                                  
+                                :type ("Constant" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3725 3860])
+                            ("getConstantRangeOnEdge" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4075 4084])
+                                    ("FromBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4085 4104])
+                                    ("ToBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4144 4161])
+                                    ("CxtI" variable
+                                       (:pointer 1
+                                        :default-value "nullptr"
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4201 4228]))                                  
+                                :type ("ConstantRange" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4038 4230])
+                            ("threadEdge" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("PredBB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4379 4398])
+                                    ("OldSucc" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4399 4419])
+                                    ("NewSucc" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4420 4440]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4363 4441])
+                            ("eraseBlock" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("BB" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4522 4537]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4506 4538])
+                            ("printLVI" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4725 4737])
+                                    ("DTree" variable
+                                       (:reference 1
+                                        :type ("DominatorTree" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4738 4759])
+                                    ("OS" variable
+                                       (:reference 1
+                                        :type ("raw_ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4760 4776]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4711 4777])
+                            ("releaseMemory" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4849 4870])
+                            ("invalidate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4948 4960])
+                                    ("PA" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("PreservedAnalyses" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4961 4989])
+                                    ("Inv" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager::Invalidator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5008 5050]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4932 5051]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [951 5054])
+                    ("LazyValueAnalysis" type
+                       (:superclasses 
+                          ( ("AnalysisInfoMixin" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5176 5183])
+                            ("Result" type
+                               (:typedef ("LazyValueInfo" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5186 5215])
+                            ("run" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5229 5241])
+                                    ("FAM" variable
+                                       (:reference 1
+                                        :type ("FunctionAnalysisManager" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5242 5271]))                                  
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5218 5272])
+                            ("private" label nil (reparse-symbol classsubparts) [5274 5282])
+                            ("Key" variable
+                               (:typemodifiers ("static")
+                                :type ("AnalysisKey" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5285 5308])
+                            ("AnalysisInfoMixin" type
+                               (:prototype t
+                                :template-specifier 
+                                  ( ("LazyValueAnalysis" type nil nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [5318 5362]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5104 5365])
+                    ("LazyValueInfoWrapperPass" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5586 5593])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [5596 5611])
+                            ("LazyValueInfoWrapperPass" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("LazyValueInfoWrapperPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5614 5641])
+                            ("getLVI" function
+                               (:prototype-flag t
+                                :type ("LazyValueInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5745 5769])
+                            ("override" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5814 5829])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [5853 5862])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [5897 5906])
+                            ("private" label nil (reparse-symbol classsubparts) [5907 5915])
+                            ("Info" variable (:type ("LazyValueInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5918 5937]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5401 5940]))                  
+                :type "namespace")
+                nil [684 5943]))          
+      :file "LazyValueInfo.h"
+      :pointmax 5976
+      :fsize 5975
+      :lastmodtime '(25573 11044 496397 198000)
+      :unmatched-syntax '((semantic-list 5883 . 5896) (symbol 5870 . 5883) (BOOL 5865 . 5869) (semantic-list 5850 . 5852) (symbol 5837 . 5850) (VOID 5832 . 5836) (semantic-list 5794 . 5813) (symbol 5778 . 5794) (VOID 5773 . 5777) (semantic-list 5681 . 5741) (symbol 5672 . 5680) (semantic-list 5669 . 5671) (symbol 5645 . 5669) (punctuation 5644 . 5645) (punctuation 5584 . 5585) (DELETE 5578 . 5584) (punctuation 5576 . 5577) (semantic-list 5542 . 5575) (punctuation 5541 . 5542) (OPERATOR 5533 . 5541) (VOID 5528 . 5532) (punctuation 5524 . 5525) (DELETE 5518 . 5524) (punctuation 5516 . 5517) (semantic-list 5482 . 5515) (symbol 5458 . 5482) (FRIEND 5311 . 5317) (punctuation 1616 . 1617) (punctuation 1474 . 1475) (punctuation 1300 . 1301) (DEFAULT 1293 . 1300) (punctuation 1291 . 1292) (semantic-list 1288 . 1290) (symbol 1275 . 1288) (punctuation 1243 . 1244) (DELETE 1237 . 1243) (punctuation 1235 . 1236) (semantic-list 1212 . 1234) (punctuation 1211 . 1212) (OPERATOR 1203 . 1211) (VOID 1198 . 1202) (punctuation 1194 . 1195) (DELETE 1188 . 1194) (punctuation 1186 . 1187) (semantic-list 1163 . 1185) (symbol 1150 . 1163) (punctuation 1012 . 1013))
+      :lexical-table 
+        '(("LLVM_ANALYSIS_LAZYVALUEINFO_H")
+          )
+))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!include!llvm!Analysis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

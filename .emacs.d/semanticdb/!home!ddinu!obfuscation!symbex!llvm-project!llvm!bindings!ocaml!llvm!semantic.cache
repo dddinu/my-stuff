@@ -1,0 +1,2421 @@
+;; Object semanticdb-project-database-file-15698c85d75c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15698c85d75c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15698c85d796"
+      :major-mode c++-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [1298 1317])
+            ("stdlib.h" include (:system-flag t) nil [1318 1337])
+            ("string.h" include (:system-flag t) nil [1338 1357])
+            ("llvm-c/Core.h" include nil nil [1358 1382])
+            ("llvm-c/Support.h" include nil nil [1383 1410])
+            ("llvm/Config/llvm-config.h" include nil nil [1411 1447])
+            ("caml/memory.h" include nil nil [1448 1472])
+            ("caml/fail.h" include nil nil [1473 1495])
+            ("caml/callback.h" include nil nil [1496 1522])
+            ("llvm_ocaml.h" include nil nil [1523 1546])
+            ("caml_alloc_some" function
+               (:arguments 
+                  ( ("v" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1604]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [1574 1706])
+            ("caml_alloc_tuple_uninit" function
+               (:arguments 
+                  ( ("wosize" variable (:type ("mlsize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1745 1761]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [1715 1894])
+            ("llvm_string_of_message" function
+               (:arguments 
+                  ( ("Message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1925 1939]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [1896 2036])
+            ("ptr_to_option" function
+               (:arguments 
+                  ( ("Ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2058 2068]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [2038 2143])
+            ("cstr_to_string" function
+               (:arguments 
+                  ( ("Str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2166 2182])
+                    ("Len" variable (:type ("mlsize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2196]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [2145 2351])
+            ("cstr_to_string_option" function
+               (:arguments 
+                  ( ("CStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2381 2398])
+                    ("Len" variable (:type ("mlsize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2399 2412]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [2353 2574])
+            ("llvm_raise" function
+               (:arguments 
+                  ( ("Prototype" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2592 2608])
+                    ("Message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2609 2623]))                  
+                :type "void")
+                nil [2576 2694])
+            ("llvm_fatal_error_handler" variable
+               (:typemodifiers ("static")
+                :type ("value" type (:type "class") nil nil))
+                nil [2696 2734])
+            ("llvm_fatal_error_trampoline" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("Reason" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2776 2795]))                  
+                :type "void")
+                nil [2736 2863])
+            ("llvm_install_fatal_error_handler" function
+               (:arguments 
+                  ( ("Handler" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2904 2918]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [2865 3096])
+            ("llvm_reset_fatal_error_handler" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3135 3146]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [3098 3255])
+            ("llvm_enable_pretty_stacktrace" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3293 3304]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [3257 3359])
+            ("llvm_parse_command_line_options" function
+               (:arguments 
+                  ( ("Overview" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3399 3414])
+                    ("Args" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3415 3426]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [3361 3716])
+            ("alloc_variant" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tag" variable (:type "int") (reparse-symbol arg-sub-list) [3745 3753])
+                    ("Value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3754 3766]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [3718 3860])
+            ("DEFINE_ITERATORS" variable (:constant-flag t) nil [3966 3982])
+            ("llvm_diagnostic_handler_trampoline" function
+               (:arguments 
+                  ( ("DI" variable (:type ("LLVMDiagnosticInfoRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5909 5934])
+                    ("DiagnosticContext" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5975 5999]))                  
+                :type "void")
+                nil [5869 6062])
+            ("llvm_get_diagnostic_description" function
+               (:arguments 
+                  ( ("Diagnostic" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6131 6148]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [6093 6255])
+            ("llvm_get_diagnostic_severity" function
+               (:arguments 
+                  ( ("Diagnostic" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6335 6352]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [6300 6434])
+            ("llvm_remove_diagnostic_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6479 6496]))                  
+                :type "void")
+                nil [6436 6710])
+            ("llvm_set_diagnostic_handler" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6803 6820])
+                    ("Handler" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6821 6835]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [6769 7339])
+            ("llvm_create_context" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7482 7493]))                  
+                :type ("LLVMContextRef" type (:type "class") nil nil))
+                nil [7447 7525])
+            ("llvm_dispose_context" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7578 7595]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [7551 7680])
+            ("llvm_global_context" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7741 7752]))                  
+                :type ("LLVMContextRef" type (:type "class") nil nil))
+                nil [7706 7789])
+            ("llvm_mdkind_id" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7845 7862])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7863 7874]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [7824 8007])
+            ("llvm_enum_attr_kind" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8144 8155]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [8118 8420])
+            ("llvm_create_enum_attr_by_kind" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8516 8533])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8534 8545])
+                    ("Value" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8593 8605]))                  
+                :type ("LLVMAttributeRef" type (:type "class") nil nil))
+                nil [8469 8679])
+            ("llvm_is_enum_attr" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8731 8750]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [8707 8796])
+            ("llvm_get_enum_attr_kind" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8860 8879]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [8830 8930])
+            ("llvm_get_enum_attr_value" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8990 9009]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [8959 9069])
+            ("llvm_create_string_attr" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9173 9190])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9191 9202])
+                    ("Value" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9244 9256]))                  
+                :type ("LLVMAttributeRef" type (:type "class") nil nil))
+                nil [9132 9459])
+            ("llvm_is_string_attr" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9513 9532]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [9487 9580])
+            ("llvm_get_string_attr_kind" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9642 9661]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [9610 9788])
+            ("llvm_get_string_attr_value" function
+               (:arguments 
+                  ( ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9851 9870]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [9818 9998])
+            ("llvm_create_module" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10153 10170])
+                    ("ModuleID" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10171 10186]))                  
+                :type ("LLVMModuleRef" type (:type "class") nil nil))
+                nil [10120 10259])
+            ("llvm_dispose_module" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10310 10326]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10284 10373])
+            ("llvm_target_triple" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10425 10441]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10400 10490])
+            ("llvm_set_target_triple" function
+               (:arguments 
+                  ( ("Trip" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10554 10565])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10566 10582]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10525 10643])
+            ("llvm_data_layout" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10693 10709]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10670 10762])
+            ("llvm_set_data_layout" function
+               (:arguments 
+                  ( ("Layout" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10824 10837])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10838 10854]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10797 10921])
+            ("llvm_dump_module" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10969 10985]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [10946 11029])
+            ("llvm_print_module" function
+               (:arguments 
+                  ( ("Filename" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11088 11103])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11104 11120]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [11064 11286])
+            ("llvm_string_of_llmodule" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11343 11359]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [11313 11517])
+            ("llvm_get_module_identifier" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11577 11593]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [11544 11712])
+            ("llvm_set_module_identifier" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11780 11796])
+                    ("Id" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11797 11806]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [11747 11899])
+            ("llvm_set_module_inline_asm" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11967 11983])
+                    ("Asm" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11984 11994]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [11934 12063])
+            ("llvm_get_module_flag" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12138 12154])
+                    ("Key" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12155 12165]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [12111 12264])
+            ("llvm_add_module_flag" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12293 12309])
+                    ("Behaviour" variable (:type ("LLVMModuleFlagBehavior" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12310 12343])
+                    ("Key" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12371 12381])
+                    ("Val" variable (:type ("LLVMMetadataRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12382 12402]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [12266 12536])
+            ("llvm_classify_type" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12672 12687]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [12647 12730])
+            ("llvm_type_is_sized" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12757 12772]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [12732 12816])
+            ("llvm_type_context" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12877 12892]))                  
+                :type ("LLVMContextRef" type (:type "class") nil nil))
+                nil [12844 12929])
+            ("llvm_dump_type" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12973 12989]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [12952 13210])
+            ("llvm_string_of_lltype" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13263 13277]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [13235 13423])
+            ("llvm_i1_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13558 13581]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [13533 13626])
+            ("llvm_i8_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13679 13702]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [13654 13747])
+            ("llvm_i16_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13801 13824]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [13775 13870])
+            ("llvm_i32_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13924 13947]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [13898 13993])
+            ("llvm_i64_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14047 14070]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14021 14116])
+            ("llvm_integer_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14181 14204])
+                    ("Width" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14205 14217]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14151 14277])
+            ("llvm_integer_bitwidth" function
+               (:arguments 
+                  ( ("IntegerTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14327 14349]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [14299 14403])
+            ("llvm_float_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14541 14564]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14513 14610])
+            ("llvm_double_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14667 14690]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14638 14737])
+            ("llvm_x86fp80_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14795 14818]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14765 14866])
+            ("llvm_fp128_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14922 14945]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [14894 14991])
+            ("llvm_ppc_fp128_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15051 15074]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [15019 15123])
+            ("llvm_function_type" function
+               (:arguments 
+                  ( ("RetTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15277 15295])
+                    ("ParamTys" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15296 15311]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [15246 15425])
+            ("llvm_var_arg_function_type" function
+               (:arguments 
+                  ( ("RetTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15505 15523])
+                    ("ParamTys" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15524 15539]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [15466 15653])
+            ("llvm_is_var_arg" function
+               (:arguments 
+                  ( ("FunTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15698 15716]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [15676 15768])
+            ("llvm_param_types" function
+               (:arguments 
+                  ( ("FunTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15822 15840]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [15799 15981])
+            ("llvm_struct_type" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16136 16153])
+                    ("ElementTypes" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16154 16173]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [16107 16305])
+            ("llvm_packed_struct_type" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16385 16402])
+                    ("ElementTypes" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16403 16422]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [16349 16554])
+            ("llvm_named_struct_type" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16627 16644])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16645 16656]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [16592 16713])
+            ("llvm_struct_set_body" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16742 16757])
+                    ("ElementTypes" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16758 16777])
+                    ("Packed" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16778 16791]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [16715 16932])
+            ("llvm_struct_name" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16987 17002]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [16964 17163])
+            ("llvm_struct_element_types" function
+               (:arguments 
+                  ( ("StructTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17226 17247]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [17194 17410])
+            ("llvm_is_packed" function
+               (:arguments 
+                  ( ("StructTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17454 17475]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [17433 17528])
+            ("llvm_is_opaque" function
+               (:arguments 
+                  ( ("StructTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17572 17593]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [17551 17646])
+            ("llvm_is_literal" function
+               (:arguments 
+                  ( ("StructTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17691 17712]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [17669 17766])
+            ("llvm_subtypes" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17899 17914]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [17879 18076])
+            ("llvm_array_type" function
+               (:arguments 
+                  ( ("ElementTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18136 18158])
+                    ("Count" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18159 18171]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [18108 18226])
+            ("llvm_pointer_type" function
+               (:arguments 
+                  ( ("ElementTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18281 18303]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [18251 18347])
+            ("llvm_qualified_pointer_type" function
+               (:arguments 
+                  ( ("ElementTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18419 18441])
+                    ("AddressSpace" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18482 18501]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [18379 18565])
+            ("llvm_vector_type" function
+               (:arguments 
+                  ( ("ElementTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18626 18648])
+                    ("Count" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18649 18661]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [18597 18717])
+            ("llvm_array_length" function
+               (:arguments 
+                  ( ("ArrayTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18763 18783]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [18739 18834])
+            ("llvm_address_space" function
+               (:arguments 
+                  ( ("PtrTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18881 18899]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [18856 18956])
+            ("llvm_vector_size" function
+               (:arguments 
+                  ( ("VectorTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19001 19022]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [18978 19073])
+            ("llvm_void_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19210 19233]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [19183 19278])
+            ("llvm_label_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19334 19357]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [19306 19403])
+            ("llvm_x86_mmx_type" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19461 19484]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [19431 19531])
+            ("llvm_type_by_name" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19557 19573])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19574 19585]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [19533 19653])
+            ("llvm_type_of" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19786 19803]))                  
+                :type ("LLVMTypeRef" type (:type "class") nil nil))
+                nil [19761 19831])
+            ("ValueKind" type
+               (:members 
+                  ( ("NullValue" variable
+                       (:constant-flag t
+                        :default-value (19900 19901)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19888 19901])
+                    ("Argument" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19905 19914])
+                    ("BasicBlock" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19917 19928])
+                    ("InlineAsm" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19931 19941])
+                    ("MDNode" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19944 19951])
+                    ("MDString" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19954 19963])
+                    ("BlockAddress" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19966 19979])
+                    ("ConstantAggregateZero" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [19982 20004])
+                    ("ConstantArray" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20007 20021])
+                    ("ConstantDataArray" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20024 20042])
+                    ("ConstantDataVector" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20045 20064])
+                    ("ConstantExpr" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20067 20080])
+                    ("ConstantFP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20083 20094])
+                    ("ConstantInt" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20097 20109])
+                    ("ConstantPointerNull" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20112 20132])
+                    ("ConstantStruct" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20135 20150])
+                    ("ConstantVector" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20153 20168])
+                    ("Function" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20171 20180])
+                    ("GlobalAlias" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20183 20195])
+                    ("GlobalIFunc" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20198 20210])
+                    ("GlobalVariable" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20213 20228])
+                    ("UndefValue" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20231 20242])
+                    ("PoisonValue" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20245 20257])
+                    ("Instruction" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [20260 20273]))                  
+                :type "enum")
+                nil [19869 20274])
+            ("DEFINE_CASE" variable (:constant-flag t) nil [20313 20324])
+            ("llvm_classify_value" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20429 20446]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [20403 21542])
+            ("llvm_value_name" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21590 21607]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [21568 21661])
+            ("llvm_set_value_name" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21721 21732])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21733 21750]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [21695 21816])
+            ("llvm_dump_value" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21862 21879]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [21840 21924])
+            ("llvm_string_of_llvalue" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21979 21994]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [21950 22146])
+            ("llvm_replace_all_uses_with" function
+               (:arguments 
+                  ( ("OldVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22214 22234])
+                    ("NewVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22235 22255]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [22181 22320])
+            ("llvm_operand" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22462 22477])
+                    ("I" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22478 22486]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [22436 22530])
+            ("llvm_operand_use" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22590 22605])
+                    ("I" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22606 22614]))                  
+                :type ("LLVMUseRef" type (:type "class") nil nil))
+                nil [22562 22661])
+            ("llvm_set_operand" function
+               (:arguments 
+                  ( ("U" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22726 22741])
+                    ("I" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22742 22750])
+                    ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22751 22766]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [22703 22825])
+            ("llvm_num_operands" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22872 22887]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [22848 22932])
+            ("llvm_indices" function
+               (:arguments 
+                  ( ("Instr" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22980 22999]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [22961 23246])
+            ("llvm_is_constant" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23375 23392]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [23352 23436])
+            ("llvm_is_null" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23479 23496]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [23460 23534])
+            ("llvm_is_undef" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23578 23595]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [23558 23634])
+            ("llvm_is_poison" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23679 23696]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [23658 23736])
+            ("llvm_constexpr_get_opcode" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23796 23813]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [23764 23934])
+            ("llvm_has_metadata" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24064 24081]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [24040 24126])
+            ("llvm_metadata" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24187 24204])
+                    ("MDKindID" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24205 24220]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [24167 24289])
+            ("llvm_set_metadata" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24355 24372])
+                    ("MDKindID" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24373 24388])
+                    ("MD" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24389 24405]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [24331 24475])
+            ("llvm_clear_metadata" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24532 24549])
+                    ("MDKindID" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24550 24565]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [24506 24637])
+            ("llvm_mdstring" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24785 24802])
+                    ("S" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24803 24811]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [24758 24888])
+            ("llvm_mdnode" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24959 24976])
+                    ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24977 24995]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [24934 25123])
+            ("llvm_mdnull" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25177 25194]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [25152 25211])
+            ("llvm_get_mdstring" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25268 25283]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [25244 25393])
+            ("llvm_get_mdnode_operands" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25426 25441]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [25395 25621])
+            ("llvm_get_namedmd" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25688 25704])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25705 25716]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [25665 25978])
+            ("llvm_append_namedmd" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26050 26066])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26067 26078])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26079 26096]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [26024 26176])
+            ("llvm_value_as_metadata" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26245 26262]))                  
+                :type ("LLVMMetadataRef" type (:type "class") nil nil))
+                nil [26206 26301])
+            ("llvm_metadata_as_value" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26380 26397])
+                    ("MD" variable (:type ("LLVMMetadataRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26398 26417]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [26344 26458])
+            ("llvm_const_int" function
+               (:arguments 
+                  ( ("IntTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26601 26619])
+                    ("N" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26620 26628]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [26573 26689])
+            ("llvm_const_of_int64" function
+               (:arguments 
+                  ( ("IntTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26767 26785])
+                    ("N" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26786 26794])
+                    ("SExt" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26795 26806]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [26734 26870])
+            ("llvm_int64_of_const" function
+               (:arguments 
+                  ( ("Const" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26923 26942]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [26897 27136])
+            ("llvm_const_int_of_string" function
+               (:arguments 
+                  ( ("IntTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27217 27235])
+                    ("S" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27236 27244])
+                    ("Radix" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27245 27257]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [27179 27397])
+            ("llvm_const_float" function
+               (:arguments 
+                  ( ("RealTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27462 27481])
+                    ("N" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27482 27490]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [27432 27541])
+            ("llvm_float_of_const" function
+               (:arguments 
+                  ( ("Const" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27592 27611]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [27566 27852])
+            ("llvm_const_float_of_string" function
+               (:arguments 
+                  ( ("RealTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27928 27947])
+                    ("S" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27948 27956]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [27888 28083])
+            ("llvm_const_string" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28235 28258])
+                    ("Str" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28259 28269])
+                    ("NullTerminate" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28301 28321]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [28204 28443])
+            ("llvm_const_stringz" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28514 28537])
+                    ("Str" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28538 28548])
+                    ("NullTerminate" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28581 28601]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [28482 28723])
+            ("llvm_const_array" function
+               (:arguments 
+                  ( ("ElementTy" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28796 28818])
+                    ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28819 28837]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [28766 28963])
+            ("llvm_const_struct" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29040 29057])
+                    ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29058 29076]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [29009 29217])
+            ("llvm_const_named_struct" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29297 29312])
+                    ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29313 29331]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [29260 29462])
+            ("llvm_const_packed_struct" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29546 29563])
+                    ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29564 29582]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [29508 29723])
+            ("llvm_const_vector" function
+               (:arguments 
+                  ( ("ElementVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29787 29805]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [29756 29922])
+            ("llvm_string_of_const" function
+               (:arguments 
+                  ( ("Const" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29982 30001]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [29955 30219])
+            ("llvm_const_element" function
+               (:arguments 
+                  ( ("Const" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30285 30304])
+                    ("N" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30305 30313]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [30253 30371])
+            ("llvm_const_icmp" function
+               (:arguments 
+                  ( ("Pred" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30530 30541])
+                    ("LHSConstant" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30542 30567])
+                    ("RHSConstant" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30597 30622]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [30501 30703])
+            ("llvm_const_fcmp" function
+               (:arguments 
+                  ( ("Pred" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30780 30791])
+                    ("LHSConstant" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30792 30817])
+                    ("RHSConstant" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30847 30872]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [30751 30941])
+            ("llvm_const_gep" function
+               (:arguments 
+                  ( ("ConstantVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31013 31038])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31039 31053]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [30985 31169])
+            ("llvm_const_in_bounds_gep" function
+               (:arguments 
+                  ( ("ConstantVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31251 31276])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31277 31291]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [31213 31423])
+            ("llvm_const_intcast" function
+               (:arguments 
+                  ( ("CV" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31510 31526])
+                    ("T" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31527 31541])
+                    ("IsSigned" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31574 31589]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [31478 31647])
+            ("llvm_const_extractvalue" function
+               (:arguments 
+                  ( ("Aggregate" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31724 31747])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31748 31762]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [31687 32063])
+            ("llvm_const_insertvalue" function
+               (:arguments 
+                  ( ("Aggregate" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32150 32173])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32174 32191])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32228 32242]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [32114 32547])
+            ("llvm_const_inline_asm" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32644 32659])
+                    ("Asm" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32660 32670])
+                    ("Constraints" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32671 32689])
+                    ("HasSideEffects" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32725 32746])
+                    ("IsAlignStack" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32747 32766]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [32609 32923])
+            ("llvm_is_declaration" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33055 33075]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33029 33125])
+            ("llvm_linkage" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33173 33193]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33154 33239])
+            ("llvm_set_linkage" function
+               (:arguments 
+                  ( ("Linkage" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33299 33313])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33314 33334]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33276 33401])
+            ("llvm_unnamed_addr" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33449 33469]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33425 33520])
+            ("llvm_set_unnamed_addr" function
+               (:arguments 
+                  ( ("UseUnnamedAddr" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33580 33601])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33602 33622]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33552 33701])
+            ("llvm_section" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33746 33766]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33727 33821])
+            ("llvm_set_section" function
+               (:arguments 
+                  ( ("Section" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33878 33892])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33893 33913]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [33855 33983])
+            ("llvm_visibility" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34037 34057]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34015 34106])
+            ("llvm_set_visibility" function
+               (:arguments 
+                  ( ("Viz" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34172 34182])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34183 34203]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34146 34269])
+            ("llvm_dll_storage_class" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34335 34355]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34306 34409])
+            ("llvm_set_dll_storage_class" function
+               (:arguments 
+                  ( ("Viz" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34487 34497])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34498 34518]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34454 34589])
+            ("llvm_alignment" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34633 34653]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34612 34701])
+            ("llvm_set_alignment" function
+               (:arguments 
+                  ( ("Bytes" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34757 34769])
+                    ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34770 34790]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34732 34857])
+            ("llvm_global_copy_all_metadata" function
+               (:arguments 
+                  ( ("Global" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34942 34962]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [34906 35490])
+            ("llvm_use_begin" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35625 35642]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [35604 35692])
+            ("llvm_use_succ" function
+               (:arguments 
+                  ( ("U" variable (:type ("LLVMUseRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35742 35755]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [35722 35800])
+            ("llvm_user" function
+               (:arguments 
+                  ( ("UR" variable (:type ("LLVMUseRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35848 35862]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [35825 35890])
+            ("llvm_used_value" function
+               (:arguments 
+                  ( ("UR" variable (:type ("LLVMUseRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35944 35958]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [35915 35991])
+            ("llvm_global_begin" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [36075 36174])
+            ("llvm_global_succ" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [36075 36174])
+            ("llvm_global_end" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [36075 36174])
+            ("llvm_global_pred" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [36075 36174])
+            ("llvm_declare_global" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36255 36270])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36271 36282])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36283 36299]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [36222 36590])
+            ("llvm_declare_qualified_global" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36688 36703])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36704 36715])
+                    ("AddressSpace" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36759 36778])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36822 36838]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [36645 37253])
+            ("llvm_lookup_global" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37323 37334])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37335 37351]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [37298 37420])
+            ("llvm_define_global" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37501 37512])
+                    ("Initializer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37513 37538])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37571 37587]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [37469 37751])
+            ("llvm_define_qualified_global" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37849 37860])
+                    ("Initializer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37861 37886])
+                    ("AddressSpace" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37929 37948])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37949 37965]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [37807 38167])
+            ("llvm_delete_global" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38216 38239]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38191 38293])
+            ("llvm_global_initializer" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38357 38380]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38327 38439])
+            ("llvm_set_initializer" function
+               (:arguments 
+                  ( ("ConstantVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38501 38526])
+                    ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38527 38550]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38474 38619])
+            ("llvm_remove_initializer" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38673 38696]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38643 38758])
+            ("llvm_is_thread_local" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38809 38832]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38782 38885])
+            ("llvm_set_thread_local" function
+               (:arguments 
+                  ( ("IsThreadLocal" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38945 38965])
+                    ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38966 38989]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [38917 39070])
+            ("llvm_thread_local_mode" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39136 39159]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [39107 39216])
+            ("llvm_set_thread_local_mode" function
+               (:arguments 
+                  ( ("ThreadLocalMode" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39294 39316])
+                    ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39350 39373]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [39261 39459])
+            ("llvm_is_externally_initialized" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39520 39543]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [39483 39606])
+            ("llvm_set_externally_initialized" function
+               (:arguments 
+                  ( ("IsExternallyInitialized" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39676 39706])
+                    ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39745 39768]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [39638 39869])
+            ("llvm_is_global_constant" function
+               (:arguments 
+                  ( ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39923 39946]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [39893 40002])
+            ("llvm_set_global_constant" function
+               (:arguments 
+                  ( ("Flag" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40065 40076])
+                    ("GlobalVar" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40077 40100]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [40034 40175])
+            ("llvm_add_alias" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40287 40303])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40304 40319])
+                    ("Aliasee" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40348 40369])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40370 40381]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [40259 40442])
+            ("llvm_function_begin" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [40526 40629])
+            ("llvm_function_succ" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [40526 40629])
+            ("llvm_function_end" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [40526 40629])
+            ("llvm_function_pred" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [40526 40629])
+            ("llvm_declare_function" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40712 40723])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40724 40739])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40775 40791]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [40677 41051])
+            ("llvm_lookup_function" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41123 41134])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41135 41151]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [41096 41222])
+            ("llvm_define_function" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41304 41315])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41316 41331])
+                    ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41332 41348]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [41270 41497])
+            ("llvm_delete_function" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41548 41564]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [41521 41613])
+            ("llvm_is_intrinsic" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41661 41677]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [41637 41724])
+            ("llvm_function_call_conv" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41777 41793]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [41747 41844])
+            ("llvm_set_function_call_conv" function
+               (:arguments 
+                  ( ("Id" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41909 41918])
+                    ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41919 41935]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [41875 42002])
+            ("llvm_gc" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42049 42065]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [42035 42183])
+            ("llvm_set_gc" function
+               (:arguments 
+                  ( ("GC" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42242 42251])
+                    ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42252 42268]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [42224 42355])
+            ("llvm_add_function_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42430 42445])
+                    ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42446 42465])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42466 42478]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [42401 42550])
+            ("llvm_function_attrs" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42620 42635])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42636 42648]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [42594 42895])
+            ("llvm_remove_enum_function_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42977 42992])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42993 43004])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43005 43017]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [42940 43108])
+            ("llvm_remove_string_function_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43188 43203])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43204 43215])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43255 43267]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43149 43424])
+            ("llvm_param_begin" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43508 43586])
+            ("llvm_param_succ" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43508 43586])
+            ("llvm_param_end" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43508 43586])
+            ("llvm_param_pred" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43508 43586])
+            ("llvm_param" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43644 43660])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43661 43673]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [43620 43720])
+            ("llvm_params" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43765 43781]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [43747 43918])
+            ("llvm_block_begin" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44002 44112])
+            ("llvm_block_succ" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44002 44112])
+            ("llvm_block_end" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44002 44112])
+            ("llvm_block_pred" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44002 44112])
+            ("llvm_block_terminator" function
+               (:arguments 
+                  ( ("Block" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44179 44203]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44151 44267])
+            ("llvm_basic_blocks" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44329 44345]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44305 44500])
+            ("llvm_delete_block" function
+               (:arguments 
+                  ( ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44553 44574]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44529 44625])
+            ("llvm_remove_block" function
+               (:arguments 
+                  ( ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44678 44699]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44654 44760])
+            ("llvm_move_block_before" function
+               (:arguments 
+                  ( ("Pos" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44834 44856])
+                    ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44857 44878]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44805 44938])
+            ("llvm_move_block_after" function
+               (:arguments 
+                  ( ("Pos" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45011 45033])
+                    ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45034 45055]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [44983 45114])
+            ("llvm_append_block" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45192 45215])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45216 45227])
+                    ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45264 45280]))                  
+                :type ("LLVMBasicBlockRef" type (:type "class") nil nil))
+                nil [45156 45355])
+            ("llvm_insert_block" function
+               (:arguments 
+                  ( ("Context" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45438 45461])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45462 45473])
+                    ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45510 45531]))                  
+                :type ("LLVMBasicBlockRef" type (:type "class") nil nil))
+                nil [45402 45606])
+            ("llvm_value_is_block" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45656 45673]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45630 45724])
+            ("llvm_instr_begin" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45808 45920])
+            ("llvm_instr_succ" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45808 45920])
+            ("llvm_instr_end" function
+               (:arguments 
+                  ( ("Mom" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45808 45920])
+            ("llvm_instr_pred" function
+               (:arguments 
+                  ( ("Kid" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45808 45920])
+            ("llvm_instr_get_opcode" function
+               (:arguments 
+                  ( ("Inst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45976 45994]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [45948 46169])
+            ("llvm_instr_icmp_predicate" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46234 46251]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [46202 46373])
+            ("llvm_instr_fcmp_predicate" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46438 46455]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [46406 46590])
+            ("llvm_instr_clone" function
+               (:arguments 
+                  ( ("Inst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46647 46665]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [46617 46775])
+            ("llvm_instruction_call_conv" function
+               (:arguments 
+                  ( ("Inst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46913 46931]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [46880 46987])
+            ("llvm_set_instruction_call_conv" function
+               (:arguments 
+                  ( ("CC" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47055 47064])
+                    ("Inst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47065 47083]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [47018 47155])
+            ("llvm_add_call_site_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47231 47246])
+                    ("A" variable (:type ("LLVMAttributeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47247 47266])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47267 47279]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [47201 47352])
+            ("llvm_call_site_attrs" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47423 47438])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47439 47451]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [47396 47699])
+            ("llvm_remove_enum_call_site_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47782 47797])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47798 47809])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47810 47822]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [47744 47914])
+            ("llvm_remove_string_call_site_attr" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47995 48010])
+                    ("Kind" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48011 48022])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48063 48075]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [47955 48234])
+            ("llvm_num_arg_operands" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48367 48382]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [48339 48430])
+            ("llvm_is_tail_call" function
+               (:arguments 
+                  ( ("CallInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48478 48500]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [48454 48549])
+            ("llvm_set_tail_call" function
+               (:arguments 
+                  ( ("IsTailCall" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48606 48623])
+                    ("CallInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48624 48646]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [48581 48720])
+            ("llvm_is_volatile" function
+               (:arguments 
+                  ( ("MemoryInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48849 48873]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [48826 48925])
+            ("llvm_set_volatile" function
+               (:arguments 
+                  ( ("IsVolatile" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48981 48998])
+                    ("MemoryInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48999 49023]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [48957 49099])
+            ("llvm_successor" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49253 49268])
+                    ("I" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49269 49277]))                  
+                :type ("LLVMBasicBlockRef" type (:type "class") nil nil))
+                nil [49220 49323])
+            ("llvm_set_successor" function
+               (:arguments 
+                  ( ("U" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49390 49405])
+                    ("I" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49406 49414])
+                    ("B" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49415 49435]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [49365 49496])
+            ("llvm_num_successors" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49545 49560]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [49519 49607])
+            ("llvm_condition" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49744 49759]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [49716 49791])
+            ("llvm_set_condition" function
+               (:arguments 
+                  ( ("B" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49851 49866])
+                    ("C" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49867 49882]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [49826 49931])
+            ("llvm_is_conditional" function
+               (:arguments 
+                  ( ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49981 49996]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [49955 50041])
+            ("llvm_add_incoming" function
+               (:arguments 
+                  ( ("Incoming" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50199 50214])
+                    ("PhiNode" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50215 50236]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [50175 50387])
+            ("llvm_incoming" function
+               (:arguments 
+                  ( ("PhiNode" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50456 50477]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [50436 50920])
+            ("llvm_delete_instruction" function
+               (:arguments 
+                  ( ("Instruction" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50974 50999]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [50944 51069])
+            ("Builder_val" variable (:constant-flag t) nil [51161 51172])
+            ("llvm_finalize_builder" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51253 51261]))                  
+                :type "void")
+                nil [51219 51303])
+            ("builder_ops" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    (char *)\"Llvm.llbuilder\",  llvm_finalize_builder,
+    custom_compare_default,    custom_hash_default,
+    custom_serialize_default,  custom_deserialize_default,
+    custom_compare_ext_default}"
+                :type ("custom_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [51305 51550])
+            ("alloc_builder" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("B" variable (:type ("LLVMBuilderRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51579 51596]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [51552 51704])
+            ("llvm_builder" function
+               (:arguments 
+                  ( ("C" variable (:type ("LLVMContextRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51754 51771]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [51735 51830])
+            ("llvm_position_builder" function
+               (:arguments 
+                  ( ("Pos" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51917 51927])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51928 51936]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [51889 52228])
+            ("llvm_insertion_block" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52301 52309]))                  
+                :type ("LLVMBasicBlockRef" type (:type "class") nil nil))
+                nil [52262 52453])
+            ("llvm_insert_into_builder" function
+               (:arguments 
+                  ( ("I" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52531 52546])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52547 52558])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52559 52567]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [52500 52660])
+            ("llvm_set_current_debug_location" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52817 52825])
+                    ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52826 52841]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [52779 52914])
+            ("llvm_clear_current_debug_location" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52980 52988]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [52940 53064])
+            ("llvm_current_debug_location" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53134 53142]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [53100 53215])
+            ("llvm_set_inst_debug_location" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53287 53295])
+                    ("V" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53296 53311]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [53252 53381])
+            ("llvm_build_ret_void" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53525 53533]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [53492 53580])
+            ("llvm_build_ret" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53648 53665])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53666 53674]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [53620 53722])
+            ("llvm_build_aggregate_ret" function
+               (:arguments 
+                  ( ("RetVals" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53806 53820])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53821 53829]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [53768 53966])
+            ("llvm_build_br" function
+               (:arguments 
+                  ( ("BB" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54038 54059])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54060 54068]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [54011 54114])
+            ("llvm_build_cond_br" function
+               (:arguments 
+                  ( ("If" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54218 54234])
+                    ("Then" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54235 54258])
+                    ("Else" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54291 54314])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54315 54323]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [54186 54385])
+            ("llvm_build_switch" function
+               (:arguments 
+                  ( ("Of" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54479 54495])
+                    ("Else" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54496 54519])
+                    ("EstimatedCount" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54551 54572])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54573 54581]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [54448 54662])
+            ("llvm_build_malloc" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54742 54757])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54758 54769])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54770 54778]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [54711 54846])
+            ("llvm_build_array_malloc" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54943 54958])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54959 54976])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55014 55025])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55026 55034]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [54906 55112])
+            ("llvm_build_free" function
+               (:arguments 
+                  ( ("P" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55181 55196])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55197 55205]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [55152 55252])
+            ("llvm_add_case" function
+               (:arguments 
+                  ( ("Switch" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55323 55343])
+                    ("OnVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55344 55363])
+                    ("Dest" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55384 55407]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [55303 55466])
+            ("llvm_build_indirect_br" function
+               (:arguments 
+                  ( ("Addr" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55558 55576])
+                    ("EstimatedDests" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55577 55598])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55635 55643]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [55522 55715])
+            ("llvm_add_destination" function
+               (:arguments 
+                  ( ("IndirectBr" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55793 55817])
+                    ("Dest" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55818 55841]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [55766 55904])
+            ("llvm_build_invoke_nat" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56041 56057])
+                    ("Args" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56058 56069])
+                    ("Then" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56105 56128])
+                    ("Catch" variable (:type ("LLVMBasicBlockRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56164 56188])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56189 56200])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56236 56244]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [56006 56398])
+            ("llvm_build_invoke_bc" function
+               (:arguments 
+                  ( ("Args" variable
+                       (:dereference 1
+                        :type ("value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56534 56547])
+                    ("NumArgs" variable (:type "int") (reparse-symbol arg-sub-list) [56548 56560]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [56500 56764])
+            ("llvm_build_landingpad" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56866 56881])
+                    ("PersFn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56882 56902])
+                    ("NumClauses" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56938 56955])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56956 56967])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56968 56976]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [56831 57106])
+            ("llvm_add_clause" function
+               (:arguments 
+                  ( ("LandingPadInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57163 57191])
+                    ("ClauseVal" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57192 57215]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [57141 57282])
+            ("llvm_is_cleanup" function
+               (:arguments 
+                  ( ("LandingPadInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57328 57356]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [57306 57410])
+            ("llvm_set_cleanup" function
+               (:arguments 
+                  ( ("LandingPadInst" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57465 57493])
+                    ("flag" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57494 57505]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [57442 57578])
+            ("llvm_build_resume" function
+               (:arguments 
+                  ( ("Exn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57649 57666])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57667 57675]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [57618 57726])
+            ("llvm_build_unreachable" function
+               (:arguments 
+                  ( ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57791 57799]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [57755 57850])
+            ("llvm_build_add" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58021 58038])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58039 58056])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58057 58068])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58097 58105]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [57993 58176])
+            ("llvm_build_nsw_add" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58269 58286])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58287 58304])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58305 58316])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58349 58357]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [58237 58431])
+            ("llvm_build_nuw_add" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58524 58541])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58542 58559])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58560 58571])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58604 58612]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [58492 58686])
+            ("llvm_build_fadd" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58776 58793])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58794 58811])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58812 58823])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58853 58861]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [58747 58933])
+            ("llvm_build_sub" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59022 59039])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59040 59057])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59058 59069])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59098 59106]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [58994 59177])
+            ("llvm_build_nsw_sub" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59270 59287])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59288 59305])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59306 59317])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59350 59358]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [59238 59432])
+            ("llvm_build_nuw_sub" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59525 59542])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59543 59560])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59561 59572])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59605 59613]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [59493 59687])
+            ("llvm_build_fsub" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59777 59794])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59795 59812])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59813 59824])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59854 59862]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [59748 59934])
+            ("llvm_build_mul" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60023 60040])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60041 60058])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60059 60070])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60099 60107]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [59995 60178])
+            ("llvm_build_nsw_mul" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60271 60288])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60289 60306])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60307 60318])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60351 60359]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [60239 60433])
+            ("llvm_build_nuw_mul" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60526 60543])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60544 60561])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60562 60573])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60606 60614]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [60494 60688])
+            ("llvm_build_fmul" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60778 60795])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60796 60813])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60814 60825])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60855 60863]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [60749 60935])
+            ("llvm_build_udiv" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61025 61042])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61043 61060])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61061 61072])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61102 61110]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [60996 61182])
+            ("llvm_build_sdiv" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61272 61289])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61290 61307])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61308 61319])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61349 61357]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [61243 61429])
+            ("llvm_build_exact_sdiv" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61525 61542])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61543 61560])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61596 61607])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61608 61616]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [61490 61693])
+            ("llvm_build_fdiv" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61783 61800])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61801 61818])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61819 61830])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61860 61868]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [61754 61940])
+            ("llvm_build_urem" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62030 62047])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62048 62065])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62066 62077])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62107 62115]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [62001 62187])
+            ("llvm_build_srem" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62277 62294])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62295 62312])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62313 62324])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62354 62362]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [62248 62434])
+            ("llvm_build_frem" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62524 62541])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62542 62559])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62560 62571])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62601 62609]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [62495 62681])
+            ("llvm_build_shl" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62770 62787])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62788 62805])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62806 62817])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62846 62854]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [62742 62925])
+            ("llvm_build_lshr" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63015 63032])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63033 63050])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63051 63062])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63092 63100]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [62986 63172])
+            ("llvm_build_ashr" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63262 63279])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63280 63297])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63298 63309])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63339 63347]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [63233 63419])
+            ("llvm_build_and" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63508 63525])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63526 63543])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63544 63555])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63584 63592]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [63480 63663])
+            ("llvm_build_or" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63751 63768])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63769 63786])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63787 63798])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63826 63834]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [63724 63904])
+            ("llvm_build_xor" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63993 64010])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64011 64028])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64029 64040])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64069 64077]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [63965 64148])
+            ("llvm_build_neg" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64226 64241])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64242 64253])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64254 64262]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [64198 64326])
+            ("llvm_build_nsw_neg" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64408 64423])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64424 64435])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64436 64444]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [64376 64511])
+            ("llvm_build_nuw_neg" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64593 64608])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64609 64620])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64621 64629]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [64561 64696])
+            ("llvm_build_fneg" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64775 64790])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64791 64802])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64803 64811]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [64746 64876])
+            ("llvm_build_not" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64954 64969])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64970 64981])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64982 64990]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [64926 65054])
+            ("llvm_build_alloca" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65216 65231])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65232 65243])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65244 65252]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [65185 65320])
+            ("llvm_build_array_alloca" function
+               (:arguments 
+                  ( ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65417 65432])
+                    ("Size" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65433 65451])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65489 65500])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65501 65509]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [65380 65588])
+            ("llvm_build_load" function
+               (:arguments 
+                  ( ("Pointer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65667 65688])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65689 65700])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65701 65709]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [65638 65780])
+            ("llvm_build_store" function
+               (:arguments 
+                  ( ("Value" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65861 65880])
+                    ("Pointer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65881 65902])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65933 65941]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [65831 66002])
+            ("llvm_build_atomicrmw_native" function
+               (:arguments 
+                  ( ("BinOp" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66145 66157])
+                    ("Ptr" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66158 66175])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66217 66234])
+                    ("Ord" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66235 66245])
+                    ("ST" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66246 66255])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66297 66308])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66309 66317]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [66104 66533])
+            ("llvm_build_atomicrmw_bytecode" function
+               (:arguments 
+                  ( ("argv" variable
+                       (:pointer 1
+                        :type ("value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66578 66590])
+                    ("argn" variable (:type "int") (reparse-symbol arg-sub-list) [66591 66600]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [66535 66807])
+            ("llvm_build_gep" function
+               (:arguments 
+                  ( ("Pointer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66902 66923])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66924 66938])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66939 66950])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66979 66987]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [66874 67133])
+            ("llvm_build_in_bounds_gep" function
+               (:arguments 
+                  ( ("Pointer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67238 67259])
+                    ("Indices" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67260 67274])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67313 67324])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67325 67333]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [67200 67525])
+            ("llvm_build_struct_gep" function
+               (:arguments 
+                  ( ("Pointer" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67617 67638])
+                    ("Index" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67639 67651])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67687 67698])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67699 67707]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [67582 67827])
+            ("llvm_build_global_string" function
+               (:arguments 
+                  ( ("Str" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67914 67924])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67925 67936])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67937 67945]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [67876 68063])
+            ("llvm_build_global_stringptr" function
+               (:arguments 
+                  ( ("Str" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68153 68163])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68164 68175])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68176 68184]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [68112 68308])
+            ("llvm_build_trunc" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68480 68495])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68496 68511])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68512 68523])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68554 68562]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [68450 68632])
+            ("llvm_build_zext" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68721 68736])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68737 68752])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68753 68764])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68794 68802]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [68692 68871])
+            ("llvm_build_sext" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68960 68975])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68976 68991])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68992 69003])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69033 69041]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [68931 69110])
+            ("llvm_build_fptoui" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69201 69216])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69217 69232])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69233 69244])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69276 69284]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [69170 69355])
+            ("llvm_build_fptosi" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69446 69461])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69462 69477])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69478 69489])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69521 69529]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [69415 69600])
+            ("llvm_build_uitofp" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69691 69706])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69707 69722])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69723 69734])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69766 69774]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [69660 69845])
+            ("llvm_build_sitofp" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69936 69951])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69952 69967])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69968 69979])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70011 70019]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [69905 70090])
+            ("llvm_build_fptrunc" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70182 70197])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70198 70213])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70214 70225])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70258 70266]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [70150 70338])
+            ("llvm_build_fpext" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70428 70443])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70444 70459])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70460 70471])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70502 70510]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [70398 70580])
+            ("llvm_build_prttoint" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70673 70688])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70689 70704])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70705 70716])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70750 70758]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [70640 70831])
+            ("llvm_build_inttoptr" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70924 70939])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70940 70955])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70956 70967])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71001 71009]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [70891 71082])
+            ("llvm_build_bitcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71174 71189])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71190 71205])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71206 71217])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71250 71258]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [71142 71330])
+            ("llvm_build_zext_or_bitcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71430 71445])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71446 71461])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71502 71513])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71514 71522]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [71390 71600])
+            ("llvm_build_sext_or_bitcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71700 71715])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71716 71731])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71772 71783])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71784 71792]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [71660 71870])
+            ("llvm_build_trunc_or_bitcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71971 71986])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71987 72002])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72044 72055])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72056 72064]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [71930 72143])
+            ("llvm_build_pointercast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72239 72254])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72255 72270])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72271 72282])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72319 72327]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [72203 72403])
+            ("llvm_build_intcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72495 72510])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72511 72526])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72527 72538])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72571 72579]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [72463 72651])
+            ("llvm_build_fpcast" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72742 72757])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72758 72773])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72774 72785])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72817 72825]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [72711 72896])
+            ("llvm_build_icmp" function
+               (:arguments 
+                  ( ("Pred" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73078 73089])
+                    ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73090 73107])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73108 73125])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73155 73166])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73167 73175]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [73049 73297])
+            ("llvm_build_fcmp" function
+               (:arguments 
+                  ( ("Pred" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73397 73408])
+                    ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73409 73426])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73427 73444])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73474 73485])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73486 73494]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [73368 73604])
+            ("llvm_build_phi" function
+               (:arguments 
+                  ( ("Incoming" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73786 73801])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73802 73813])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73814 73822]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [73758 74350])
+            ("llvm_build_empty_phi" function
+               (:arguments 
+                  ( ("Type" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74431 74448])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74449 74460])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74461 74469]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [74397 74536])
+            ("llvm_build_call" function
+               (:arguments 
+                  ( ("Fn" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74632 74648])
+                    ("Params" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74649 74662])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74663 74674])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74704 74712]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [74603 74853])
+            ("llvm_build_select" function
+               (:arguments 
+                  ( ("If" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74956 74972])
+                    ("Then" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74973 74991])
+                    ("Else" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75023 75041])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75042 75053])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75054 75062]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [74925 75142])
+            ("llvm_build_va_arg" function
+               (:arguments 
+                  ( ("List" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75233 75251])
+                    ("Ty" variable (:type ("LLVMTypeRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75252 75267])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75268 75279])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75311 75319]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [75202 75392])
+            ("llvm_build_extractelement" function
+               (:arguments 
+                  ( ("Vec" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75492 75509])
+                    ("Idx" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75510 75527])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75567 75578])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75579 75587]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [75453 75669])
+            ("llvm_build_insertelement" function
+               (:arguments 
+                  ( ("Vec" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75779 75796])
+                    ("Element" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75797 75818])
+                    ("Idx" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75857 75874])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75875 75886])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75887 75895]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [75741 76017])
+            ("llvm_build_shufflevector" function
+               (:arguments 
+                  ( ("V1" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76127 76143])
+                    ("V2" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76144 76160])
+                    ("Mask" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76199 76217])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76218 76229])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76230 76238]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [76089 76323])
+            ("llvm_build_extractvalue" function
+               (:arguments 
+                  ( ("Aggregate" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76417 76440])
+                    ("Idx" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76441 76451])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76489 76500])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76501 76509]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [76380 76635])
+            ("llvm_build_insertvalue" function
+               (:arguments 
+                  ( ("Aggregate" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76739 76762])
+                    ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76763 76780])
+                    ("Idx" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76817 76827])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76828 76839])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76840 76848]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [76703 76977])
+            ("llvm_build_is_null" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77059 77076])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77077 77088])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77089 77097]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [77027 77166])
+            ("llvm_build_is_not_null" function
+               (:arguments 
+                  ( ("Val" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77252 77269])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77270 77281])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77282 77290]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [77216 77362])
+            ("llvm_build_ptrdiff" function
+               (:arguments 
+                  ( ("LHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77455 77472])
+                    ("RHS" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77473 77490])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77491 77502])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77535 77543]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [77423 77618])
+            ("llvm_build_freeze" function
+               (:arguments 
+                  ( ("X" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77699 77714])
+                    ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77715 77726])
+                    ("B" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77727 77735]))                  
+                :type ("LLVMValueRef" type (:type "class") nil nil))
+                nil [77668 77802])
+            ("llvm_memorybuffer_of_file" function
+               (:arguments 
+                  ( ("Path" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77994 78005]))                  
+                :type ("LLVMMemoryBufferRef" type (:type "class") nil nil))
+                nil [77948 78267])
+            ("llvm_memorybuffer_of_stdin" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78376 78387]))                  
+                :type ("LLVMMemoryBufferRef" type (:type "class") nil nil))
+                nil [78329 78575])
+            ("llvm_memorybuffer_of_string" function
+               (:arguments 
+                  ( ("Name" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78672 78683])
+                    ("String" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78684 78697]))                  
+                :type ("LLVMMemoryBufferRef" type (:type "class") nil nil))
+                nil [78624 78989])
+            ("llvm_memorybuffer_as_string" function
+               (:arguments 
+                  ( ("MemBuf" variable (:type ("LLVMMemoryBufferRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79056 79083]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [79022 79242])
+            ("llvm_memorybuffer_dispose" function
+               (:arguments 
+                  ( ("MemBuf" variable (:type ("LLVMMemoryBufferRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79305 79332]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [79273 79390])
+            ("llvm_passmanager_create" function
+               (:arguments 
+                  ( ("Unit" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79557 79568]))                  
+                :type ("LLVMPassManagerRef" type (:type "class") nil nil))
+                nil [79514 79606])
+            ("llvm_passmanager_run_module" function
+               (:arguments 
+                  ( ("M" variable (:type ("LLVMModuleRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79696 79712])
+                    ("PM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79713 79735]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [79662 79785])
+            ("llvm_passmanager_initialize" function
+               (:arguments 
+                  ( ("FPM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79863 79886]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [79829 79949])
+            ("llvm_passmanager_run_function" function
+               (:arguments 
+                  ( ("F" variable (:type ("LLVMValueRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80040 80055])
+                    ("FPM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80056 80079]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [80004 80138])
+            ("llvm_passmanager_finalize" function
+               (:arguments 
+                  ( ("FPM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80214 80237]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [80182 80298])
+            ("llvm_passmanager_dispose" function
+               (:arguments 
+                  ( ("PM" variable (:type ("LLVMPassManagerRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80375 80397]))                  
+                :type ("value" type (:type "class") nil nil))
+                nil [80344 80450]))          
+      :file "llvm_ocaml.c"
+      :pointmax 80451
+      :fsize 80450
+      :lastmodtime '(25573 11044 399731 563000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Builder_val" (spp-arg-list ("v") 51172 . 51175) . ((semantic-list "(*(LLVMBuilderRef *)(Data_custom_val(v)))" 51176 . 51217)))
+          ("DEFINE_CASE" (spp-arg-list ("Val" "Kind") 20324 . 20335) . 
+              ((DO "do" 20342 . 20344) (semantic-list "{if (LLVMIsA##Kind(Val)) return Val_int(Kind);}" 20345 . 20392) (WHILE "while" 20393 . 20398) (semantic-list "(0)" 20398 . 20401)))
+          ("DEFINE_ITERATORS" (spp-arg-list ("camlname" "cname" "pty" "cty" "pfun") 3982 . 4015) . 
+              ((symbol "value" 4080 . 4085) (spp-symbol-merge ((spp-symbol-merge ((symbol "llvm_" 4086 . 4091) (symbol "camlname" 4093 . 4101)) 4086 . 4101) (symbol "_begin" 4103 . 4109)) 4086 . 4109) (semantic-list "(pty Mom)" 4109 . 4118) (semantic-list "{       \\
+    cty First = LLVMGetFirst##cname(Mom);                 \\
+    if (First)                                            \\
+      return alloc_variant(1, First);                     \\
+    return alloc_variant(0, Mom);                         \\
+  }" 4119 . 4372) (symbol "value" 4551 . 4556) (spp-symbol-merge ((spp-symbol-merge ((symbol "llvm_" 4557 . 4562) (symbol "camlname" 4564 . 4572)) 4557 . 4572) (symbol "_succ" 4574 . 4579)) 4557 . 4579) (semantic-list "(cty Kid)" 4579 . 4588) (semantic-list "{        \\
+    cty Next = LLVMGetNext##cname(Kid);                   \\
+    if (Next)                                             \\
+      return alloc_variant(1, Next);                      \\
+    return alloc_variant(0, pfun(Kid));                   \\
+  }" 4589 . 4843) (symbol "value" 5022 . 5027) (spp-symbol-merge ((spp-symbol-merge ((symbol "llvm_" 5028 . 5033) (symbol "camlname" 5035 . 5043)) 5028 . 5043) (symbol "_end" 5045 . 5049)) 5028 . 5049) (semantic-list "(pty Mom)" 5049 . 5058) (semantic-list "{         \\
+    cty Last = LLVMGetLast##cname(Mom);                   \\
+    if (Last)                                             \\
+      return alloc_variant(1, Last);                      \\
+    return alloc_variant(0, Mom);                         \\
+  }" 5059 . 5314) (symbol "value" 5493 . 5498) (spp-symbol-merge ((spp-symbol-merge ((symbol "llvm_" 5499 . 5504) (symbol "camlname" 5506 . 5514)) 5499 . 5514) (symbol "_pred" 5516 . 5521)) 5499 . 5521) (semantic-list "(cty Kid)" 5521 . 5530) (semantic-list "{        \\
+    cty Prev = LLVMGetPrevious##cname(Kid);               \\
+    if (Prev)                                             \\
+      return alloc_variant(1, Prev);                      \\
+    return alloc_variant(0, pfun(Kid));                   \\
+  }" 5531 . 5785)))
+          )
+)
+    (semanticdb-table "semanticdb-table-15698d21a688"
+      :file "llvm_ocaml.h"
+      :fsize 1906
+      :lastmodtime '(25573 11044 399731 563000)))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!bindings!ocaml!llvm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

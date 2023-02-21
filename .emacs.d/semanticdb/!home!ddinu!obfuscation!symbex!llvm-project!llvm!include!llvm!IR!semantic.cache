@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-15698cb727ba
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15698cb727ba"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15698cbb310c"
+      :major-mode c++-mode
+      :tags nil
+      :file "Value.h"
+      :pointmax 36808
+      :fsize 36807
+      :lastmodtime '(25573 11044 566396 451000)
+      :unmatched-syntax nil))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!include!llvm!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,352 @@
+;; Object semanticdb-project-database-file-15657c766738
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15657c766738"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15657c766772"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Pass.h" include nil nil [618 640])
+            ("llvm/Config/llvm-config.h" include nil nil [641 677])
+            ("llvm/IR/Function.h" include nil nil [678 707])
+            ("llvm/IR/IRPrintingPasses.h" include nil nil [708 745])
+            ("llvm/IR/LLVMContext.h" include nil nil [746 778])
+            ("llvm/IR/LegacyPassNameParser.h" include nil nil [779 820])
+            ("llvm/IR/Module.h" include nil nil [821 848])
+            ("llvm/IR/OptBisect.h" include nil nil [849 879])
+            ("llvm/PassInfo.h" include nil nil [880 906])
+            ("llvm/PassRegistry.h" include nil nil [907 937])
+            ("llvm/Support/Compiler.h" include nil nil [938 972])
+            ("llvm/Support/Debug.h" include nil nil [973 1004])
+            ("llvm/Support/raw_ostream.h" include nil nil [1005 1042])
+            ("cassert" include (:system-flag t) nil [1043 1061])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1063 1084])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [1094 1104])
+            ("Pass" function
+               (:destructor-flag t
+                :parent "Pass"
+                :type "void")
+                nil [1256 1292])
+            ("createPrinterPass" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "ModulePass"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1405 1421])
+                    ("Banner" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1458 1484]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [1369 1538])
+            ("getPotentialPassManagerType" function
+               (:methodconst-flag t
+                :parent "ModulePass"
+                :type ("PassManagerType" type (:type "class") nil nil))
+                nil [1540 1639])
+            ("getDescription" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1675 1691]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1641 1742])
+            ("skipModule" function
+               (:methodconst-flag t
+                :parent "ModulePass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1772 1782]))                  
+                :type "bool")
+                nil [1744 1922])
+            ("mustPreserveAnalysisID" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :arguments 
+                  ( ("AID" variable
+                       (:reference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1958 1968]))                  
+                :type "bool")
+                nil [1924 2038])
+            ("dumpPassStructure" function
+               (:parent "Pass"
+                :arguments 
+                  ( ("Offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2135 2151]))                  
+                :type "void")
+                nil [2106 2207])
+            ("getPassName" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :type ("StringRef" type (:type "class") nil nil))
+                nil [2408 2650])
+            ("preparePassManager" function
+               (:parent "Pass"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("PMStack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2682 2692]))                  
+                :type "void")
+                nil [2652 2732])
+            ("getPotentialPassManagerType" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :type ("PassManagerType" type (:type "class") nil nil))
+                nil [2734 2846])
+            ("getAnalysisUsage" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :type ("AnalysisUsage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2876 2892]))                  
+                :type "void")
+                nil [2848 2970])
+            ("releaseMemory" function
+               (:parent "Pass"
+                :type "void")
+                nil [2972 3038])
+            ("verifyAnalysis" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :type "void")
+                nil [3040 3113])
+            ("getAdjustedAnalysisPointer" function
+               (:pointer 1
+                :parent "Pass"
+                :arguments 
+                  ( ("AID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3154 3169]))                  
+                :type "void")
+                nil [3115 3188])
+            ("getAsImmutablePass" function
+               (:pointer 1
+                :parent "Pass"
+                :type ("ImmutablePass" type (:type "class") nil nil))
+                nil [3190 3253])
+            ("getAsPMDataManager" function
+               (:pointer 1
+                :parent "Pass"
+                :type ("PMDataManager" type (:type "class") nil nil))
+                nil [3255 3318])
+            ("setResolver" function
+               (:parent "Pass"
+                :arguments 
+                  ( ("AR" variable
+                       (:pointer 1
+                        :type ("AnalysisResolver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3343 3364]))                  
+                :type "void")
+                nil [3320 3435])
+            ("print" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3639 3655])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3656 3671]))                  
+                :type "void")
+                nil [3622 3759])
+            ("dump" function
+               (:methodconst-flag t
+                :parent "Pass"
+                :type "void")
+                nil [3856 3909])
+            ("initializePass" function
+               (:parent "ImmutablePass"
+                :type "void")
+                nil [4115 4191])
+            ("createPrinterPass" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "FunctionPass"
+                :arguments 
+                  ( ("OS" variable
+                       (:reference 1
+                        :type ("raw_ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4347 4363])
+                    ("Banner" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4402 4428]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [4309 4484])
+            ("getPotentialPassManagerType" function
+               (:methodconst-flag t
+                :parent "FunctionPass"
+                :type ("PassManagerType" type (:type "class") nil nil))
+                nil [4486 4589])
+            ("getDescription" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4625 4643]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4591 4696])
+            ("skipFunction" function
+               (:methodconst-flag t
+                :parent "FunctionPass"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4730 4748]))                  
+                :type "bool")
+                nil [4698 5091])
+            ("lookupPassInfo" function
+               (:pointer 1
+                :parent "Pass"
+                :constant-flag t
+                :arguments 
+                  ( ("TI" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5130 5145]))                  
+                :type ("PassInfo" type (:type "class") nil nil))
+                nil [5093 5208])
+            ("lookupPassInfo" function
+               (:pointer 1
+                :parent "Pass"
+                :constant-flag t
+                :arguments 
+                  ( ("Arg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5247 5261]))                  
+                :type ("PassInfo" type (:type "class") nil nil))
+                nil [5210 5325])
+            ("createPass" function
+               (:pointer 1
+                :parent "Pass"
+                :arguments 
+                  ( ("ID" variable (:type ("AnalysisID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5350 5364]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [5327 5499])
+            ("RegisterAGBase" function
+               (:constructor-flag t
+                :parent "RegisterAGBase"
+                :arguments 
+                  ( ("Name" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5784 5799])
+                    ("InterfaceID" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5800 5824])
+                    ("PassID" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5856 5875])
+                    ("isDefault" variable (:type "bool") (reparse-symbol arg-sub-list) [5876 5891]))                  
+                :type ("RegisterAGBase" type (:type "class") nil nil))
+                nil [5753 6083])
+            ("enumeratePasses" function
+               (:parent "PassRegistrationListener"
+                :type "void")
+                nil [6333 6441])
+            ("PassNameParser" function
+               (:constructor-flag t
+                :parent "PassNameParser"
+                :arguments 
+                  ( ("O" variable
+                       (:reference 1
+                        :type ("cl::Option" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6474 6488]))                  
+                :type ("PassNameParser" type (:type "class") nil nil))
+                nil [6443 6596])
+            ("unnamed" type
+               (:members 
+                  ( ("GetCFGOnlyPasses" type
+                       (:superclasses 
+                          ( ("PassRegistrationListener" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("AnalysisUsage::VectorType" variable (:type "int") (reparse-symbol classsubparts) [7069 7095])
+                            ("CFGOnlyList" variable (:type ("VectorType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7099 7123])
+                            ("GetCFGOnlyPasses" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("L" variable
+                                       (:reference 1
+                                        :type ("VectorType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7144 7158]))                                  
+                                :type ("GetCFGOnlyPasses" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [7127 7178]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [6988 7312]))                  
+                :type "namespace")
+                nil [6975 7315])
+            ("setPreservesCFG" function
+               (:parent "AnalysisUsage"
+                :type "void")
+                nil [7677 7918])
+            ("addPreserved" function
+               (:parent "AnalysisUsage"
+                :arguments 
+                  ( ("Arg" variable (:type ("StringRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7963 7977]))                  
+                :type ("AnalysisUsage" type (:type "class") nil nil))
+                nil [7920 8172])
+            ("addRequiredID" function
+               (:parent "AnalysisUsage"
+                :arguments 
+                  ( ("ID" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8218 8233]))                  
+                :type ("AnalysisUsage" type (:type "class") nil nil))
+                nil [8174 8281])
+            ("addRequiredID" function
+               (:parent "AnalysisUsage"
+                :arguments 
+                  ( ("ID" variable
+                       (:reference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8327 8336]))                  
+                :type ("AnalysisUsage" type (:type "class") nil nil))
+                nil [8283 8385])
+            ("addRequiredTransitiveID" function
+               (:parent "AnalysisUsage"
+                :arguments 
+                  ( ("ID" variable
+                       (:reference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8441 8450]))                  
+                :type ("AnalysisUsage" type (:type "class") nil nil))
+                nil [8387 8538]))          
+      :file "Pass.cpp"
+      :pointmax 8539
+      :fsize 8538
+      :lastmodtime '(25573 11044 756394 425000)
+      :unmatched-syntax '((semantic-list 7229 . 7309) (symbol 7220 . 7228) (semantic-list 7200 . 7219) (symbol 7187 . 7200) (VOID 7182 . 7186) (punctuation 7067 . 7068) (symbol 7056 . 7066) (USING 7050 . 7055) (punctuation 6847 . 6848) (DEFAULT 6840 . 6847) (punctuation 6838 . 6839) (semantic-list 6835 . 6837) (symbol 6821 . 6835) (punctuation 6820 . 6821) (punctuation 6819 . 6820) (punctuation 6818 . 6819) (symbol 6804 . 6818) (punctuation 4112 . 4113) (DEFAULT 4105 . 4112) (punctuation 4103 . 4104) (semantic-list 4100 . 4102) (symbol 4087 . 4100) (punctuation 4086 . 4087) (punctuation 4085 . 4086) (punctuation 4084 . 4085) (symbol 4071 . 4084) (symbol 3839 . 3855) (punctuation 1366 . 1367) (DEFAULT 1359 . 1366) (punctuation 1357 . 1358) (semantic-list 1354 . 1356) (symbol 1344 . 1354) (punctuation 1343 . 1344) (punctuation 1342 . 1343) (punctuation 1341 . 1342) (symbol 1331 . 1341))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"ir\"" 1105 . 1109)))
+          )
+))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!IR!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

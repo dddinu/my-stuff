@@ -1,0 +1,734 @@
+;; Object semanticdb-project-database-file-15698cb5d024
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15698cb5d024"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15698cf8cf6a"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/ADT/STLExtras.h" include nil nil [2399 2430])
+            ("llvm/BinaryFormat/Dwarf.h" include nil nil [2431 2467])
+            ("llvm/ExecutionEngine/MCJIT.h" include nil nil [2468 2507])
+            ("llvm/ExecutionEngine/SectionMemoryManager.h" include nil nil [2508 2562])
+            ("llvm/IR/DataLayout.h" include nil nil [2563 2594])
+            ("llvm/IR/DerivedTypes.h" include nil nil [2595 2628])
+            ("llvm/IR/IRBuilder.h" include nil nil [2629 2659])
+            ("llvm/IR/Intrinsics.h" include nil nil [2660 2691])
+            ("llvm/IR/LLVMContext.h" include nil nil [2692 2724])
+            ("llvm/IR/LegacyPassManager.h" include nil nil [2725 2763])
+            ("llvm/IR/Module.h" include nil nil [2764 2791])
+            ("llvm/IR/Verifier.h" include nil nil [2792 2821])
+            ("llvm/Support/TargetSelect.h" include nil nil [2822 2860])
+            ("llvm/Target/TargetOptions.h" include nil nil [2861 2899])
+            ("llvm/Transforms/Scalar.h" include nil nil [2900 2935])
+            ("cstdio" include (:system-flag t) nil [3540 3557])
+            ("sstream" include (:system-flag t) nil [3559 3577])
+            ("stdexcept" include (:system-flag t) nil [3578 3598])
+            ("inttypes.h" include (:system-flag t) nil [3600 3621])
+            ("unwind.h" include (:system-flag t) nil [3623 3642])
+            ("USE_GLOBAL_STR_CONSTS" variable (:constant-flag t) nil [3682 3703])
+            ("OurExceptionType_t" type
+               (:members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [3829 3838]))                  
+                :type "struct")
+                nil [3778 3841])
+            ("OurBaseException_t" type
+               (:members 
+                  ( ("type" variable (:type ("OurExceptionType_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4249 4280])
+                    ("unwindException" variable (:type ("_Unwind_Exception" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4332 4373]))                  
+                :type "struct")
+                nil [4219 4376])
+            ("OurException" type
+               (:typedef ("OurBaseException_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4416 4463])
+            ("OurUnwindException" type
+               (:typedef ("_Unwind_Exception" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4464 4516])
+            ("namedValues" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("llvm::Value" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4609 4664])
+            ("ourBaseFromUnwindOffset" variable (:type ("int64_t" type (:type "class") nil nil)) nil [4666 4698])
+            ("ourBaseExcpClassChars" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{'o', 'b', 'j', '\\0', 'b', 'a', 's', '\\0'}"
+                :type "unsigned char")
+                nil [4700 4789])
+            ("ourBaseExceptionClass" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [4792 4834])
+            ("ourTypeInfoNames" variable
+               (:typemodifiers ("static")
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4836 4885])
+            ("ourTypeInfoNamesIndex" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [4886 4942])
+            ("ourTypeInfoType" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::StructType" type (:type "class") nil nil))
+                nil [4944 4985])
+            ("ourCaughtResultType" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::StructType" type (:type "class") nil nil))
+                nil [4986 5031])
+            ("ourExceptionType" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::StructType" type (:type "class") nil nil))
+                nil [5032 5074])
+            ("ourUnwindExceptionType" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::StructType" type (:type "class") nil nil))
+                nil [5075 5123])
+            ("ourExceptionNotThrownState" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::ConstantInt" type (:type "class") nil nil))
+                nil [5125 5178])
+            ("ourExceptionThrownState" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::ConstantInt" type (:type "class") nil nil))
+                nil [5179 5229])
+            ("ourExceptionCaughtState" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("llvm::ConstantInt" type (:type "class") nil nil))
+                nil [5230 5280])
+            ("ArgNames" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [5282 5324])
+            ("ArgTypes" type
+               (:typedef ("std::vector" type
+                     (:template-specifier 
+                        ( ("llvm::Type" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [5325 5367])
+            ("createFunction" function
+               (:pointer 1
+                :arguments 
+                  ( ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6040 6061])
+                    ("retType" variable
+                       (:pointer 1
+                        :type ("llvm::Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6093 6113])
+                    ("theArgTypes" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ArgTypes" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6145 6173])
+                    ("theArgNames" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ArgNames" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6205 6233])
+                    ("functName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6265 6294])
+                    ("linkage" variable (:type ("llvm::GlobalValue::LinkageTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6326 6366])
+                    ("declarationOnly" variable (:type "bool") (reparse-symbol arg-sub-list) [6398 6419])
+                    ("isVarArg" variable (:type "bool") (reparse-symbol arg-sub-list) [6451 6465]))                  
+                :type ("llvm::Function" type (:type "class") nil nil))
+                nil [6009 6973])
+            ("createEntryBlockAlloca" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("function" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7348 7373])
+                    ("varName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7422 7449])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("llvm::Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7498 7515])
+                    ("initWith" variable
+                       (:pointer 1
+                        :default-value "0"
+                        :type ("llvm::Constant" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7564 7592]))                  
+                :type ("llvm::AllocaInst" type (:type "class") nil nil))
+                nil [7300 7830])
+            ("unnamed" type
+               (:members 
+                  ( ("ReadType" function
+                       (:template 
+                          ( ("Type_" type (:type "class") nil nil))                          
+                        :type ("uintptr_t" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7968 7984])
+                            ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7984 7986]))                          )
+                        (reparse-symbol namespacesubparts) [7923 8103]))                  
+                :type "namespace")
+                nil [7911 8105])
+            ("genClass" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint64_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("classChars" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [26601 26634])
+                    ("classCharsSize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26635 26657]))                  )
+                (reparse-symbol extern-c-contents) [26583 26805])
+            ("ourPersonality" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("_Unwind_Reason_Code" type (:type "class") nil nil)
+                :arguments 
+                  ( ("version" variable (:type "int") (reparse-symbol arg-sub-list) [25158 25170])
+                    ("actions" variable (:type ("_Unwind_Action" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25171 25194])
+                    ("exceptionClass" variable (:type ("_Unwind_Exception_Class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25230 25269])
+                    ("exceptionObject" variable
+                       (:pointer 1
+                        :type ("_Unwind_Exception" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25305 25347])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("_Unwind_Context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25383 25415]))                  )
+                (reparse-symbol extern-c-contents) [25123 26171])
+            ("handleLsda" function
+               (:type ("_Unwind_Reason_Code" type (:type "class") nil nil)
+                :arguments 
+                  ( ("version" variable (:type "int") (reparse-symbol arg-sub-list) [18993 19005])
+                    ("lsda" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19006 19026])
+                    ("actions" variable (:type ("_Unwind_Action" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19065 19088])
+                    ("exceptionClass" variable (:type ("_Unwind_Exception_Class" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19127 19166])
+                    ("exceptionObject" variable
+                       (:pointer 1
+                        :type ("_Unwind_Exception" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19205 19247])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("_Unwind_Context" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19286 19318]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [18955 24459])
+            ("handleActionValue" function
+               (:type "bool"
+                :arguments 
+                  ( ("resultAction" variable
+                       (:pointer 1
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15881 15903])
+                    ("TTypeEncoding" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15934 15956])
+                    ("ClassInfo" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15987 16012])
+                    ("actionEntry" variable (:type ("uintptr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16043 16065])
+                    ("exceptionClass" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16096 16120])
+                    ("exceptionObject" variable
+                       (:pointer 1
+                        :type ("_Unwind_Exception" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16151 16193]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [15851 18310])
+            ("readEncodedPointer" function
+               (:type ("uintptr_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13039 13060])
+                    ("encoding" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13061 13078]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [13003 14762])
+            ("getEncodingSize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("Encoding" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12106 12123]))                  )
+                (reparse-symbol extern-c-contents) [12081 12726])
+            ("readSLEB128" function
+               (:type ("uintptr_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11727 11748]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [11698 12079])
+            ("readULEB128" function
+               (:type ("uintptr_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11200 11221]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [11171 11460])
+            ("createOurException" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("OurUnwindException" type (:type "class") nil nil)
+                :arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [10609 10618]))                  
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [10570 10933])
+            ("deleteFromUnwindOurException" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("reason" variable (:type ("_Unwind_Reason_Code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10202 10229])
+                    ("expToDelete" variable
+                       (:pointer 1
+                        :type ("OurUnwindException" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10264 10296]))                  )
+                (reparse-symbol extern-c-contents) [10168 10425])
+            ("deleteOurException" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("expToDelete" variable
+                       (:pointer 1
+                        :type ("OurUnwindException" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9577 9609]))                  )
+                (reparse-symbol extern-c-contents) [9553 9843])
+            ("printStr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("toPrint" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9175 9189]))                  )
+                (reparse-symbol extern-c-contents) [9161 9315])
+            ("print64Int" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("intToPrint" variable (:type "long int") (reparse-symbol arg-sub-list) [8865 8885])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8886 8905]))                  )
+                (reparse-symbol extern-c-contents) [8849 9091])
+            ("print32Int" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("intToPrint" variable (:type "int") (reparse-symbol arg-sub-list) [8417 8432])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8433 8452]))                  )
+                (reparse-symbol extern-c-contents) [8401 8638])
+            ("generateStringPrint" function
+               (:arguments 
+                  ( ("context" variable
+                       (:reference 1
+                        :type ("llvm::LLVMContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27363 27390])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27416 27437])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27463 27490])
+                    ("toPrint" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27516 27536])
+                    ("useGlobal" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [27562 27583]))                  
+                :type "void")
+                nil [27338 28429])
+            ("generateIntegerPrint" function
+               (:arguments 
+                  ( ("context" variable
+                       (:reference 1
+                        :type ("llvm::LLVMContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29075 29102])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29129 29150])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29177 29204])
+                    ("printFunct" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29231 29258])
+                    ("toPrint" variable
+                       (:reference 1
+                        :type ("llvm::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29285 29306])
+                    ("format" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29333 29352])
+                    ("useGlobal" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [29379 29400]))                  
+                :type "void")
+                nil [29049 30196])
+            ("createFinallyBlock" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:reference 1
+                        :type ("llvm::LLVMContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31437 31464])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31509 31530])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31575 31602])
+                    ("toAddTo" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31647 31671])
+                    ("blockName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31716 31739])
+                    ("functionId" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31784 31808])
+                    ("terminatorBlock" variable
+                       (:reference 1
+                        :type ("llvm::BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31853 31887])
+                    ("unwindResumeBlock" variable
+                       (:reference 1
+                        :type ("llvm::BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31932 31968])
+                    ("exceptionCaughtFlag" variable
+                       (:pointer 2
+                        :type ("llvm::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32013 32047])
+                    ("exceptionStorage" variable
+                       (:pointer 2
+                        :type ("llvm::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32092 32123])
+                    ("caughtResultStorage" variable
+                       (:pointer 2
+                        :type ("llvm::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32168 32202]))                  
+                :type ("llvm::BasicBlock" type (:type "class") nil nil))
+                nil [31393 34551])
+            ("createCatchBlock" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("context" variable
+                       (:reference 1
+                        :type ("llvm::LLVMContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35192 35219])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35262 35283])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35326 35353])
+                    ("toAddTo" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35396 35420])
+                    ("blockName" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35463 35486])
+                    ("functionId" variable
+                       (:reference 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35529 35553])
+                    ("terminatorBlock" variable
+                       (:reference 1
+                        :type ("llvm::BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35596 35630])
+                    ("exceptionCaughtFlag" variable
+                       (:reference 1
+                        :type ("llvm::Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35673 35706]))                  
+                :type ("llvm::BasicBlock" type (:type "class") nil nil))
+                nil [35150 36377])
+            ("createCatchWrappedInvokeFunction" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37548 37569])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37570 37597])
+                    ("fpm" variable
+                       (:reference 1
+                        :type ("llvm::legacy::FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37602 37641])
+                    ("toInvoke" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37642 37667])
+                    ("ourId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37672 37690])
+                    ("numExceptionsToCatch" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [37691 37721])
+                    ("exceptionTypesToCatch" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [37726 37759]))                  
+                :type ("llvm::Function" type (:type "class") nil nil))
+                nil [37487 47435])
+            ("createThrowExceptionFunction" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48284 48305])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48306 48333])
+                    ("fpm" variable
+                       (:reference 1
+                        :type ("llvm::legacy::FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48363 48402])
+                    ("ourId" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48432 48450])
+                    ("nativeThrowType" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48451 48475])
+                    ("nativeThrowFunct" variable
+                       (:reference 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48505 48538]))                  
+                :type ("llvm::Function" type (:type "class") nil nil))
+                nil [48231 52047])
+            ("createStandardUtilityFunctions" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("numTypeInfos" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [52092 52114])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52158 52179])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52223 52250]))                  
+                :type "void")
+                nil [52049 52251])
+            ("createUnwindExceptionTest" function
+               (:pointer 1
+                :arguments 
+                  ( ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53593 53614])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53615 53642])
+                    ("fpm" variable
+                       (:reference 1
+                        :type ("llvm::legacy::FunctionPassManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53669 53708])
+                    ("nativeThrowFunctName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53735 53768]))                  
+                :type ("llvm::Function" type (:type "class") nil nil))
+                nil [53550 56199])
+            ("unnamed" type
+               (:members 
+                  ( ("OurCppRunException" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [56306 56313])
+                            ("OurCppRunException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("reason" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [56335 56360]))                                  
+                                :type ("OurCppRunException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [56316 56394])
+                            ("OurCppRunException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("toCopy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OurCppRunException" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [56418 56451]))                                  
+                                :type ("OurCppRunException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [56398 56485])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("toCopy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("OurCppRunException" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [56521 56554]))                                  
+                                :type ("OurCppRunException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [56489 56684]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [56251 56736]))                  
+                :type "namespace")
+                nil [56201 56738])
+            ("throwCppException" function
+               (:arguments 
+                  ( ("ignoreIt" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56951 56968]))                  
+                :type "void")
+                nil [56927 57037])
+            ("OurExceptionThrowFunctType" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("typeToThrow" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57083 57103]))                  
+                :type "void")
+                nil [57047 57104])
+            ("runExceptionThrow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("engine" variable
+                       (:pointer 1
+                        :type ("llvm::ExecutionEngine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57684 57714])
+                    ("function" variable
+                       (:pointer 1
+                        :type ("llvm::Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57738 57763])
+                    ("typeToThrow" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57787 57807]))                  
+                :type "void")
+                nil [57654 58765])
+            ("TypeArray" type
+               (:typedef ("llvm::ArrayRef" type
+                     (:template-specifier 
+                        ( ("llvm::Type" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [58796 58842])
+            ("createStandardUtilityFunctions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("numTypeInfos" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [59234 59256])
+                    ("module" variable
+                       (:reference 1
+                        :type ("llvm::Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59300 59321])
+                    ("builder" variable
+                       (:reference 1
+                        :type ("llvm::IRBuilder" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59365 59392]))                  
+                :type "void")
+                nil [59191 66561])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [67213 67222])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67223 67236]))                  
+                :type "int")
+                nil [67204 70399]))          
+      :file "ExceptionDemo.cpp"
+      :pointmax 70400
+      :fsize 70399
+      :lastmodtime '(25573 11044 476397 411000)
+      :unmatched-syntax '((TYPEDEF 57039 . 57046) (semantic-list 56731 . 56733) (symbol 56722 . 56730) (semantic-list 56719 . 56721) (THROW 56714 . 56719) (semantic-list 56707 . 56713) (symbol 56689 . 56707) (punctuation 56688 . 56689) (punctuation 7983 . 7984))
+      :lexical-table 
+        '(("USE_GLOBAL_STR_CONSTS" . ((symbol "true" 3704 . 3708)))
+          )
+))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!examples!ExceptionDemo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
