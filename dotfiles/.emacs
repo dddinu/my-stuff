@@ -6,7 +6,7 @@
  '(custom-enabled-themes '(modus-vivendi))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(cmake-mode smooth-scroll ranger iedit auto-complete-c-headers yasnippet-snippets yasnippet-classic-snippets yasnippet auto-complete))
+   '(all-the-icons doom-modeline ggtags cmake-mode smooth-scroll iedit auto-complete-c-headers yasnippet-snippets yasnippet-classic-snippets yasnippet auto-complete))
  '(warning-suppress-types '(((python python-shell-completion-native-turn-on-maybe)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -64,16 +64,16 @@
 		    ))))
 
 ;; dired settings
-;; use ranger
-(require 'ranger)
 ;; make dired not have so many fucking buffers
 (put 'dired-find-alternate-file 'disabled nil)
-;; remap enter and previous directory
-(define-key dired-mode-map (kbd "C-<right>") 'dired-find-alternate-file)
-(define-key dired-mode-map (kbd "C-<left>") 'dired-up-directory)
 ;; enable line highlighting when in dired
-(add-hook 'dired-mode-hook (lambda ()
-			     (hl-line-mode 1)))
+(add-hook 'dired-mode-hook
+	  (lambda ()
+	    (hl-line-mode 1)
+	    ;; remap enter and previous directory
+	    (define-key dired-mode-map (kbd "C-<right>") 'dired-find-alternate-file)
+	    (define-key dired-mode-map (kbd "C-<left>") 'dired-up-directory)))
+	    
 
 
 ;; ibuffer settings
@@ -88,6 +88,8 @@
 	       ("py" (mode . python-mode))
 	       ("c++" (mode . c++-mode))
 	       ("c" (mode . c-mode))
+	       ("llvm" (mode . llvm-mode))
+	       ("emacs" (name . "^\\*"))
 	       ))))
 ;; don't show empty filter groups
 (setq ibuffer-show-empty-filter-groups nil)
@@ -97,13 +99,11 @@
 	    (ibuffer-auto-mode 1)
 	    (hl-line-mode 1) ;; have line highlighting on
 	    (ibuffer-switch-to-saved-filter-groups "default")
-	    (ibuffer-filter-by-filename ".") ;; show only dired and file buffers
+	    ;;(ibuffer-filter-by-filename ".") ;; show only dired and file buffers
 	    ))
 
 ;; start ibuf-ext with emacs
 (require 'ibuf-ext)
-;; hide buffers starting with *
-(add-to-list 'ibuffer-never-show-predicates "^\\*")
 
 ;; start good-scroll with emacs
 (require 'good-scroll)
@@ -128,7 +128,42 @@
 (add-to-list 'load-path "~/.emacs.d/llvm")
 (require 'llvm-mode)
 
-
+;;;;;;;;;; DOOM EMACS modeline settings ;;;;;;;;;;
+;; (require 'doom-modeline)
+;; (require 'all-the-icons)
+;; ;; always enable
+;; (doom-modeline-mode 1)
+;; ;; enable imenu support
+;; (setq doom-modeline-support-imenu t)
+;; ;; display file name
+;; (setq doom-modeline-buffer-file-name-style 'auto)
+;; ;; Whether display icons in the mode-line.
+;; ;; While using the server mode in GUI, should set the value explicitly.
+;; (setq doom-modeline-icon t)
+;; ;; Whether display the icon for `major-mode'. It respects `doom-modeline-icon'.
+;; (setq doom-modeline-major-mode-icon t)
+;; ;; Whether display the colorful icon for `major-mode'.
+;; ;; It respects `all-the-icons-color-icons'.
+;; (setq doom-modeline-major-mode-color-icon t)
+;; ;; Whether display the icon for the buffer state. It respects `doom-modeline-icon'.
+;; (setq doom-modeline-buffer-state-icon t)
+;; ;; Whether display the modification icon for the buffer.
+;; ;; It respects `doom-modeline-icon' and `doom-modeline-buffer-state-icon'.
+;; (setq doom-modeline-buffer-modification-icon t)
+;; ;; Whether display the time icon. It respects variable `doom-modeline-icon'.
+;; (setq doom-modeline-time-icon t)
+;; ;; Whether to use unicode as a fallback (instead of ASCII) when not using icons.
+;; (setq doom-modeline-unicode-fallback nil)
+;; ;; Whether display the buffer name.
+;; (setq doom-modeline-buffer-name t)
+;; ;; Whether highlight the modified buffer name.
+;; (setq doom-modeline-highlight-modified-buffer-name t)
+;; ;; Whether display the buffer encoding.
+;; (setq doom-modeline-buffer-encoding t)
+;; ;; Whether display the indentation information.
+;; (setq doom-modeline-indent-info t)
+;; ;; Whether display the time. It respects `display-time-mode'.
+;; (setq doom-modeline-time t)
 
 ;;;;;;;;;; C++ development settings ;;;;;;;;;;
 
@@ -206,3 +241,26 @@
 	    (setq indent-tabs-mode t)
 	    (setq show-trailing-whitespace t)
 	    (c-set-style "linux-tabs-only")))
+
+;; start ggtags with emacs
+(require 'ggtags)
+;; enable ggtags for C modes
+(add-hook 'c-mode-common-hook
+	  (lambda ()
+	    (when (derived-mode-p 'c-mode 'c++-mode 'asm-mode)
+	      (ggtags-mode 1))))
+
+;; define the keybindings
+(define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
+(define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
+(define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
+(define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
+(define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
+(define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
+(define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
+
+;; let ggtags make imenu
+(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
+
+
+
