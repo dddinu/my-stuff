@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15788bfc891a
+;; Object semanticdb-project-database-file-156f18dea9a8
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15788bfc891a"
+(semanticdb-project-database-file "semanticdb-project-database-file-156f18dea9a8"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15788bfc88da"
+    (semanticdb-table "semanticdb-table-156f18dea968"
       :major-mode c-mode
       :tags 
         '( ("stdio.h" include (:system-flag t) nil [1 19])
@@ -23,7 +23,7 @@
       :fsize 239
       :lastmodtime '(25576 18944 250399 890000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15788bfc88fa"
+    (semanticdb-table "semanticdb-table-156f18dea988"
       :major-mode c-mode
       :tags 
         '( ("stdio.h" include (:system-flag t) nil [1 19])
@@ -42,6 +42,94 @@
       :pointmax 411
       :fsize 410
       :lastmodtime '(25585 36329 232978 960000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-156f189cb6f6"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [51 57])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [58 64]))                  
+                :type "int")
+                nil [42 139])
+            ("func2" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151 164])
+                    ("n" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [165 180]))                  
+                :type "int")
+                nil [141 244])
+            ("func3" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [257 264])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [265 271]))                  
+                :type "void")
+                nil [246 307])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [320 329])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [330 343]))                  
+                :type "int")
+                nil [311 562]))          
+      :file "file_11_mod.c"
+      :pointmax 563
+      :fsize 562
+      :lastmodtime '(25589 35616 153022 399000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-156f18a8a378"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [51 57])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [58 64]))                  
+                :type "int")
+                nil [42 200])
+            ("func2" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [212 225])
+                    ("n" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [226 241]))                  
+                :type "int")
+                nil [202 305])
+            ("func3" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [318 325])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [326 332]))                  
+                :type "void")
+                nil [307 368])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [381 390])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [391 404]))                  
+                :type "int")
+                nil [372 623]))          
+      :file "file_11_split.c"
+      :pointmax 624
+      :fsize 623
+      :lastmodtime '(25589 36628 836768 873000)
       :unmatched-syntax nil))
   :file "!home!ddinu!obfuscation!symbex!workspace!semantic.cache"
   :semantic-tag-version "2.0"

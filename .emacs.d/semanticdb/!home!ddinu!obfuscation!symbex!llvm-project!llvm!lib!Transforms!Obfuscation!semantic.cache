@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15698cb43086
+;; Object semanticdb-project-database-file-156a75ca847a
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15698cb43086"
+(semanticdb-project-database-file "semanticdb-project-database-file-156a75ca847a"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15698cb43046"
+    (semanticdb-table "semanticdb-table-156a75bd354a"
       :major-mode c++-mode
       :tags 
         '( ("llvm/Transforms/Obfuscation/SymbexSplit.h" include nil nil [1113 1165])
@@ -48,42 +48,31 @@
                                         :type ("Function" type (:type "class") nil nil))
                                         (reparse-symbol arg-sub-list) [2488 2500]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [2474 3042]))                          
+                                (reparse-symbol classsubparts) [2474 3393]))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [1911 3046]))                  
+                        (reparse-symbol namespacesubparts) [1911 3397]))                  
                 :type "namespace")
-                nil [1898 3077])
+                nil [1898 3428])
             ("SymbexSplit::ID" variable
                (:default-value "0"
                 :type "char")
-                nil [3109 3134])
-            ("X" function
+                nil [3460 3485])
+            ("SymbexSplit" function
                (:prototype-flag t
-                :typemodifiers ("static")
-                :type ("RegisterPass" type
-                     (:template-specifier 
-                        ( ("SymbexSplit" type nil nil nil))                        
-                      :type "class")
-                      nil nil))
-                nil [3135 3205])
-            ("createSymbexSplit" function
-               (:pointer 1
-                :parent "llvm"
-                :type ("Pass" type (:type "class") nil nil))
-                nil [3207 3268])
-            ("createSymbexSplit" function
-               (:pointer 1
-                :parent "llvm"
+                :type "int")
+                nil [3603 3617])
+            ("SymbexSplit" function
+               (:prototype-flag t
                 :arguments 
-                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [3300 3310]))                  
-                :type ("Pass" type (:type "class") nil nil))
-                nil [3270 3344]))          
+                  ( ("" variable (:type ("flag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3687 3692]))                  
+                :type "int")
+                nil [3675 3693]))          
       :file "SymbexSplit.cpp"
-      :pointmax 3345
-      :fsize 3344
-      :lastmodtime '(25588 16915 443801 423000)
+      :pointmax 3696
+      :fsize 3695
+      :lastmodtime '(25589 40195 819955 330000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15698cb43066"
+    (semanticdb-table "semanticdb-table-156a75ca845a"
       :major-mode c++-mode
       :tags 
         '( ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [3813 3870])

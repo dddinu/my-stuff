@@ -1,16 +1,38 @@
-;; Object semanticdb-project-database-file-15698cb727ba
+;; Object semanticdb-project-database-file-1592b69b3252
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15698cb727ba"
+(semanticdb-project-database-file "semanticdb-project-database-file-1592b69b3252"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15698cbb310c"
+    (semanticdb-table "semanticdb-table-1592b69b3232"
       :major-mode c++-mode
       :tags nil
       :file "Value.h"
       :pointmax 36808
       :fsize 36807
       :lastmodtime '(25573 11044 566396 451000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1592b69b3292"
+      :major-mode c++-mode
+      :tags 
+        '( ("LLVM_IR_ARGUMENT_H" variable (:constant-flag t) nil [535 553])
+            ("llvm/ADT/Twine.h" include nil nil [555 582])
+            ("llvm/ADT/ilist_node.h" include nil nil [583 615])
+            ("llvm/IR/Attributes.h" include nil nil [616 647])
+            ("llvm/IR/Value.h" include nil nil [648 674])
+            ("llvm" type
+               (:members 
+                  ( ("Value" variable (:type "int") (reparse-symbol namespacesubparts) [1136 6321]))                  
+                :type "namespace")
+                nil [676 6324]))          
+      :file "Argument.h"
+      :pointmax 6355
+      :fsize 6354
+      :lastmodtime '(25573 11044 546396 664000)
+      :unmatched-syntax '((PUBLIC 1129 . 1135) (punctuation 1127 . 1128) (symbol 1121 . 1126) (symbol 1112 . 1120) (CLASS 1106 . 1111))
+      :lexical-table 
+        '(("LLVM_IR_ARGUMENT_H")
+          )
+))
   :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!include!llvm!IR!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

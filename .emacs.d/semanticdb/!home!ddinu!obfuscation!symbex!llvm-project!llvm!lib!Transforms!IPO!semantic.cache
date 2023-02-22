@@ -1,9 +1,9 @@
-;; Object semanticdb-project-database-file-15556113df2a
+;; Object semanticdb-project-database-file-156a752d2a68
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15556113df2a"
+(semanticdb-project-database-file "semanticdb-project-database-file-156a752d2a68"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15556113df66"
+    (semanticdb-table "semanticdb-table-156a752d2a48"
       :major-mode c++-mode
       :tags 
         '( ("llvm/Transforms/IPO/PassManagerBuilder.h" include nil nil [610 661])
@@ -731,7 +731,541 @@
       :pointmax 57917
       :fsize 57916
       :lastmodtime '(25573 19000 97892 783000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-156a75beb200"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/IPO/DeadArgumentElimination.h" include nil nil [903 959])
+            ("llvm/ADT/SmallVector.h" include nil nil [960 993])
+            ("llvm/ADT/Statistic.h" include nil nil [994 1025])
+            ("llvm/IR/Argument.h" include nil nil [1026 1055])
+            ("llvm/IR/Attributes.h" include nil nil [1056 1087])
+            ("llvm/IR/BasicBlock.h" include nil nil [1088 1119])
+            ("llvm/IR/Constants.h" include nil nil [1120 1150])
+            ("llvm/IR/DerivedTypes.h" include nil nil [1151 1184])
+            ("llvm/IR/Function.h" include nil nil [1185 1214])
+            ("llvm/IR/IRBuilder.h" include nil nil [1215 1245])
+            ("llvm/IR/InstrTypes.h" include nil nil [1246 1277])
+            ("llvm/IR/Instruction.h" include nil nil [1278 1310])
+            ("llvm/IR/Instructions.h" include nil nil [1311 1344])
+            ("llvm/IR/IntrinsicInst.h" include nil nil [1345 1379])
+            ("llvm/IR/Intrinsics.h" include nil nil [1380 1411])
+            ("llvm/IR/Module.h" include nil nil [1412 1439])
+            ("llvm/IR/NoFolder.h" include nil nil [1440 1469])
+            ("llvm/IR/PassManager.h" include nil nil [1470 1502])
+            ("llvm/IR/Type.h" include nil nil [1503 1528])
+            ("llvm/IR/Use.h" include nil nil [1529 1553])
+            ("llvm/IR/User.h" include nil nil [1554 1579])
+            ("llvm/IR/Value.h" include nil nil [1580 1606])
+            ("llvm/InitializePasses.h" include nil nil [1607 1641])
+            ("llvm/Pass.h" include nil nil [1642 1664])
+            ("llvm/Support/Casting.h" include nil nil [1665 1698])
+            ("llvm/Support/Debug.h" include nil nil [1699 1730])
+            ("llvm/Support/raw_ostream.h" include nil nil [1731 1768])
+            ("llvm/Transforms/IPO.h" include nil nil [1769 1801])
+            ("llvm/Transforms/Utils/BasicBlockUtils.h" include nil nil [1802 1852])
+            ("cassert" include (:system-flag t) nil [1853 1871])
+            ("cstdint" include (:system-flag t) nil [1872 1890])
+            ("utility" include (:system-flag t) nil [1891 1909])
+            ("vector" include (:system-flag t) nil [1910 1927])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1929 1950])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [1960 1970])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumArgumentsEliminated" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1996 2019]))                  
+                :type "int")
+                nil [1986 2053])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumRetValsEliminated" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2064 2087]))                  
+                :type "int")
+                nil [2054 2130])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumArgumentsReplacedWithUndef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2141 2171]))                  
+                :type "int")
+                nil [2131 2227])
+            ("unnamed" type
+               (:members 
+                  ( ("DAE" type
+                       (:superclasses 
+                          ( ("ModulePass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [2326 2336])
+                            ("DAE" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ID" variable
+                                       (:reference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2402 2411]))                                  
+                                :type ("DAE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2398 2431])
+                            ("public" label nil (reparse-symbol classsubparts) [2435 2442])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2447 2462])
+                            ("DAE" function
+                               (:constructor-flag t
+                                :type ("DAE" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2515 2604])
+                            ("ShouldHackArguments" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2896 2954]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2292 2959]))                  
+                :type "namespace")
+                nil [2229 2962])
+            ("DAE::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [2991 3008])
+            ("unnamed" type
+               (:members 
+                  ( ("DAH" type
+                       (:superclasses 
+                          ( ("DAE" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [3311 3326])
+                            ("DAH" function
+                               (:constructor-flag t
+                                :type ("DAH" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [3332 3350]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [3281 3419]))                  
+                :type "namespace")
+                nil [3090 3422])
+            ("DAH::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [3451 3468])
+            ("createDeadArgEliminationPass" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("ModulePass" type (:type "class") nil nil))
+                nil [3741 3811])
+            ("createDeadArgHackingPass" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("ModulePass" type (:type "class") nil nil))
+                nil [3813 3879])
+            ("DeleteDeadVarargs" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("Fn" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4087 4100]))                  
+                :type "bool")
+                nil [4035 8887])
+            ("RemoveDeadArgumentsFromCallers" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("Fn" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9122 9135]))                  
+                :type "bool")
+                nil [9057 11360])
+            ("NumRetVals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("F" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11615 11633]))                  
+                :type "unsigned int")
+                nil [11588 11915])
+            ("getRetComponentType" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("F" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12169 12187])
+                    ("Idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12188 12201]))                  
+                :type ("Type" type (:type "class") nil nil))
+                nil [12136 12507])
+            ("MarkIfNotLive" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("Use" variable (:type ("RetOrArg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12765 12778])
+                    ("MaybeLiveUses" variable
+                       (:reference 1
+                        :type ("UseVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12822 12847]))                  
+                :type ("DeadArgumentEliminationPass::Liveness" type (:type "class") nil nil))
+                nil [12684 13107])
+            ("SurveyUse" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("U" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Use" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13564 13577])
+                    ("MaybeLiveUses" variable
+                       (:reference 1
+                        :type ("UseVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13578 13603])
+                    ("RetValNum" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13643 13662]))                  
+                :type ("DeadArgumentEliminationPass::Liveness" type (:type "class") nil nil))
+                nil [13487 16890])
+            ("SurveyUses" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17307 17322])
+                    ("MaybeLiveUses" variable
+                       (:reference 1
+                        :type ("UseVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17363 17388]))                  
+                :type ("DeadArgumentEliminationPass::Liveness" type (:type "class") nil nil))
+                nil [17229 17656])
+            ("SurveyFunction" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18106 18124]))                  
+                :type "void")
+                nil [18057 24043])
+            ("MarkValue" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("RA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RetOrArg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24345 24364])
+                    ("L" variable (:type ("Liveness" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24365 24376])
+                    ("MaybeLiveUses" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("UseVector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24421 24452]))                  
+                :type "void")
+                nil [24301 25011])
+            ("MarkLive" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25295 25313]))                  
+                :type "void")
+                nil [25252 25779])
+            ("MarkLive" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("RA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RetOrArg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25988 26007]))                  
+                :type "void")
+                nil [25945 26239])
+            ("IsLive" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("RA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RetOrArg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26282 26301]))                  
+                :type "bool")
+                nil [26241 26365])
+            ("PropagateLiveness" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("RA" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RetOrArg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26551 26570]))                  
+                :type "void")
+                nil [26499 27111])
+            ("RemoveDeadStuffFromFunction" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("F" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27400 27412]))                  
+                :type "bool")
+                nil [27338 42353])
+            ("run" function
+               (:parent "DeadArgumentEliminationPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42406 42416])
+                    ("" variable
+                       (:reference 1
+                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42468 42492]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [42355 43986]))          
+      :file "DeadArgumentElimination.cpp"
+      :pointmax 43987
+      :fsize 43986
+      :lastmodtime '(25573 11045 73057 715000)
+      :unmatched-syntax '((semantic-list 3485 . 3609) (symbol 3470 . 3485) (string 3523 . 3578) (string 3491 . 3505) (semantic-list 3398 . 3414) (symbol 3389 . 3397) (CONST 3383 . 3388) (semantic-list 3380 . 3382) (symbol 3361 . 3380) (BOOL 3356 . 3360) (semantic-list 3025 . 3088) (symbol 3010 . 3025) (string 3046 . 3073) (string 3031 . 3044) (semantic-list 2647 . 2890) (symbol 2638 . 2646) (semantic-list 2626 . 2637) (symbol 2615 . 2626) (BOOL 2610 . 2614) (EXPLICIT 2389 . 2397) (string 2182 . 2225) (string 2088 . 2128) (string 2020 . 2051))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"deadargelim\"" 1971 . 1984)))
+          )
+)
+    (semanticdb-table "semanticdb-table-156a75beb25c"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/IPO/GlobalDCE.h" include nil nil [812 854])
+            ("llvm/ADT/SmallPtrSet.h" include nil nil [855 888])
+            ("llvm/ADT/Statistic.h" include nil nil [889 920])
+            ("llvm/Analysis/TypeMetadataUtils.h" include nil nil [921 965])
+            ("llvm/IR/Instructions.h" include nil nil [966 999])
+            ("llvm/IR/IntrinsicInst.h" include nil nil [1000 1034])
+            ("llvm/IR/Module.h" include nil nil [1035 1062])
+            ("llvm/IR/Operator.h" include nil nil [1063 1092])
+            ("llvm/InitializePasses.h" include nil nil [1093 1127])
+            ("llvm/Pass.h" include nil nil [1128 1150])
+            ("llvm/Support/CommandLine.h" include nil nil [1151 1188])
+            ("llvm/Transforms/IPO.h" include nil nil [1189 1221])
+            ("llvm/Transforms/Utils/CtorUtils.h" include nil nil [1222 1266])
+            ("llvm/Transforms/Utils/GlobalStatus.h" include nil nil [1267 1314])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1316 1337])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [1347 1357])
+            ("ClEnableVFE" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::Hidden" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1422 1433])
+                    ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1448])
+                    ("" variable (:type ("cl::ZeroOrMore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1450 1465])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1529]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("bool" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1371 1531])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumAliases" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1543 1556]))                  
+                :type "int")
+                nil [1533 1593])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumFunctions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1604 1617]))                  
+                :type "int")
+                nil [1594 1649])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumIFuncs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1660 1670]))                  
+                :type "int")
+                nil [1650 1714])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumVariables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1725 1738]))                  
+                :type "int")
+                nil [1715 1777])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("NumVFuncs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1788 1798]))                  
+                :type "int")
+                nil [1778 1841])
+            ("unnamed" type
+               (:members 
+                  ( ("GlobalDCELegacyPass" type
+                       (:superclasses 
+                          ( ("ModulePass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1907 1914])
+                            ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [1919 1934])
+                            ("GlobalDCELegacyPass" function
+                               (:constructor-flag t
+                                :type ("GlobalDCELegacyPass" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1986 2107])
+                            ("private" label nil (reparse-symbol classsubparts) [2785 2793])
+                            ("Impl" variable (:type ("GlobalDCEPass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2798 2817]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1857 2822]))                  
+                :type "namespace")
+                nil [1843 2824])
+            ("GlobalDCELegacyPass::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [2826 2859])
+            ("createGlobalDCEPass" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("ModulePass" type (:type "class") nil nil))
+                nil [3010 3089])
+            ("isEmptyFunction" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("F" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3163 3175]))                  
+                :type "bool")
+                nil [3135 3408])
+            ("ComputeDependencies" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3563 3572])
+                    ("Deps" variable
+                       (:reference 1
+                        :type ("SmallPtrSetImpl" type
+                             (:template-specifier 
+                                ( ("GlobalValue" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3613 3650]))                  
+                :type "void")
+                nil [3523 4399])
+            ("UpdateGVDependencies" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("GV" variable
+                       (:reference 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4442 4458]))                  
+                :type "void")
+                nil [4401 5142])
+            ("MarkLive" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("GV" variable
+                       (:reference 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5203 5219])
+                    ("Updates" variable
+                       (:pointer 1
+                        :type ("SmallVectorImpl" type
+                             (:template-specifier 
+                                ( ("GlobalValue" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5249 5289]))                  
+                :type "void")
+                nil [5174 5686])
+            ("ScanVTables" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5720 5730]))                  
+                :type "void")
+                nil [5688 7291])
+            ("ScanVTableLoad" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("Caller" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7328 7345])
+                    ("TypeId" variable
+                       (:pointer 1
+                        :type ("Metadata" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7346 7363])
+                    ("CallOffset" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7399 7419]))                  
+                :type "void")
+                nil [7293 8239])
+            ("ScanTypeCheckedLoadIntrinsics" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8291 8301]))                  
+                :type "void")
+                nil [8241 9157])
+            ("AddVirtualFunctionDependencies" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9210 9220]))                  
+                :type "void")
+                nil [9159 9932])
+            ("run" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("M" variable
+                       (:reference 1
+                        :type ("Module" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9971 9981])
+                    ("MAM" variable
+                       (:reference 1
+                        :type ("ModuleAnalysisManager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9982 10009]))                  
+                :type ("PreservedAnalyses" type (:type "class") nil nil))
+                nil [9934 15847])
+            ("RemoveUnusedGlobalValue" function
+               (:parent "GlobalDCEPass"
+                :arguments 
+                  ( ("GV" variable
+                       (:reference 1
+                        :type ("GlobalValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16236 16252]))                  
+                :type "bool")
+                nil [16192 16353]))          
+      :file "GlobalDCE.cpp"
+      :pointmax 16354
+      :fsize 16353
+      :lastmodtime '(25573 11045 73057 715000)
+      :unmatched-syntax '((semantic-list 2875 . 2966) (symbol 2860 . 2875) (string 2926 . 2951) (string 2897 . 2908) (semantic-list 2292 . 2781) (symbol 2283 . 2291) (semantic-list 2271 . 2282) (symbol 2260 . 2271) (BOOL 2255 . 2259) (string 1802 . 1839) (string 1739 . 1775) (string 1674 . 1712) (string 1618 . 1647) (string 1557 . 1591) (semantic-list 1490 . 1529) (semantic-list 1442 . 1448) (string 1408 . 1420))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"globaldce\"" 1358 . 1369)))
+          )
+))
   :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!Transforms!IPO!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
