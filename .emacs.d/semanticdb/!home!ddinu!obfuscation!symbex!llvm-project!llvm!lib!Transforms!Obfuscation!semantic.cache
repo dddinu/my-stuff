@@ -1,78 +1,17 @@
-;; Object semanticdb-project-database-file-156a75ca847a
+;; Object semanticdb-project-database-file-15932b5a8b16
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-156a75ca847a"
+(semanticdb-project-database-file "semanticdb-project-database-file-15932b5a8b16"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-156a75bd354a"
+    (semanticdb-table "semanticdb-table-15932b5a8ad6"
       :major-mode c++-mode
-      :tags 
-        '( ("llvm/Transforms/Obfuscation/SymbexSplit.h" include nil nil [1113 1165])
-            ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [1166 1212])
-            ("llvm" using (:type ("llvm" type
-                 (:prototype t
-                  :type "namespace")
-                  nil nil)) nil [1790 1811])
-            ("defaultForkPoints" variable
-               (:constant-flag t
-                :default-value "5"
-                :type "int")
-                nil [1837 1869])
-            ("unnamed" type
-               (:members 
-                  ( ("SymbexSplit" type
-                       (:superclasses 
-                          ( ("FunctionPass" type
-                               (:protection "public"
-                                :type "class")
-                                nil nil))                          
-                        :members 
-                          ( ("ID" variable
-                               (:typemodifiers ("static")
-                                :type "char")
-                                (reparse-symbol classsubparts) [1956 1971])
-                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [1997 2007])
-                            ("SymbexSplit" function
-                               (:constructor-flag t
-                                :type ("SymbexSplit" type (:type "struct") nil nil))
-                                (reparse-symbol classsubparts) [2010 2045])
-                            ("SymbexSplit" function
-                               (:constructor-flag t
-                                :arguments 
-                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [2060 2070]))                                  
-                                :type ("SymbexSplit" type (:type "struct") nil nil))
-                                (reparse-symbol classsubparts) [2048 2135])
-                            ("symSplit" function
-                               (:arguments 
-                                  ( ("F" variable
-                                       (:reference 1
-                                        :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [2488 2500]))                                  
-                                :type "void")
-                                (reparse-symbol classsubparts) [2474 3393]))                          
-                        :type "struct")
-                        (reparse-symbol namespacesubparts) [1911 3397]))                  
-                :type "namespace")
-                nil [1898 3428])
-            ("SymbexSplit::ID" variable
-               (:default-value "0"
-                :type "char")
-                nil [3460 3485])
-            ("SymbexSplit" function
-               (:prototype-flag t
-                :type "int")
-                nil [3603 3617])
-            ("SymbexSplit" function
-               (:prototype-flag t
-                :arguments 
-                  ( ("" variable (:type ("flag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3687 3692]))                  
-                :type "int")
-                nil [3675 3693]))          
+      :tags nil
       :file "SymbexSplit.cpp"
-      :pointmax 3696
-      :fsize 3695
-      :lastmodtime '(25589 40195 819955 330000)
+      :pointmax 3997
+      :fsize 3996
+      :lastmodtime '(25590 43200 893849 95000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-156a75ca845a"
+    (semanticdb-table "semanticdb-table-15932b5a8af6"
       :major-mode c++-mode
       :tags 
         '( ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [3813 3870])

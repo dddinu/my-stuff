@@ -1,0 +1,1008 @@
+;; Object semanticdb-project-database-file-1567db80eb48
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1567db80eb48"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1567db80eb84"
+      :major-mode c++-mode
+      :tags 
+        '( ("InstCombineInternal.h" include nil nil [532 564])
+            ("llvm/ADT/APFloat.h" include nil nil [565 594])
+            ("llvm/ADT/APInt.h" include nil nil [595 622])
+            ("llvm/ADT/STLExtras.h" include nil nil [623 654])
+            ("llvm/ADT/SmallVector.h" include nil nil [655 688])
+            ("llvm/Analysis/InstructionSimplify.h" include nil nil [689 735])
+            ("llvm/Analysis/ValueTracking.h" include nil nil [736 776])
+            ("llvm/IR/Constant.h" include nil nil [777 806])
+            ("llvm/IR/Constants.h" include nil nil [807 837])
+            ("llvm/IR/InstrTypes.h" include nil nil [838 869])
+            ("llvm/IR/Instruction.h" include nil nil [870 902])
+            ("llvm/IR/Instructions.h" include nil nil [903 936])
+            ("llvm/IR/Operator.h" include nil nil [937 966])
+            ("llvm/IR/PatternMatch.h" include nil nil [967 1000])
+            ("llvm/IR/Type.h" include nil nil [1001 1026])
+            ("llvm/IR/Value.h" include nil nil [1027 1053])
+            ("llvm/Support/AlignOf.h" include nil nil [1054 1087])
+            ("llvm/Support/Casting.h" include nil nil [1088 1121])
+            ("llvm/Support/KnownBits.h" include nil nil [1122 1157])
+            ("llvm/Transforms/InstCombine/InstCombiner.h" include nil nil [1158 1211])
+            ("cassert" include (:system-flag t) nil [1212 1230])
+            ("utility" include (:system-flag t) nil [1231 1249])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1251 1272])
+            ("PatternMatch" using (:type ("PatternMatch" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1273 1302])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [1312 1322])
+            ("unnamed" type
+               (:members 
+                  ( ("FAddendCoef" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1701 1708])
+                            ("FAddendCoef" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2098 2113])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddendCoef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2284 2305]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2269 2306])
+                            ("+=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddendCoef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2327 2348]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2311 2349])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :arguments 
+                                  ( ("S" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddendCoef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2370 2391]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2354 2392])
+                            ("set" function
+                               (:arguments 
+                                  ( ("C" variable (:type "short") (reparse-symbol arg-sub-list) [2407 2415]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2398 2511])
+                            ("set" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("C" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("APFloat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2526 2543]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2517 2544])
+                            ("negate" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2550 2564])
+                            ("isZero" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2570 2641])
+                            ("getValue" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :type ("Type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2662 2669]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2646 2676])
+                            ("isOne" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2682 2735])
+                            ("isTwo" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2740 2793])
+                            ("isMinusOne" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2798 2857])
+                            ("isMinusTwo" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2862 2921])
+                            ("private" label nil (reparse-symbol classsubparts) [2925 2933])
+                            ("insaneIntVal" function
+                               (:arguments 
+                                  ( ("V" variable (:type "int") (reparse-symbol arg-sub-list) [2956 2962]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2938 2990])
+                            ("getFpValPtr" function
+                               (:pointer 1
+                                :type ("APFloat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2996 3069])
+                            ("getFpValPtr" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("APFloat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3075 3176])
+                            ("getFpVal" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("APFloat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3182 3305])
+                            ("getFpVal" function (:type ("APFloat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3311 3422])
+                            ("isInt" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3428 3464])
+                            ("convertToFpType" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Sem" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("fltSemantics" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3586 3610]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3565 3611])
+                            ("createAPFloatFromInt" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Sem" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("fltSemantics" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3816 3840])
+                                    ("Val" variable (:type "int") (reparse-symbol arg-sub-list) [3841 3849]))                                  
+                                :type ("APFloat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3787 3850])
+                            ("IsFp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3856 3874])
+                            ("BufHasFpVal" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3938 3963])
+                            ("IntVal" variable
+                               (:default-value "0"
+                                :type "short")
+                                (reparse-symbol classsubparts) [4222 4239])
+                            ("FpValBuf" variable (:type ("AlignedCharArrayUnion" type
+                                 (:template-specifier 
+                                    ( ("APFloat" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4245 4285]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1679 4290])
+                    ("FAddend" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4528 4535])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("T" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4582 4599]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4566 4691])
+                            ("getSymVal" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4697 4737])
+                            ("getCoef" function
+                               (:methodconst-flag t
+                                :constant-flag t
+                                :type ("FAddendCoef" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4742 4794])
+                            ("isConstant" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4800 4850])
+                            ("isZero" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4855 4901])
+                            ("set" function
+                               (:arguments 
+                                  ( ("Coefficient" variable (:type "short") (reparse-symbol arg-sub-list) [4916 4934])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4935 4944]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4907 4997])
+                            ("set" function
+                               (:arguments 
+                                  ( ("Coefficient" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("APFloat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5011 5038])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5039 5048]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5002 5101])
+                            ("set" function
+                               (:arguments 
+                                  ( ("Coefficient" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ConstantFP" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5115 5145])
+                                    ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5146 5155]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5106 5223])
+                            ("negate" function (:type "void") (reparse-symbol classsubparts) [5229 5262])
+                            ("drillValueDownOneStep" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5442 5451])
+                                    ("A0" variable
+                                       (:reference 1
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5452 5464])
+                                    ("A1" variable
+                                       (:reference 1
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5465 5477]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5404 5478])
+                            ("drillAddendDownOneStep" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("Addend0" variable
+                                       (:reference 1
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5630 5647])
+                                    ("Addend1" variable
+                                       (:reference 1
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5648 5665]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [5598 5672])
+                            ("private" label nil (reparse-symbol classsubparts) [5676 5684])
+                            ("Scale" function
+                               (:arguments 
+                                  ( ("ScaleAmt" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddendCoef" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5700 5728]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5689 5751])
+                            ("Val" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5808 5829])
+                            ("Coeff" variable (:type ("FAddendCoef" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5834 5852]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4510 5857])
+                    ("FAddCombine" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6014 6021])
+                            ("FAddCombine" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("B" variable
+                                       (:reference 1
+                                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6038 6065]))                                  
+                                :type ("FAddCombine" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6026 6081])
+                            ("simplify" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("FAdd" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6103 6121]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6087 6122])
+                            ("private" label nil (reparse-symbol classsubparts) [6126 6134])
+                            ("SmallVector" variable (:type "int") (reparse-symbol classsubparts) [6158 6190])
+                            ("simplifyFAdd" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("V" variable
+                                       (:reference 1
+                                        :type ("AddendVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6216 6230])
+                                    ("InstrQuota" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6231 6251]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6196 6252])
+                            ("createAddendVal" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FAddend" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6321 6338])
+                                    ("NeedNeg" variable
+                                       (:reference 1
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [6339 6353]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6298 6354])
+                            ("calcInstrNumber" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Vect" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AddendVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6462 6485]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [6437 6486])
+                            ("createFSub" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Opnd0" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6510 6523])
+                                    ("Opnd1" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6524 6537]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6492 6538])
+                            ("createFAdd" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Opnd0" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6561 6574])
+                                    ("Opnd1" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6575 6588]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6543 6589])
+                            ("createFMul" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Opnd0" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6612 6625])
+                                    ("Opnd1" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6626 6639]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6594 6640])
+                            ("createFNeg" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("V" variable
+                                       (:pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6663 6672]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6645 6673])
+                            ("createNaryFAdd" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("Opnds" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AddendVect" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6700 6724])
+                                    ("InstrQuota" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6725 6745]))                                  
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6678 6746])
+                            ("createInstPostProc" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("NewInst" variable
+                                       (:pointer 1
+                                        :type ("Instruction" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6775 6796])
+                                    ("NoNumber" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [6797 6818]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6751 6820])
+                            ("CreateInstrNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [6891 6915])
+                            ("initCreateInstNum" function (:type "void") (reparse-symbol classsubparts) [6922 6970])
+                            ("incCreateInstNum" function (:type "void") (reparse-symbol classsubparts) [6977 7022])
+                            ("Builder" variable (:type ("InstCombiner::BuilderTy" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7116 7149])
+                            ("Instr" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type ("Instruction" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7154 7183]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [5992 7188]))                  
+                :type "namespace")
+                nil [1338 7191])
+            ("FAddendCoef" function
+               (:destructor-flag t
+                :parent "FAddendCoef"
+                :type "void")
+                nil [7463 7544])
+            ("set" function
+               (:parent "FAddendCoef"
+                :arguments 
+                  ( ("C" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("APFloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7568 7585]))                  
+                :type "void")
+                nil [7546 7801])
+            ("convertToFpType" function
+               (:parent "FAddendCoef"
+                :arguments 
+                  ( ("Sem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("fltSemantics" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7837 7861]))                  
+                :type "void")
+                nil [7803 8075])
+            ("createAPFloatFromInt" function
+               (:parent "FAddendCoef"
+                :arguments 
+                  ( ("Sem" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("fltSemantics" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8119 8143])
+                    ("Val" variable (:type "int") (reparse-symbol arg-sub-list) [8144 8152]))                  
+                :type ("APFloat" type (:type "class") nil nil))
+                nil [8077 8261])
+            ("=" function
+               (:operator-flag t
+                :parent "FAddendCoef"
+                :arguments 
+                  ( ("That" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FAddendCoef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8291 8315]))                  
+                :type "void")
+                nil [8263 8394])
+            ("+=" function
+               (:operator-flag t
+                :parent "FAddendCoef"
+                :arguments 
+                  ( ("That" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FAddendCoef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8425 8449]))                  
+                :type "void")
+                nil [8396 8907])
+            ("=" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "FAddendCoef"
+                :arguments 
+                  ( ("That" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FAddendCoef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8938 8962]))                  
+                :type "void")
+                nil [8909 9602])
+            ("negate" function
+               (:parent "FAddendCoef"
+                :type "void")
+                nil [9604 9710])
+            ("getValue" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "FAddendCoef"
+                :arguments 
+                  ( ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9741 9750]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [9712 9871])
+            ("drillValueDownOneStep" function
+               (:parent "FAddend"
+                :arguments 
+                  ( ("Val" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10318 10329])
+                    ("Addend0" variable
+                       (:reference 1
+                        :type ("FAddend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10330 10347])
+                    ("Addend1" variable
+                       (:reference 1
+                        :type ("FAddend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10348 10365]))                  
+                :type "unsigned int")
+                nil [10275 11695])
+            ("drillAddendDownOneStep" function
+               (:methodconst-flag t
+                :parent "FAddend"
+                :arguments 
+                  ( ("Addend0" variable
+                       (:reference 1
+                        :type ("FAddend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11925 11942])
+                    ("Addend1" variable
+                       (:reference 1
+                        :type ("FAddend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11943 11960]))                  
+                :type "unsigned int")
+                nil [11881 12230])
+            ("simplify" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12261 12276]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [12232 14883])
+            ("simplifyFAdd" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Addends" variable
+                       (:reference 1
+                        :type ("AddendVect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14918 14938])
+                    ("InstrQuota" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14939 14959]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [14885 17653])
+            ("createNaryFAdd" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Opnds" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddendVect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17693 17717])
+                    ("InstrQuota" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17718 17738]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [17655 19259])
+            ("createFSub" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Opnd0" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19292 19305])
+                    ("Opnd1" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19306 19319]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [19261 19458])
+            ("createFNeg" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19491 19500]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [19460 19688])
+            ("createFAdd" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Opnd0" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19721 19734])
+                    ("Opnd1" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19735 19748]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [19690 19887])
+            ("createFMul" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Opnd0" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19920 19933])
+                    ("Opnd1" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19934 19947]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [19889 20086])
+            ("createInstPostProc" function
+               (:parent "FAddCombine"
+                :arguments 
+                  ( ("NewInstr" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20125 20147])
+                    ("NoNumber" variable (:type "bool") (reparse-symbol arg-sub-list) [20148 20162]))                  
+                :type "void")
+                nil [20088 20398])
+            ("calcInstrNumber" function
+               (:parent "FAddCombine"
+                :arguments 
+                  ( ("Opnds" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("AddendVect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20569 20593]))                  
+                :type "unsigned int")
+                nil [20531 21433])
+            ("createAddendVal" function
+               (:pointer 1
+                :parent "FAddCombine"
+                :arguments 
+                  ( ("Opnd" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("FAddend" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21872 21892])
+                    ("NeedNeg" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [21893 21907]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [21836 22405])
+            ("checkForNegativeOperand" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22732 22750])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22789 22822]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [22694 24816])
+            ("foldNoWrapAdd" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("Add" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24925 24945])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24980 25013]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [24891 26515])
+            ("foldAddWithConstant" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("Add" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26568 26588]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [26517 31825])
+            ("MatchMul" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("E" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32021 32030])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32031 32039])
+                    ("" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32039 32042])
+                    ("C" variable
+                       (:reference 1
+                        :type ("APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32043 32052]))                  
+                :type "bool")
+                nil [32000 32300])
+            ("MatchRem" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("E" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32557 32566])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32567 32575])
+                    ("" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32575 32578])
+                    ("C" variable
+                       (:reference 1
+                        :type ("APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32579 32588])
+                    ("IsSigned" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [32589 32604]))                  
+                :type "bool")
+                nil [32536 32971])
+            ("MatchDiv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("E" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33213 33222])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33223 33231])
+                    ("" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33231 33234])
+                    ("C" variable
+                       (:reference 1
+                        :type ("APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33235 33244])
+                    ("IsSigned" variable (:type "bool") (reparse-symbol arg-sub-list) [33245 33259]))                  
+                :type "bool")
+                nil [33192 33648])
+            ("MulWillOverflow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("C0" variable
+                       (:reference 1
+                        :type ("APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33742 33752])
+                    ("C1" variable
+                       (:reference 1
+                        :type ("APInt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33753 33763])
+                    ("IsSigned" variable (:type "bool") (reparse-symbol arg-sub-list) [33764 33778]))                  
+                :type "bool")
+                nil [33714 33913])
+            ("SimplifyAddWithRemainder" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34067 34085]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [34017 35044])
+            ("canonicalizeLowbitMask" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35306 35324])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35368 35401]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [35263 35943])
+            ("foldToUnsignedSaturatedAdd" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35992 36010]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [35945 36701])
+            ("canonicalizeCondSignextOfHighBitExtractToSignextHighBitExtract" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36811 36829]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [36703 40905])
+            ("factorizeMathWithShlOps" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41168 41186])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41231 41264]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [41124 42501])
+            ("visitAdd" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42543 42561]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [42503 48971])
+            ("factorizeLerp" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49071 49089])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49124 49157]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [49037 49703])
+            ("factorizeFAddFSub" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49802 49820])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49859 49892]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [49764 51408])
+            ("visitFAdd" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51451 51469]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [51410 57447])
+            ("OptimizePointerDifference" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("LHS" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57730 57741])
+                    ("RHS" variable
+                       (:pointer 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57742 57753])
+                    ("Ty" variable
+                       (:pointer 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57805 57814])
+                    ("IsNUW" variable (:type "bool") (reparse-symbol arg-sub-list) [57815 57826]))                  
+                :type ("Value" type (:type "class") nil nil))
+                nil [57679 60634])
+            ("visitSub" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60676 60694]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [60636 78176])
+            ("foldFNegIntoConstant" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78349 78364]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [78308 79967])
+            ("hoistFNegAboveFMulFDiv" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80012 80027])
+                    ("Builder" variable
+                       (:reference 1
+                        :type ("InstCombiner::BuilderTy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80071 80104]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [79969 80501])
+            ("visitFNeg" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("UnaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80544 80561]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [80503 82334])
+            ("visitFSub" function
+               (:pointer 1
+                :parent "InstCombinerImpl"
+                :arguments 
+                  ( ("I" variable
+                       (:reference 1
+                        :type ("BinaryOperator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82377 82395]))                  
+                :type ("Instruction" type (:type "class") nil nil))
+                nil [82336 88837]))          
+      :file "InstCombineAddSub.cpp"
+      :pointmax 88838
+      :fsize 88837
+      :lastmodtime '(25573 11045 83057 607000)
+      :unmatched-syntax '((punctuation 33230 . 33231) (punctuation 32574 . 32575) (punctuation 32038 . 32039) (punctuation 6156 . 6157) (symbol 6145 . 6155) (USING 6139 . 6144) (punctuation 4559 . 4560) (DEFAULT 4552 . 4559) (punctuation 4550 . 4551) (semantic-list 4547 . 4549) (symbol 4540 . 4547) (punctuation 2092 . 2093) (DEFAULT 2085 . 2092) (punctuation 2083 . 2084) (semantic-list 2080 . 2082) (symbol 2069 . 2080))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"instcombine\"" 1323 . 1336)))
+          )
+)
+    (semanticdb-table "semanticdb-table-1567dc11b13e"
+      :file "InstCombineInternal.h"
+      :fsize 35917
+      :lastmodtime '(25573 11045 86390 905000)))
+  :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!Transforms!InstCombine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
