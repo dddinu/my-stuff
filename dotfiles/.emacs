@@ -81,6 +81,13 @@
 (require 'ibuffer)
 ;; use ibuffer for buffer list
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+;; define a function to put the cursor at the most recent buffer when we call ibuffer
+(defun ibuffer-jump-to-last-buffer ()
+  (ibuffer-jump-to-buffer (buffer-name (cadr (buffer-list))))
+  )
+;; add this function as a hook
+(add-hook 'ibuffer-hook #'ibuffer-jump-to-last-buffer)
+
 ;; set file modes per file type
 (setq ibuffer-saved-filter-groups
       (quote (("default"
@@ -99,11 +106,7 @@
 	    (ibuffer-auto-mode 1)
 	    (hl-line-mode 1) ;; have line highlighting on
 	    (ibuffer-switch-to-saved-filter-groups "default")
-	    ;;(ibuffer-filter-by-filename ".") ;; show only dired and file buffers
 	    ))
-
-;; start ibuf-ext with emacs
-(require 'ibuf-ext)
 
 ;; start good-scroll with emacs
 (require 'good-scroll)
@@ -241,26 +244,5 @@
 	    (setq indent-tabs-mode t)
 	    (setq show-trailing-whitespace t)
 	    (c-set-style "linux-tabs-only")))
-
-;; start ggtags with emacs
-(require 'ggtags)
-;; enable ggtags for C modes
-(add-hook 'c-mode-common-hook
-	  (lambda ()
-	    (when (derived-mode-p 'c-mode 'c++-mode 'asm-mode)
-	      (ggtags-mode 1))))
-
-;; define the keybindings
-(define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
-(define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
-(define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
-(define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
-(define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
-(define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
-(define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
-
-;; let ggtags make imenu
-(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
-
 
 
