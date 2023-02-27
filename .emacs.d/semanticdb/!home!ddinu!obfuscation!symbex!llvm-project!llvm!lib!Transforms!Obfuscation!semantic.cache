@@ -1,17 +1,154 @@
-;; Object semanticdb-project-database-file-15932b5a8b16
+;; Object semanticdb-project-database-file-156a042f6a72
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "semanticdb-project-database-file-15932b5a8b16"
+(semanticdb-project-database-file "semanticdb-project-database-file-156a042f6a72"
   :tables
   (list
-    (semanticdb-table "semanticdb-table-15932b5a8ad6"
+    (semanticdb-table "semanticdb-table-156a042f6a32"
       :major-mode c++-mode
-      :tags nil
+      :tags 
+        '( ("llvm/Transforms/Obfuscation/SymbexSplit.h" include nil nil [1113 1165])
+            ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [1166 1212])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1790 1811])
+            ("defaultForkPoints" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "int")
+                nil [1837 1869])
+            ("unnamed" type
+               (:members 
+                  ( ("InjectStruct" type
+                       (:members 
+                          ( ("allocai" variable
+                               (:pointer 1
+                                :type ("AllocaInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1935 1955])
+                            ("storei" variable
+                               (:pointer 1
+                                :type ("StoreInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1958 1976])
+                            ("loadi" variable
+                               (:pointer 1
+                                :type ("LoadInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1979 1995])
+                            ("compi" variable
+                               (:pointer 1
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1998 2011]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1911 2015])
+                    ("std::map" variable (:type "int") (reparse-symbol namespacesubparts) [2034 2065])
+                    ("SymbexSplit" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [2113 2128])
+                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [2154 2164])
+                            ("SymbexSplit" function
+                               (:constructor-flag t
+                                :type ("SymbexSplit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2167 2202])
+                            ("SymbexSplit" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [2217 2227]))                                  
+                                :type ("SymbexSplit" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2205 2292])
+                            ("addForkingVariables" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2659 2671]))                                  
+                                :type ("ForkMap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2631 2981])
+                            ("injectAllocaInstructions" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3015 3027])
+                                    ("forkMap" variable
+                                       (:reference 1
+                                        :type ("ForkMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3028 3045]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2985 3704])
+                            ("injectStoreInstructions" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3737 3749])
+                                    ("forkMap" variable
+                                       (:reference 1
+                                        :type ("ForkMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3750 3767]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3708 4672])
+                            ("injectComparisonInstructions" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4710 4722])
+                                    ("forkMap" variable
+                                       (:reference 1
+                                        :type ("ForkMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4723 4740]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4676 6405])
+                            ("symSplit" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6424 6436]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6410 7045]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2068 7068]))                  
+                :type "namespace")
+                nil [1898 7099])
+            ("SymbexSplit::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [7131 7156])
+            ("X" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("RegisterPass" type
+                     (:template-specifier 
+                        ( ("SymbexSplit" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7157 7227])
+            ("createSymbexSplit" function
+               (:pointer 1
+                :parent "llvm"
+                :type ("Pass" type (:type "class") nil nil))
+                nil [7229 7290])
+            ("createSymbexSplit" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [7322 7332]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [7292 7366]))          
       :file "SymbexSplit.cpp"
-      :pointmax 3997
-      :fsize 3996
-      :lastmodtime '(25590 43200 893849 95000)
+      :pointmax 7367
+      :fsize 7366
+      :lastmodtime '(25596 2842 779164 591000)
       :unmatched-syntax nil)
-    (semanticdb-table "semanticdb-table-15932b5a8af6"
+    (semanticdb-table "semanticdb-table-156a042f6a52"
       :major-mode c++-mode
       :tags 
         '( ("llvm/Transforms/Obfuscation/BogusControlFlow.h" include nil nil [3813 3870])
@@ -215,7 +352,61 @@
       :lexical-table 
         '(("DEBUG_TYPE" . ((string "\"BogusControlFlow\"" 3947 . 3965)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table-156a0573ad0c"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [1 47])
+            ("llvm/IR/Module.h" include nil nil [48 75])
+            ("llvm/Support/raw_ostream.h" include nil nil [76 113])
+            ("sstream" include (:system-flag t) nil [114 132])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [134 155])
+            ("valueEscapes" function
+               (:arguments 
+                  ( ("Inst" variable
+                       (:pointer 1
+                        :type ("Instruction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [229 247]))                  
+                :type "bool")
+                nil [211 526])
+            ("fixStack" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [542 554]))                  
+                :type "void")
+                nil [528 1567])
+            ("readAnnotate" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1594 1606]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1569 3228])
+            ("toObfuscate" function
+               (:arguments 
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [3247 3257])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3258 3270])
+                    ("attribute" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3271 3300]))                  
+                :type "bool")
+                nil [3230 4445]))          
+      :file "Utils.cpp"
+      :pointmax 4446
+      :fsize 4445
+      :lastmodtime '(25573 11105 995741 998000)
+      :unmatched-syntax nil))
   :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!Transforms!Obfuscation!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
