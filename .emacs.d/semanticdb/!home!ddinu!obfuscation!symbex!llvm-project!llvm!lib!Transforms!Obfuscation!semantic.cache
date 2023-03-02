@@ -41,14 +41,22 @@
                                (:pointer 1
                                 :type ("BranchInst" type (:type "class") nil nil))
                                 (reparse-symbol classsubparts) [2014 2034])
+                            ("trueToOg" variable
+                               (:pointer 1
+                                :type ("BranchInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2037 2058])
+                            ("falseToOg" variable
+                               (:pointer 1
+                                :type ("BranchInst" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2061 2083])
                             ("garbInsts" variable (:type ("std::list" type
                                  (:template-specifier 
                                     ( ("Value" type (:pointer 1) nil nil))                                    
                                   :type "class")
-                                  nil nil)) (reparse-symbol classsubparts) [2037 2065]))                          
+                                  nil nil)) (reparse-symbol classsubparts) [2086 2114]))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [1911 2069])
-                    ("std::map" variable (:type "int") (reparse-symbol namespacesubparts) [2088 2119])
+                        (reparse-symbol namespacesubparts) [1911 2118])
+                    ("std::map" variable (:type "int") (reparse-symbol namespacesubparts) [2137 2168])
                     ("SymbexSplit" type
                        (:superclasses 
                           ( ("FunctionPass" type
@@ -59,101 +67,78 @@
                           ( ("ID" variable
                                (:typemodifiers ("static")
                                 :type "char")
-                                (reparse-symbol classsubparts) [2167 2182])
-                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [2208 2218])
+                                (reparse-symbol classsubparts) [2216 2231])
+                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [2257 2267])
                             ("SymbexSplit" function
                                (:constructor-flag t
                                 :type ("SymbexSplit" type (:type "struct") nil nil))
-                                (reparse-symbol classsubparts) [2221 2256])
+                                (reparse-symbol classsubparts) [2270 2305])
                             ("SymbexSplit" function
                                (:constructor-flag t
                                 :arguments 
-                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [2271 2281]))                                  
+                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [2320 2330]))                                  
                                 :type ("SymbexSplit" type (:type "struct") nil nil))
-                                (reparse-symbol classsubparts) [2259 2346])
+                                (reparse-symbol classsubparts) [2308 2395])
                             ("addForkingVariables" function
                                (:pointer 1
                                 :arguments 
                                   ( ("F" variable
                                        (:reference 1
                                         :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [2734 2746]))                                  
+                                        (reparse-symbol arg-sub-list) [2783 2795]))                                  
                                 :type ("ForkMap" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [2705 3278])
-                            ("injectAllocaInstructions" function
-                               (:arguments 
-                                  ( ("F" variable
-                                       (:reference 1
-                                        :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [3312 3324])
-                                    ("forkMap" variable
-                                       (:pointer 1
-                                        :type ("ForkMap" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [3325 3342]))                                  
-                                :type "void")
-                                (reparse-symbol classsubparts) [3282 4170])
-                            ("injectStoreInstructions" function
-                               (:arguments 
-                                  ( ("F" variable
-                                       (:reference 1
-                                        :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [4203 4215])
-                                    ("forkMap" variable
-                                       (:pointer 1
-                                        :type ("ForkMap" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [4216 4233]))                                  
-                                :type "void")
-                                (reparse-symbol classsubparts) [4174 5150])
-                            ("injectComparisonInstructions" function
-                               (:arguments 
-                                  ( ("F" variable
-                                       (:reference 1
-                                        :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [5188 5200])
-                                    ("forkMap" variable
-                                       (:pointer 1
-                                        :type ("ForkMap" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [5201 5218]))                                  
-                                :type "void")
-                                (reparse-symbol classsubparts) [5154 7167])
+                                (reparse-symbol classsubparts) [2754 3269])
                             ("createGarbageBasicBlock" function
                                (:pointer 1
                                 :arguments 
                                   ( ("F" variable
                                        (:reference 1
                                         :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [7207 7219])
-                                    ("i" variable (:type ("ForkMap::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7220 7240]))                                  
+                                        (reparse-symbol arg-sub-list) [3309 3321])
+                                    ("i" variable (:type ("ForkMap::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3322 3342]))                                  
                                 :type ("BasicBlock" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [7171 7865])
-                            ("injectBranchInstructions" function
+                                (reparse-symbol classsubparts) [3273 4026])
+                            ("injectGarbVarInstructions" function
                                (:arguments 
                                   ( ("F" variable
                                        (:reference 1
                                         :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [7900 7912])
-                                    ("forkMap" variable
+                                        (reparse-symbol arg-sub-list) [4063 4075])
+                                    ("bb" variable
                                        (:pointer 1
-                                        :type ("ForkMap" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [7913 7930]))                                  
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4076 4091])
+                                    ("i" variable (:type ("ForkMap::iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4092 4112]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [7870 8899])
+                                (reparse-symbol classsubparts) [4032 7491])
+                            ("getBasicBlocks" function
+                               (:arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7533 7545]))                                  
+                                :type ("std::list" type
+                                     (:template-specifier 
+                                        ( ("BasicBlock" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7495 7732])
                             ("symSplit" function
                                (:arguments 
                                   ( ("F" variable
                                        (:reference 1
                                         :type ("Function" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [8918 8930]))                                  
+                                        (reparse-symbol arg-sub-list) [7751 7763]))                                  
                                 :type "bool")
-                                (reparse-symbol classsubparts) [8904 9680]))                          
+                                (reparse-symbol classsubparts) [7737 9139]))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [2122 9703]))                  
+                        (reparse-symbol namespacesubparts) [2171 9162]))                  
                 :type "namespace")
-                nil [1898 9734])
+                nil [1898 9193])
             ("SymbexSplit::ID" variable
                (:default-value "0"
                 :type "char")
-                nil [9766 9791])
+                nil [9225 9250])
             ("X" function
                (:prototype-flag t
                 :typemodifiers ("static")
@@ -162,23 +147,23 @@
                         ( ("SymbexSplit" type nil nil nil))                        
                       :type "class")
                       nil nil))
-                nil [9792 9862])
+                nil [9251 9321])
             ("createSymbexSplit" function
                (:pointer 1
                 :parent "llvm"
                 :type ("Pass" type (:type "class") nil nil))
-                nil [9864 9925])
+                nil [9323 9384])
             ("createSymbexSplit" function
                (:pointer 1
                 :parent "llvm"
                 :arguments 
-                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [9957 9967]))                  
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [9416 9426]))                  
                 :type ("Pass" type (:type "class") nil nil))
-                nil [9927 10001]))          
+                nil [9386 9460]))          
       :file "SymbexSplit.cpp"
-      :pointmax 10002
-      :fsize 10001
-      :lastmodtime '(25597 34706 575061 184000)
+      :pointmax 9461
+      :fsize 9460
+      :lastmodtime '(25600 3995 318226 820000)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table-15778ae1501a"
       :major-mode c++-mode
@@ -446,7 +431,173 @@
       :pointmax 12552
       :fsize 12551
       :lastmodtime '(25573 11105 992408 700000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15778caacd94"
+      :major-mode c++-mode
+      :tags 
+        '( ("llvm/Transforms/Obfuscation/CryptoUtils.h" include nil nil [481 533])
+            ("llvm/Transforms/Obfuscation/Split.h" include nil nil [534 580])
+            ("llvm/Transforms/Obfuscation/Utils.h" include nil nil [581 627])
+            ("DEBUG_TYPE" variable (:constant-flag t) nil [637 647])
+            ("llvm" using (:type ("llvm" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [657 678])
+            ("STATISTIC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Split" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [699 705]))                  
+                :type "int")
+                nil [689 729])
+            ("SplitNum" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("cl::init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [773 784])
+                    ("" variable (:type ("cl::desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [815 857]))                  
+                :type ("cl::opt" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [731 859])
+            ("unnamed" type
+               (:members 
+                  ( ("SplitBasicBlock" type
+                       (:superclasses 
+                          ( ("FunctionPass" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("ID" variable
+                               (:typemodifiers ("static")
+                                :type "char")
+                                (reparse-symbol classsubparts) [922 937])
+                            ("flag" variable (:type "bool") (reparse-symbol classsubparts) [987 997])
+                            ("SplitBasicBlock" function
+                               (:constructor-flag t
+                                :type ("SplitBasicBlock" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1001 1040])
+                            ("SplitBasicBlock" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [1059 1069]))                                  
+                                :type ("SplitBasicBlock" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [1043 1111])
+                            ("runOnFunction" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("F" variable
+                                       (:reference 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1134 1146]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1115 1147])
+                            ("split" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("f" variable
+                                       (:pointer 1
+                                        :type ("Function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1161 1173]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1150 1174])
+                            ("containsPHI" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("b" variable
+                                       (:pointer 1
+                                        :type ("BasicBlock" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1195 1209]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1178 1210])
+                            ("shuffle" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("vec" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1226 1248]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1213 1249]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [873 1252]))                  
+                :type "namespace")
+                nil [861 1254])
+            ("SplitBasicBlock::ID" variable
+               (:default-value "0"
+                :type "char")
+                nil [1269 1298])
+            ("X" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("RegisterPass" type
+                     (:template-specifier 
+                        ( ("SplitBasicBlock" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1299 1374])
+            ("createSplitBasicBlock" function
+               (:pointer 1
+                :parent "llvm"
+                :arguments 
+                  ( ("flag" variable (:type "bool") (reparse-symbol arg-sub-list) [1410 1420]))                  
+                :type ("Pass" type (:type "class") nil nil))
+                nil [1376 1460])
+            ("runOnFunction" function
+               (:parent "SplitBasicBlock"
+                :arguments 
+                  ( ("F" variable
+                       (:reference 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1498 1510]))                  
+                :type "bool")
+                nil [1462 1875])
+            ("split" function
+               (:parent "SplitBasicBlock"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("Function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1905 1917]))                  
+                :type "void")
+                nil [1877 3214])
+            ("containsPHI" function
+               (:parent "SplitBasicBlock"
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("BasicBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3250 3264]))                  
+                :type "bool")
+                nil [3216 3415])
+            ("shuffle" function
+               (:parent "SplitBasicBlock"
+                :arguments 
+                  ( ("vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3447 3469]))                  
+                :type "void")
+                nil [3417 3602]))          
+      :file "SplitBasicBlocks.cpp"
+      :pointmax 3603
+      :fsize 3602
+      :lastmodtime '(25573 11105 992408 700000)
+      :unmatched-syntax '((string 1350 . 1372) (string 1338 . 1348) (semantic-list 823 . 857) (semantic-list 781 . 784) (string 760 . 771) (string 706 . 727))
+      :lexical-table 
+        '(("DEBUG_TYPE" . ((string "\"split\"" 648 . 655)))
+          )
+))
   :file "!home!ddinu!obfuscation!symbex!llvm-project!llvm!lib!Transforms!Obfuscation!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")
