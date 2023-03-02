@@ -96,6 +96,7 @@
 	       ("c++" (mode . c++-mode))
 	       ("c" (mode . c-mode))
 	       ("llvm" (mode . llvm-mode))
+	       ("shell" (mode . shell-script-mode))
 	       ("emacs" (name . "^\\*"))
 	       ))))
 ;; don't show empty filter groups
