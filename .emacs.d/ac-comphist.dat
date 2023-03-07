@@ -1,274 +1,274 @@
-((("scroll-up" .
-   [0 0 0 0 0 0 0 0 1])
-  ("scroll-down-1" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("s" .
-   [1])
-  ("move-and-recenter" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("recenter-top-bottom" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("next-line" .
-   [0 0 0 0 0 0 0 0 1])
-  ("functional" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("c-set-style" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("show-trailing-whitespace" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("indent-tabs-mode" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-lineup-arglist-tabs-only" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-lineup-gcc-asm-reg" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("arglist-cont-nonempty" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-offsets-alist" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("c-add-style" .
-   [0 0 0 0 0 1 0 0 0 0 0])
-  ("hl-line-mode" .
-   [0 0 0 0 0 0 0 0 1 0 0 1])
-  ("find-alternate-file" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 0 0 0 0 0 0 4])
-  ("lambda" .
-   [4 0 0 0 0 0])
-  ("dired-mode-map" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 2])
-  ("nil" .
-   [1 0 0])
-  ("disable" .
-   [0 0 0 0 0 0 1])
-  ("dired-find-alternate-file" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("add" .
-   [1 0 0])
-  ("ranger" .
-   [0 0 0 0 0 1])
-  ("dired-up-directory" .
-   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0])
-  ("local-set-key" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("global-set-key" .
-   [0 0 0 0 0 0 0 0 0 0 3 0 0 1])
-  ("dired-mode-hook" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 1])
-  ("dired-mode" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("c++-mode" .
-   [0 0 0 1 0 0 0 0])
-  ("settings" .
-   [1 0 0 0 0 0 0 0])
-  ("SETTINGS" .
-   [0 0 0 0 0 0 0 1])
-  ("append" .
-   [1 0 0 0 0 0])
-  ("setq" .
-   [5 0 0 0])
-  ("my:add-semantic-to-auto-complete" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("c-mode-common-hook" .
-   [0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1])
-  ("c-mode" .
-   [0 0 0 0 0 1])
-  ("hook" .
-   [1 0 0 0])
-  ("call" .
-   [1 0 0 0])
-  ("ac-source-semantic" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("se" .
-   [3 0])
-  ("to" .
-   [1 0])
-  ("define" .
-   [1 0 0 0 0 0])
-  ("semantic-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("on" .
-   [1 0])
-  ("printf" .
-   [5 0 0 0 0 1])
-  ("main" .
-   [2 0 0 0])
-  ("std" .
-   [4 0 1])
-  ("cstd" .
-   [0 0 1 1])
-  ("achead:include-directories" .
-   [0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("math" .
-   [1 0 2 0])
-  ("yas-global-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("yasnippet" .
-   [0 0 0 0 0 0 0 0 1])
-  ("yas/text" .
-   [0 0 0 0 0 0 0 1])
-  ("require" .
-   [3 0 0 0 0 0 1])
-  ("with" .
-   [1 0 0 0])
-  ("while" .
-   [0 0 3 3 3])
-  ("for" .
-   [0 0 1])
-  ("include" .
-   [0 0 0 0 1 0 9])
-  ("fori" .
-   [0 0 1 0])
-  ("function" .
-   [4 0 0 0 0 0 0 0])
-  ("auto-complete" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("auto-complete-c-headers" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("defun" .
-   [6 0 0 0 0])
-  ("autoarg" .
-   [0 0 0 0 1 0 0])
-  ("add-to-list" .
-   [0 0 0 0 0 0 0 0 0 0 4])
-  ("ac-sources" .
-   [0 0 0 0 1 0 0 0 0 1])
-  ("ca" .
-   [2 0])
-  ("mode" .
-   [2 0 0 0])
-  ("add-hook" .
-   [2 0 0 2 0 0 0 3])
-  ("c++-mode-hook" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("my:ac-c-header-init" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("float" .
-   [0 0 0 1 0])
-  ("f" .
-   [2])
-  ("stdlib.h" .
-   [1 0 0 1 0 0 0 0])
-  ("cstdio" .
-   [1 0 0 0 2 0])
-  ("define-key" .
-   [1 0 0 0 0 0 0 0 0 2])
-  ("global-map" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("kbd" .
-   [7 0 0])
-  ("iedit-mode" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("vector" .
-   [1 0 1 0 0 0])
-  ("stdatomic.h" .
-   [1 0 0 0 1 0 0 0 0 0 0])
-  ("end" .
-   [2 0 0])
-  ("range" .
-   [1 0 0 0 0])
-  ("Range" .
-   [1 0 0 0 0])
-  ("begin" .
-   [1 0 0 0 0])
-  ("file" .
-   [2 0 0 0])
-  ("Hal" .
-   [5 0 0])
-  ("write_status" .
-   [3 0 0 0 0 0 0 0 0 0 0 2])
-  ("Hal.hpp" .
-   [1 0 0 0 0 0 0])
-  ("fprintf" .
-   [0 0 0 2 0 0 0])
-  ("get" .
-   [2 0 0])
-  ("file_guard" .
-   [0 0 0 0 0 0 2 0 0 0])
-  ("my_hal_two" .
-   [0 0 0 0 0 0 0 1 0 0])
-  ("my_hal" .
-   [0 0 0 1 0 0])
-  ("scroll-preserve-screen-position" .
-   [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("always" .
-   [1 0 0 0 0 0])
-  ("scroll-down" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("my-scroll-down" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 2])
-  ("ibuffer-jump-to-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("buffer-name" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("cadr" .
-   [1 0 0 0])
-  ("buffer-list" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("ibuffer-hook" .
-   [0 0 0 0 0 0 0 0 0 0 0 1])
-  ("ibuffer-jump-to-last-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("LLVMContext" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("ctx" .
-   [2 0 0])
-  ("getContext" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("getType" .
-   [3 0 0 0 0 0 0])
-  ("IntegerType" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("second" .
-   [2 0 0 0 0 0])
-  ("alloca" .
-   [1 0 0 0 0 0])
-  ("allocai" .
-   [3 0 0 0 0 0 0])
-  ("errs" .
-   [2 0 0 0])
-  ("returns" .
-   [2 0 0 0 0 0 0])
-  ("ForkMap" .
-   [4 0 0 0 0 0 0])
-  ("retMap" .
-   [3 0 0 0 0 0])
-  ("forkMap" .
-   [10 0 0 0 0 0 0])
-  ("map" .
-   [2 0 0])
-  ("InjectStruct" .
-   [2 0 0 0 0 0 0 0 0 0 0 1])
-  ("Value" .
-   [2 0 0 0 0])
-  ("Argument" .
-   [1 0 0 0 0 0 0 0])
-  ("args" .
-   [1 0 0 0])
-  ("insert" .
-   [1 0 0 0 0 0])
-  ("arg" .
-   [1 0 0])
-  ("modified" .
-   [5 0 0 0 0 0 0 1])
-  ("t" .
-   [1])
-  ("stored" .
-   [2 0 0 0 0 0])
-  ("storedReg" .
-   [2 0 0 0 0 0 0 0 0])
-  ("argument" .
-   [1 0 0 0 0 0 0 0])
-  ("never" .
-   [1 0 0 0 0])
-  ("keras" .
-   [8 0 0 0 0])
-  ("layers" .
-   [3 0 0 0 0 0])
-  ("Dense" .
+((("model" .
    [2 0 0 0 0])
   ("activation" .
    [2 0 0 0 0 0 0 0 0 0])
-  ("model" .
-   [2 0 0 0 0])))
+  ("Dense" .
+   [2 0 0 0 0])
+  ("layers" .
+   [3 0 0 0 0 0])
+  ("keras" .
+   [8 0 0 0 0])
+  ("never" .
+   [1 0 0 0 0])
+  ("argument" .
+   [1 0 0 0 0 0 0 0])
+  ("storedReg" .
+   [2 0 0 0 0 0 0 0 0])
+  ("stored" .
+   [2 0 0 0 0 0])
+  ("t" .
+   [1])
+  ("modified" .
+   [5 0 0 0 0 0 0 1])
+  ("arg" .
+   [1 0 0])
+  ("insert" .
+   [1 0 0 0 0 0])
+  ("args" .
+   [1 0 0 0])
+  ("Argument" .
+   [1 0 0 0 0 0 0 0])
+  ("Value" .
+   [2 0 0 0 0])
+  ("InjectStruct" .
+   [2 0 0 0 0 0 0 0 0 0 0 1])
+  ("map" .
+   [2 0 0])
+  ("forkMap" .
+   [10 0 0 0 0 0 0])
+  ("retMap" .
+   [3 0 0 0 0 0])
+  ("ForkMap" .
+   [4 0 0 0 0 0 0])
+  ("returns" .
+   [2 0 0 0 0 0 0])
+  ("errs" .
+   [2 0 0 0])
+  ("allocai" .
+   [3 0 0 0 0 0 0])
+  ("alloca" .
+   [1 0 0 0 0 0])
+  ("second" .
+   [2 0 0 0 0 0])
+  ("IntegerType" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("getType" .
+   [3 0 0 0 0 0 0])
+  ("getContext" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("ctx" .
+   [2 0 0])
+  ("LLVMContext" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("ibuffer-jump-to-last-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ibuffer-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("buffer-list" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("cadr" .
+   [1 0 0 0])
+  ("buffer-name" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("ibuffer-jump-to-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("my-scroll-down" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 2])
+  ("scroll-down" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("always" .
+   [1 0 0 0 0 0])
+  ("scroll-preserve-screen-position" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("my_hal" .
+   [0 0 0 1 0 0])
+  ("my_hal_two" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("file_guard" .
+   [0 0 0 0 0 0 2 0 0 0])
+  ("get" .
+   [2 0 0])
+  ("fprintf" .
+   [0 0 0 2 0 0 0])
+  ("Hal.hpp" .
+   [1 0 0 0 0 0 0])
+  ("write_status" .
+   [3 0 0 0 0 0 0 0 0 0 0 2])
+  ("Hal" .
+   [5 0 0])
+  ("file" .
+   [2 0 0 0])
+  ("begin" .
+   [1 0 0 0 0])
+  ("Range" .
+   [1 0 0 0 0])
+  ("range" .
+   [1 0 0 0 0])
+  ("end" .
+   [2 0 0])
+  ("stdatomic.h" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("vector" .
+   [1 0 1 0 0 0])
+  ("iedit-mode" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("kbd" .
+   [7 0 0])
+  ("global-map" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("define-key" .
+   [1 0 0 0 0 0 0 0 0 2])
+  ("cstdio" .
+   [1 0 0 0 2 0])
+  ("stdlib.h" .
+   [1 0 0 1 0 0 0 0])
+  ("f" .
+   [2])
+  ("float" .
+   [0 0 0 1 0])
+  ("my:ac-c-header-init" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c++-mode-hook" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("add-hook" .
+   [2 0 0 2 0 0 0 3])
+  ("mode" .
+   [2 0 0 0])
+  ("ca" .
+   [2 0])
+  ("ac-sources" .
+   [0 0 0 0 1 0 0 0 0 1])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 4])
+  ("autoarg" .
+   [0 0 0 0 1 0 0])
+  ("defun" .
+   [6 0 0 0 0])
+  ("auto-complete-c-headers" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("function" .
+   [4 0 0 0 0 0 0 0])
+  ("fori" .
+   [0 0 1 0])
+  ("include" .
+   [0 0 0 0 1 0 9])
+  ("for" .
+   [0 0 1])
+  ("while" .
+   [0 0 3 3 3])
+  ("with" .
+   [1 0 0 0])
+  ("require" .
+   [3 0 0 0 0 0 1])
+  ("yas/text" .
+   [0 0 0 0 0 0 0 1])
+  ("yasnippet" .
+   [0 0 0 0 0 0 0 0 1])
+  ("yas-global-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("math" .
+   [1 0 2 0])
+  ("achead:include-directories" .
+   [0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("cstd" .
+   [0 0 1 1])
+  ("std" .
+   [4 0 1])
+  ("main" .
+   [2 0 0 0])
+  ("printf" .
+   [5 0 0 0 0 1])
+  ("on" .
+   [1 0])
+  ("semantic-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("define" .
+   [1 0 0 0 0 0])
+  ("to" .
+   [1 0])
+  ("se" .
+   [3 0])
+  ("ac-source-semantic" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("call" .
+   [1 0 0 0])
+  ("hook" .
+   [1 0 0 0])
+  ("c-mode" .
+   [0 0 0 0 0 1])
+  ("c-mode-common-hook" .
+   [0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1])
+  ("my:add-semantic-to-auto-complete" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [5 0 0 0])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("SETTINGS" .
+   [0 0 0 0 0 0 0 1])
+  ("settings" .
+   [1 0 0 0 0 0 0 0])
+  ("c++-mode" .
+   [0 0 0 1 0 0 0 0])
+  ("dired-mode" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("dired-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 1])
+  ("global-set-key" .
+   [0 0 0 0 0 0 0 0 0 0 3 0 0 1])
+  ("local-set-key" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("dired-up-directory" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0])
+  ("ranger" .
+   [0 0 0 0 0 1])
+  ("add" .
+   [1 0 0])
+  ("dired-find-alternate-file" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("disable" .
+   [0 0 0 0 0 0 1])
+  ("nil" .
+   [1 0 0])
+  ("dired-mode-map" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("lambda" .
+   [4 0 0 0 0 0])
+  ("interactive" .
+   [0 0 0 0 0 0 0 0 0 0 4])
+  ("find-alternate-file" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("hl-line-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 1])
+  ("c-add-style" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("c-offsets-alist" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("arglist-cont-nonempty" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-lineup-gcc-asm-reg" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("c-lineup-arglist-tabs-only" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("indent-tabs-mode" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("show-trailing-whitespace" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("c-set-style" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("functional" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("next-line" .
+   [0 0 0 0 0 0 0 0 1])
+  ("recenter-top-bottom" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("move-and-recenter" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("s" .
+   [1])
+  ("scroll-down-1" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("scroll-up" .
+   [0 0 0 0 0 0 0 0 1])))
