@@ -183,8 +183,6 @@
   (package-install 'auto-complete))
 (require 'auto-complete)
 ;; auto-complete config setings
-(unless (package-installed-p 'auto-complete-config)
-  (package-install 'auto-complete-config))
 (require 'auto-complete-config)
 (ac-config-default)
 
