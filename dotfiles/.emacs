@@ -94,7 +94,6 @@
 ;; rest of config depends on use-package, install it if it's not here
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
-(require 'use-package)
   
 
 ;; ibuffer settings
