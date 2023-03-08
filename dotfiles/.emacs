@@ -17,15 +17,7 @@
 ;; CUSTOM SETTINGS
 
 
-;; start package with emacs
-(require 'package)
-;; add MELPA to repository list
-(add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/")
-	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
-;; initialize package
-(package-initialize)
-
+;;;;;;;;;; NON-PACKAGE GENERAL SETTINGS ;;;;;;;;;;
 
 ;; disable backup files
 (setq make-backup-files nil)
@@ -45,6 +37,17 @@
 (global-set-key (kbd "C-x C-k") 'kill-buffer)
 ;; turn off beeping
 (setq visible-bell 1)
+;; screen scrolling
+(defun my-scroll-up ()
+  (interactive)
+  (scroll-down 1)
+  )
+(defun my-scroll-down ()
+  (interactive)
+  (scroll-up 1)
+  )
+(global-set-key (kbd "M-<up>") 'my-scroll-up)
+(global-set-key (kbd "M-<down>") 'my-scroll-down)
 
 
 ;; disable the *scratch* buffer
@@ -63,7 +66,9 @@
 		    (kill-buffer buffer)
 		    ))))
 
-;; dired settings
+
+;;;;;;;;;; DIRED SETTINGS ;;;;;;;;;;
+
 ;; make dired not have so many fucking buffers
 (put 'dired-find-alternate-file 'disabled nil)
 ;; enable line highlighting when in dired
@@ -73,113 +78,96 @@
 	    ;; remap enter and previous directory
 	    (define-key dired-mode-map (kbd "C-<right>") 'dired-find-alternate-file)
 	    (define-key dired-mode-map (kbd "C-<left>") 'dired-up-directory)))
-	    
 
+
+;;;;;;;;;; PACKAGE SPECIFIC SETTINGS ;;;;;;;;;;
+
+;; start package with emacs
+(require 'package)
+;; add MELPA to repository list
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/")
+	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;; initialize package
+(package-initialize)
+
+;; rest of config depends on use-package, install it if it's not here
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(require 'use-package)
+  
 
 ;; ibuffer settings
-;; start ibuffer with emacs
-(require 'ibuffer)
-;; use ibuffer for buffer list
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-;; define a function to put the cursor at the most recent buffer when we call ibuffer
-(defun ibuffer-jump-to-last-buffer ()
-  (ibuffer-jump-to-buffer (buffer-name (cadr (buffer-list))))
-  )
-;; add this function as a hook
-(add-hook 'ibuffer-hook #'ibuffer-jump-to-last-buffer)
+(use-package ibuffer
+  :ensure t
+  :config
+  ;; use ibuffer for buffer list
+  (global-set-key (kbd "C-x C-b") 'ibuffer)
+  ;; define a function to put the cursor at the most recent buffer when we call ibuffer
+  (defun ibuffer-jump-to-last-buffer ()
+    (ibuffer-jump-to-buffer (buffer-name (cadr (buffer-list))))
+    )
+  ;; add this function as a hook
+  (add-hook 'ibuffer-hook #'ibuffer-jump-to-last-buffer)
 
-;; set file modes per file type
-(setq ibuffer-saved-filter-groups
-      (quote (("default"
-	       ("dired" (mode . dired-mode))
-	       ("py" (mode . python-mode))
-	       ("c++" (mode . c++-mode))
-	       ("c" (mode . c-mode))
-	       ("llvm" (mode . llvm-mode))
-	       ("shell" (mode . shell-script-mode))
-	       ("emacs" (name . "^\\*"))
-	       ))))
-;; don't show empty filter groups
-(setq ibuffer-show-empty-filter-groups nil)
-;; add the ibuffer hook
-(add-hook 'ibuffer-mode-hook
-	  (lambda()
-	    (ibuffer-auto-mode 1)
-	    (hl-line-mode 1) ;; have line highlighting on
-	    (ibuffer-switch-to-saved-filter-groups "default")
-	    ))
+  ;; set file modes per file type
+  (setq ibuffer-saved-filter-groups
+	(quote (("default"
+		 ("dired" (mode . dired-mode))
+		 ("py" (mode . python-mode))
+		 ("c++" (mode . c++-mode))
+		 ("c" (mode . c-mode))
+		 ("llvm" (mode . llvm-mode))
+		 ("shell" (mode . shell-script-mode))
+		 ("emacs" (name . "^\\*"))
+		 ))))
+  ;; don't show empty filter groups
+  (setq ibuffer-show-empty-filter-groups nil)
+  ;; add the ibuffer hook
+  (add-hook 'ibuffer-mode-hook
+	    (lambda()
+	      (ibuffer-auto-mode 1)
+	      (hl-line-mode 1) ;; have line highlighting on
+	      (ibuffer-switch-to-saved-filter-groups "default")
+	      ))
+  )
 
-;; start good-scroll with emacs
-(require 'good-scroll)
-;; keep it globally on
-(good-scroll-mode 1)
-;; rebind page up and page down
-(global-set-key [next] 'good-scroll-up-full-screen)
-(global-set-key [prior] 'good-scroll-down-full-screen)
-;; screen scrolling
-(defun my-scroll-up ()
-  (interactive)
-  (scroll-down 1)
+;; good-scroll settings
+(use-package good-scroll
+  :ensure t
+  :config
+  ;; keep it globally on
+  (good-scroll-mode 1)
+  ;; rebind page up and page down
+  (global-set-key [next] 'good-scroll-up-full-screen)
+  (global-set-key [prior] 'good-scroll-down-full-screen)
   )
-(defun my-scroll-down ()
-  (interactive)
-  (scroll-up 1)
-  )
-(global-set-key (kbd "M-<up>") 'my-scroll-up)
-(global-set-key (kbd "M-<down>") 'my-scroll-down)
+
 
 ;; github downloaded LLVM IR mode
 (add-to-list 'load-path "~/.emacs.d/llvm")
 (require 'llvm-mode)
 
-;;;;;;;;;; DOOM EMACS modeline settings ;;;;;;;;;;
-;; (require 'doom-modeline)
-;; (require 'all-the-icons)
-;; ;; always enable
-;; (doom-modeline-mode 1)
-;; ;; enable imenu support
-;; (setq doom-modeline-support-imenu t)
-;; ;; display file name
-;; (setq doom-modeline-buffer-file-name-style 'auto)
-;; ;; Whether display icons in the mode-line.
-;; ;; While using the server mode in GUI, should set the value explicitly.
-;; (setq doom-modeline-icon t)
-;; ;; Whether display the icon for `major-mode'. It respects `doom-modeline-icon'.
-;; (setq doom-modeline-major-mode-icon t)
-;; ;; Whether display the colorful icon for `major-mode'.
-;; ;; It respects `all-the-icons-color-icons'.
-;; (setq doom-modeline-major-mode-color-icon t)
-;; ;; Whether display the icon for the buffer state. It respects `doom-modeline-icon'.
-;; (setq doom-modeline-buffer-state-icon t)
-;; ;; Whether display the modification icon for the buffer.
-;; ;; It respects `doom-modeline-icon' and `doom-modeline-buffer-state-icon'.
-;; (setq doom-modeline-buffer-modification-icon t)
-;; ;; Whether display the time icon. It respects variable `doom-modeline-icon'.
-;; (setq doom-modeline-time-icon t)
-;; ;; Whether to use unicode as a fallback (instead of ASCII) when not using icons.
-;; (setq doom-modeline-unicode-fallback nil)
-;; ;; Whether display the buffer name.
-;; (setq doom-modeline-buffer-name t)
-;; ;; Whether highlight the modified buffer name.
-;; (setq doom-modeline-highlight-modified-buffer-name t)
-;; ;; Whether display the buffer encoding.
-;; (setq doom-modeline-buffer-encoding t)
-;; ;; Whether display the indentation information.
-;; (setq doom-modeline-indent-info t)
-;; ;; Whether display the time. It respects `display-time-mode'.
-;; (setq doom-modeline-time t)
+
+
+;; yasnippet settings
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1)
+  )
+
+;; iedit settings
+(use-package iedit
+  :ensure t
+  :config
+  ;; set iedit keybind
+  (define-key global-map (kbd "C-c ;") 'iedit-mode)
+  )
+
 
 ;;;;;;;;;; C++ development settings ;;;;;;;;;;
-
-;; start auto-complete with emacs
-(require 'auto-complete)
-;; do default config for auto-complete
-(require 'auto-complete-config)
-(ac-config-default)
-;; start yasnippet with emacs
-(require 'yasnippet)
-;; set to be always on
-(yas-global-mode 1)
+;; TODO: put this in a seperate file
 
 
 ;; get the current gcc version
@@ -189,6 +177,16 @@
 			 (format "/usr/lib/gcc/x86_64-pc-linux-gnu/%s/include" gcc-version)
 			 (format "/usr/lib/gcc/x86_64-pc-linux-gnu/%s/include-fixed" gcc-version)
 			 (format "/usr/lib/gcc/x86_64-pc-linux-gnu/%s" gcc-version)))
+;; auto-complete settings
+(unless (package-installed-p 'auto-complete)
+  (package-install 'auto-complete))
+(require 'auto-complete)
+;; auto-complete config setings
+(unless (package-installed-p 'auto-complete-config)
+  (package-install 'auto-complete-config))
+(require 'auto-complete-config)
+(ac-config-default)
+
 ;; define function to intiialize auto-complete-c-headers
 (defun my:ac-c-header-init ()
   (require 'auto-complete-c-headers)
@@ -199,10 +197,7 @@
 ;; call the function for c/c++ mode hooks
 (add-hook 'c++-mode-hook 'my:ac-c-header-init)
 (add-hook 'c-mode-hook 'my:ac-c-header-init)
-;; start iedit with emacs
-(require 'iedit)
-;; set iedit keybind
-(define-key global-map (kbd "C-c ;") 'iedit-mode)
+
 ;; turn on semantic mode
 (semantic-mode 1)
 ;; define function to add semantic as a suggestion backend for auto-complete
