@@ -182,6 +182,8 @@
 (unless (package-installed-p 'auto-complete)
   (package-install 'auto-complete))
 (require 'auto-complete)
+(unless (package-installed-p 'auto-complete-c-headers)
+  (package-install 'auto-complete-c-headers))
 ;; auto-complete config setings
 (require 'auto-complete-config)
 (ac-config-default)
