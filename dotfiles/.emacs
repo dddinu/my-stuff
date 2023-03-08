@@ -90,6 +90,8 @@
 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
 ;; initialize package
 (package-initialize)
+;; refresh the package list so we can instal shit
+(package-refresh-contents)
 
 ;; rest of config depends on use-package, install it if it's not here
 (unless (package-installed-p 'use-package)
