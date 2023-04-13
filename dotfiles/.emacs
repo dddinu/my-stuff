@@ -6,7 +6,7 @@
  '(custom-enabled-themes '(modus-vivendi))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(all-the-icons doom-modeline ggtags cmake-mode smooth-scroll iedit auto-complete-c-headers yasnippet-snippets yasnippet-classic-snippets yasnippet auto-complete))
+   '(yaml-mode all-the-icons doom-modeline ggtags cmake-mode smooth-scroll iedit auto-complete-c-headers yasnippet-snippets yasnippet-classic-snippets yasnippet auto-complete))
  '(warning-suppress-types '(((python python-shell-completion-native-turn-on-maybe)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
