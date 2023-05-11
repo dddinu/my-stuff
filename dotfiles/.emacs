@@ -172,7 +172,7 @@
 
 
 ;; get the current gcc version
-(setq gcc-version (string-chop-newline (shell-command-to-string "gcc --version | head -n 1 | cut -d ' ' -f 3")))
+(setq gcc-version (string-remove-suffix "\n" (shell-command-to-string "gcc --version | head -n 1 | cut -d ' ' -f 3")))
 (setq cpp-include-dirs (list (format "/usr/include/c++/%s" gcc-version)
 			 (format "/usr/include/c++/%s/backward" gcc-version)
 			 (format "/usr/lib/gcc/x86_64-pc-linux-gnu/%s/include" gcc-version)
