@@ -13,6 +13,7 @@ export VISUAL='emacs'
 ### ------- ALIASES -------###
 
 alias ls='ls --color=auto'
+alias ll='ls -l'
 alias es='emacs'
 alias eq='emacs -nw'
 alias ec='emacsclient -c'
