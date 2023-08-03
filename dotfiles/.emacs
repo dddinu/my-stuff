@@ -32,7 +32,7 @@
 ;; maximize on startup
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 ;; enable line numbers to be shown on all buffers
-(global-linum-mode 1)
+(global-display-line-numbers-mode 1)
 ;; rebind kill buffer
 (global-set-key (kbd "C-x C-k") 'kill-buffer)
 ;; turn off beeping
