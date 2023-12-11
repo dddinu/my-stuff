@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi))
+ '(ede-project-directories '("/home/ddinu/projects/matilda-ede"))
  '(inhibit-startup-screen t)
  '(package-selected-packages
    '(yaml-mode all-the-icons doom-modeline ggtags cmake-mode smooth-scroll iedit auto-complete-c-headers yasnippet-snippets yasnippet-classic-snippets yasnippet auto-complete))
@@ -241,5 +242,4 @@
 	    (setq indent-tabs-mode t)
 	    (setq show-trailing-whitespace t)
 	    (c-set-style "linux-tabs-only")))
-
 

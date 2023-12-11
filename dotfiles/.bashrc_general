@@ -14,6 +14,7 @@ export VISUAL='emacs'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
+alias cd='pushd 1> /dev/null'
 alias es='emacs'
 alias eq='emacs -nw'
 alias ec='emacsclient -c'
@@ -23,10 +24,13 @@ alias lsservice='systemctl --type=service --all'
 alias statecodes='man ps | grep "PROCESS STATE CODES" -A 11 | head -n 12'
 alias figrep='~/scripts/figrep.bash'
 alias google='~/scripts/google.bash'
+alias duh='du -h -d 1 | sort -h'
 
 ### ------- PROMPT -------###
 
 PS1='[\d] <\[\e[1;34m\w\[\e[0m>\n[\t] [\u@\h]\$ '
+# use dircolors
+eval $(dircolors -b)
 
 ### ------- DECORATION -------###
 
