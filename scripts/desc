@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+function usage() {
+    prog=$(basename "${0}")
+    echo "  USAGE: ${prog}"
+    echo -e "  \t ${prog} -e \"description\" filename ... set file description"
+    echo -e "  \t ${prog} filename                  ... view file description"
+    echo -e "  \t ${prog} -x filename               ... remove file description"
+}
+
+
+if [ "${#}" -eq 1 ]; then    
+    # only the filename was provided, view 
+    FILE="${1}"
+    if [ ! -f "${FILE}" ]; then
+	echo "file: ${FILE} does not exist"
+	usage
+	exit -1
+    fi
+    getfattr -n user.description "${FILE}"
+    
+elif [ "${#}" -eq 3 ]; then
+    # edit the description
+    OPT="${1}"
+    DESC="${2}"
+    FILE="${3}"
+    if [ "${OPT}" != "-e" ]; then
+	echo "invalid option: ${OPT}"
+	usage
+	exit -1
+    fi
+    if [ ! -f "${FILE}" ]; then
+	echo "file: ${FILE} does not exist"
+	usage
+	exit -1
+    fi
+    setfattr -n user.description -v "${DESC}" "${FILE}"
+
+elif [ "${#}" -eq 2 ]; then
+    # remove the description
+    OPT="${1}"
+    FILE="${2}"
+    if [ "${OPT}" != "-x" ]; then
+	echo "invalid option: ${OPT}"
+	usage
+	exit -1
+    fi
+    setfattr -x user.description "${FILE}"
+else
+    usage
+    exit -1
+fi
+
+
+exit 0
